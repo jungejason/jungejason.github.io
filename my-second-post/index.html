@@ -1,0 +1,400 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=008654519ce705ac7bc44303a9014606"/><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=008654519ce705ac7bc44303a9014606"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=008654519ce705ac7bc44303a9014606"/><meta name="generator" content="Gatsby 2.13.39"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=008654519ce705ac7bc44303a9014606"/><title data-react-helmet="true">My Second Post! | Jason&#x27;s Blog</title><meta data-react-helmet="true" name="description" content="Wow! I love blogging so much already. Did you know that “despite its name, salted duck eggs can also be made from
+chicken eggs, though the taste and texture…"/><meta data-react-helmet="true" property="og:title" content="My Second Post!"/><meta data-react-helmet="true" property="og:description" content="Wow! I love blogging so much already. Did you know that “despite its name, salted duck eggs can also be made from
+chicken eggs, though the taste and texture…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Jun (Jason) Ge"/><meta data-react-helmet="true" name="twitter:title" content="My Second Post!"/><meta data-react-helmet="true" name="twitter:description" content="Wow! I love blogging so much already. Did you know that “despite its name, salted duck eggs can also be made from
+chicken eggs, though the taste and texture…"/><style data-href="/styles.5f81339daa9828444137.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}</style><link as="script" rel="preload" href="/component---src-templates-blog-post-js-932d1aafe542191ce6dd.js"/><link as="script" rel="preload" href="/0-f1e21c12b6f552990213.js"/><link as="script" rel="preload" href="/app-cf2ae78ef5070f643120.js"/><link as="script" rel="preload" href="/styles-652bd96731c07d176141.js"/><link as="script" rel="preload" href="/webpack-runtime-4d796bd62b04fad32495.js"/><link as="fetch" rel="preload" href="/page-data/my-second-post/page-data.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Jason&#x27;s Blog</a></h3></header><main><h1 style="margin-top:1.75rem;margin-bottom:0">My Second Post!</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">May 06, 2015</p><div><p>Wow! I love blogging so much already.</p>
+<p>Did you know that “despite its name, salted duck eggs can also be made from
+chicken eggs, though the taste and texture will be somewhat different, and the
+egg yolk will be less rich.”?
+(<a href="http://en.wikipedia.org/wiki/Salted_duck_egg">Wikipedia Link</a>)</p>
+<p>Yeah, I didn’t either.</p>
+<hr>
+<p>path: “/vim-commands”
+date: “2019-07-20”
+title: “VIM Commands”
+tags: [‘vi’, ‘deveff’]
+excerpt: “Common commands for VIM”</p>
+<hr>
+<h2>命令模式中的基础命令</h2>
+<p>VIM有大量的命令可供你使用，这里我只主要介绍针对单个文件，尤其是代码文件的编辑中最有用的一些命令。我会根据以下编辑文件的逻辑顺序来介绍：</p>
+<ol>
+<li>打开文件，以及关于整个文件编辑的设置</li>
+<li>光标移动到需要编辑的位置</li>
+<li>进行编辑</li>
+<li>使用图形化的选择帮助编辑</li>
+<li>查找替换</li>
+</ol>
+<h3>首先是打开文件，以及关于整个文件编辑的设置</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>目的</strong></th>
+<th align="center"><strong>按键</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">打开新文件</td>
+<td align="center">:e <file> 回车</td>
+</tr>
+<tr>
+<td align="center">退出</td>
+<td align="center">:q 回车</td>
+</tr>
+<tr>
+<td align="center">保存</td>
+<td align="center">:w 回车</td>
+</tr>
+<tr>
+<td align="center">另存为</td>
+<td align="center">:w <file> 回车</td>
+</tr>
+<tr>
+<td align="center">查找帮助</td>
+<td align="center">:h &#x3C;帮助主题></td>
+</tr>
+<tr>
+<td align="center">设置搜索中忽略大小写</td>
+<td align="center">:set ignorecase 回车</td>
+</tr>
+<tr>
+<td align="center">设置搜索显示高亮</td>
+<td align="center">:set hlsearch 回车</td>
+</tr>
+<tr>
+<td align="center">设置增量查找。边输入边查找已输入的内容</td>
+<td align="center">:set incsearch 回车</td>
+</tr>
+<tr>
+<td align="center">设置支持方便编辑多文件</td>
+<td align="center">:set hidden 回车</td>
+</tr>
+</tbody>
+</table>
+<p>:h用来查找帮助文档。VIM的文档很全面，不过从我的经验来看，初学者使用谷歌搜索效果会跟好一些。</p>
+<p>:set是在命令行中进行VIM的设置。你也可以把他们写到自己的用户目录下的.vimrc文件里面。在我常用的VIM设置文件里有21项设置，这里只列出了四项最基础的，如果我到了一台服务器上打开一个没有任何配置的VIM，我一般会在命令行里运行这四个设置。可以一次输入:set ic hls is hid回车 就行了。</p>
+<p>进入文件之后，下一步编辑操作就到了</p>
+<h3>移动光标</h3>
+<p>VIM提供了非常细粒度的光标移动命令。在<strong>水平移动</strong>方面，有一下常用命令：</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>目的</strong></th>
+<th align="left"><strong>按键</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">向左移动一个字符</td>
+<td align="left">h</td>
+</tr>
+<tr>
+<td align="left">向右移动一个字符</td>
+<td align="left">l</td>
+</tr>
+<tr>
+<td align="left">向左移动到上一个单词</td>
+<td align="left">b</td>
+</tr>
+<tr>
+<td align="left">向右移动到下一个单词开头</td>
+<td align="left">w</td>
+</tr>
+<tr>
+<td align="left">向右移动到下一个单词的末尾</td>
+<td align="left">e</td>
+</tr>
+<tr>
+<td align="left">向左移动到上一个大单词（空格分开的叫大单词）</td>
+<td align="left">B</td>
+</tr>
+<tr>
+<td align="left">向右移动到下一个单词开头</td>
+<td align="left">W</td>
+</tr>
+<tr>
+<td align="left">向右移动到下一个单词的末尾</td>
+<td align="left">E</td>
+</tr>
+<tr>
+<td align="left">向右移动到下一个字母x，光标放到x上</td>
+<td align="left">fx</td>
+</tr>
+<tr>
+<td align="left">向右移动到下一个字母x，光标放到x前</td>
+<td align="left">tx</td>
+</tr>
+<tr>
+<td align="left">向左移动到本行开头</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">想左移动到本行第一个不是空格的字符</td>
+<td align="left">^</td>
+</tr>
+<tr>
+<td align="left">向右移动到本行结尾</td>
+<td align="left">$</td>
+</tr>
+</tbody>
+</table>
+<p>你可以看到，这些命令之间，有的差别很细微。比如w和e都是向右边移动一个单词，只不过w光标一个放到下单词开头，e把光标放到这一个单词结尾。另外相似的，f和t也只是一个字符的差别。虽然只是一个字符的区别，但是正是这样的细粒度，是我们能够使用最少的按键次数完成编辑任务。</p>
+<p>刚才讲的是水平移动的命令。下面列举常用的上下移动的光标命令：</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>目的</strong></th>
+<th align="left"><strong>按键</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">向上移动一行</td>
+<td align="left">k</td>
+</tr>
+<tr>
+<td align="left">向下移动一行</td>
+<td align="left">j</td>
+</tr>
+<tr>
+<td align="left">向上移动到文件开头</td>
+<td align="left">gg</td>
+</tr>
+<tr>
+<td align="left">向下移动到文件结尾</td>
+<td align="left">G</td>
+</tr>
+<tr>
+<td align="left">移动到第n行</td>
+<td align="left">nG</td>
+</tr>
+<tr>
+<td align="left">向上翻页</td>
+<td align="left">CTRL+B</td>
+</tr>
+<tr>
+<td align="left">向下翻页</td>
+<td align="left">CTRL+F</td>
+</tr>
+</tbody>
+</table>
+<p>另外还有一些是跟文字单元相关的命令：</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>目的</strong></th>
+<th align="center"><strong>按键</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">跳转到对应的括号</td>
+<td align="center">%</td>
+</tr>
+<tr>
+<td align="center">移动光标到上一个空行</td>
+<td align="center">{</td>
+</tr>
+<tr>
+<td align="center">移动光标到下一个空行</td>
+<td align="center">}</td>
+</tr>
+</tbody>
+</table>
+<p>这些命令都可以用来组合命令。举一个基础的例子：我在编辑一个比较长的代码块，代码块里面没有空行，这时”{”和”}”帮不了忙，我常使用命令5k快速上移5行，用5j快速下移5行。</p>
+<p>移动好了光标，下一步是</p>
+<h3>进行编辑</h3>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>目的</strong></th>
+<th align="left"><strong>按键</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">删除当前字符</td>
+<td align="left">x</td>
+</tr>
+<tr>
+<td align="left">删除当前字符</td>
+<td align="left">X</td>
+</tr>
+<tr>
+<td align="left">删除通用命令</td>
+<td align="left">d</td>
+</tr>
+<tr>
+<td align="left">修改通用命令</td>
+<td align="left">c</td>
+</tr>
+<tr>
+<td align="left">拷贝通用命令</td>
+<td align="left">y</td>
+</tr>
+<tr>
+<td align="left">删除当前行</td>
+<td align="left">dd</td>
+</tr>
+<tr>
+<td align="left">拷贝当前行</td>
+<td align="left">yy</td>
+</tr>
+<tr>
+<td align="left">删除当前行并进入编辑模式</td>
+<td align="left">cc</td>
+</tr>
+<tr>
+<td align="left">取消上一个编辑命令</td>
+<td align="left">u</td>
+</tr>
+<tr>
+<td align="left">重做上一个编辑命令</td>
+<td align="left">CTRL+r</td>
+</tr>
+<tr>
+<td align="left">重复上一个编辑命令</td>
+<td align="left">.</td>
+</tr>
+</tbody>
+</table>
+<p>其中d,c,y三个是通用修改命令，虽然只有三个，但VIM通过组合的方式使得具体操作非常多样化。以下是一些例子：</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>目的</strong></th>
+<th align="center"><strong>按键</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">删除到行尾</td>
+<td align="center">d$</td>
+</tr>
+<tr>
+<td align="center">删除到文件末尾</td>
+<td align="center">dG</td>
+</tr>
+<tr>
+<td align="center">删除到这一行开头第一个不是空格的字符</td>
+<td align="center">c^</td>
+</tr>
+<tr>
+<td align="center">修改光标所在位置的单词</td>
+<td align="center">ciw （这个iw是特殊而强大的文件对象定义方法。我在后面会介绍）</td>
+</tr>
+<tr>
+<td align="center">删除到当前行字符串结尾的地方</td>
+<td align="center">ct“</td>
+</tr>
+</tbody>
+</table>
+<p>最后面的这个ct”我稍微讲解一下。它是编辑命令c和光标移动命令t的组合。比如在下面的一行代码里面，</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  console.error(&quot;No more round to run&quot;)
+                          ^   </code></pre></div>
+<p>光标位于“round”的r字母处后面。ct”这个组合命令中c是命令，前面没有数字部分。后面的文字对象部分是t”的，表示从当前位置到最后的双引号。组合起来的操作就是是把r往后直到双引号的部分全部进行修改。 执行之后，文本变为</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  console.error(&quot;No more r&quot;)
+                          ^   </code></pre></div>
+<p>因为写代码的过程中我常常要修改从当前位置到括号、引号之类的边界，所有类似的常用组合命令还有dt}，cT{等。简单三个字母就完成了我想进行的操作。相信你也看出来命令组合的威力了吧。</p>
+<p>最后再强调一下这些编辑命令都是原子性。比如取消命令u、重复命令.都是针对上一个完整的编辑命令而言。用重复操作为例，比如你要把下面几个时间都修改成20ms。</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  config = {
+    timeout: 1000000ms,
+    waiting: 300000ms,
+    starting: 40000ms,
+  }</code></pre></div>
+<p>你可以把光标挪到1000000ms里数字1的地方，用命令”ctm20”对第一行进行修改。然后两次使用用”j.”命令将光标挪到第二、三行并重复刚才的编辑命令，就可以完成整个编辑任务。</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  config = {
+    timeout: 20ms,
+    waiting: 20ms,
+    starting: 20ms,
+  }</code></pre></div>
+<p>讲到这里，不知道你有没有注意到一个问题。的这些命令，功能强大，但是在执行之后马上得到结果，在运行之前没有一个给我们一个进行确认的机会。如果这个命令是简单的操作，比如说dw，那不存在任何问题。但是如果这个命令的操作比较复杂，比如上面这个ct”命令，如果在当前行里有好几个双引号，我们就会希望在删除内容之前，我能有一个机会确认我没有看错引号。没问题，这就是下面我要讲的</p>
+<h3>可视模式（Visual Mode）</h3>
+<p>可视模式是VIM中除了命令模式和编辑模式之外的另一个模式。进入这种模式后，当前字符会高亮显示，表示已经被选择，然后你可以使用光标移动命令来调整你选择的文字范围，选择完成之后再使用编辑命令对所选内容进行操作。再次使用上面t”命令为例。我们可以先用命令v进入可视模式，这时字母n被高亮显示。</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">                          _
+console.error(&quot;No more round to run&quot;)
+                          ^   
+// 注：字幕上面有横线表示高亮显示。</code></pre></div>
+<p>然后，我输入t”，这时从n到结尾的双引号全部被高亮显示，让我可以确认我的选择是正确的：</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">                          _________
+console.error(&quot;No more round to run&quot;) // 字符上面的横线表示该字符高亮显示
+                                  ^</code></pre></div>
+<p>最后，我再输入编辑命令c，将选择的字符删除并进入编辑模式。最终实现了和ct”一样的效果。这个通过视觉模式进行的操作虽然按键较多，但是让我在进行修改之前有了确认的机会，让我安心了许多。</p>
+<p>事实上可视模式一共有三种，v只是其中一种。
+| <strong>命令</strong>   | <strong>按键</strong>   |
+|:----|:----:|
+| 基于字符的可视模式   | v |
+| 基于行的可视模式 | V |
+| 基于列的可视模式   | CTRL+v | </p>
+<p>其中V比较简单，每次的选择以一行文字为单位。相比起来，基于列的可视模式针对一个矩形进行操作，功能比较强大。下面用两个例子来说明。</p>
+<p>第一个例子，一段文本，每一行都是用var声明变量，比如”var gameMode”。现在我希望改成使用const来声明。</p>
+<p><img src="https://uploader.shimo.im/f/0s9G8AjEmgsZY9AU.png!thumbnail" alt="图片"></p>
+<p>首先，把光标挪到第一行的开头 v 字符处，然后使用组合键CTRL-v进入列可视模式，然后使用7je选中一个矩形区域，包含所有的”var”</p>
+<p><img src="https://uploader.shimo.im/f/S6CnffTAiu4wvHak.png!thumbnail" alt="图片"></p>
+<p>然后输入c，删除所有的var，并进入编辑模式</p>
+<p> <img src="https://uploader.shimo.im/f/Sb3KlQqUp9ICX0CW.png!thumbnail" alt="图片">
+最后输入const，并输入Esc完成编辑操作回到命令模式。这样就完成了整个修改。</p>
+<p><img src="https://uploader.shimo.im/f/BK0yFKn51kg847zO.png!thumbnail" alt="图片"></p>
+<p><img src="https://uploader.shimo.im/f/7TBHdU7OeE4I2e6J.png!thumbnail" alt="图片"></p>
+<p>第二个例子，我希望在上面这段文字的每一行末尾都添加一个分号”;“。我可以这样来操作：首先，我用$命令把光标挪到第一行的末尾，然后用7次”j”命令将光标挪到第8行，这时，每一行的末尾都被包含到了一个方块里。不过因为每一行的长度不同，所以方块没有显示完全。
+<img src="https://uploader.shimo.im/f/iggu7pvI6Bwvm9f7.png!thumbnail" alt="图片"></p>
+<p>然后输入A命令，光标挪到每一行的末尾，并进入编辑模式。
+<img src="https://uploader.shimo.im/f/xYIp3BNkfLolItU7.png!thumbnail" alt="图片">
+输入分号”;“，然后Esc回到命令模式，完成编辑。每一行的末尾都添加了一个分号”;“。
+<img src="https://uploader.shimo.im/f/J69c9IiQLR0uKhax.png!thumbnail" alt="图片">
+<img src="https://uploader.shimo.im/f/fstQe1J8eacKa41z.png!thumbnail" alt="图片"></p>
+<p>这两个列模式中的例子，第一个例子在很多支持列模式的编辑器都能做到。不过第二个例子，能做到的编辑器就不多。</p>
+<p>最后，送你三个在可视模式比较有用的小贴士：</p>
+<p>第一个是当你退出了可视模式之后，你可以使用gv命令重新进入可视模式并选择上一次的选择。这个命令出乎意料的有用。因为我常常会需要对上一次的选择再进行操作；</p>
+<p>第二个是进入了可视模式之后，你不用退出就可直接使用v，V，CTRL-v在三种模式之间切换。比如，你一开始使用v进入了字符可视模式。这时，你发现你需要的实际上是删除几行，这个时候你可以输入V直接进入行的可视模式；</p>
+<p>第三个贴士是关于可视区域范围的调整。当你进入可视模式之后，光标默认处于所选区域的结尾处，这时你可以挪动光标调节选择区域的结尾部分。但是如果你想调节的是所选区域的开头部分，你可以使用命令o将光标跳到选择区域的开始部分。一个更好玩的情况是在列模式中，你可以使用小写o在对角线上跳转，大写O在水平方向的两个角跳转。从而实现矩形的四个角都可以调整。</p>
+<h3>最后一组常用命令是查找/替换命令</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>目的</strong></th>
+<th align="center"><strong>按键</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">向下搜素</td>
+<td align="center">/</td>
+</tr>
+<tr>
+<td align="center">查找当前光标所在单词</td>
+<td align="center">*</td>
+</tr>
+<tr>
+<td align="center">把abc替换成xyz</td>
+<td align="center">:%s/abc/xyz/g</td>
+</tr>
+</tbody>
+</table>
+<p>进行查找的过程中，使用n查找下一个，N查找上一个。</p>
+<p>这个替换命令，有一些复杂，我稍微讲解一下。这是一个ex风格的命令。前面提到过，ex是对一行文本使用命令进行编辑的工具，是VI的前身。命令中的百分号%后面的部分就是一个ex命令。下面是每一个部分的解释：</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">:%s/abc/xyz/g
+:---------------&gt; 命令行模式
+ %--------------&gt; 针对所有行运行后面的命令
+  s-------------&gt; 这个一个Substitute(替换)命令。格式为s///g
+    abc---------&gt; 被替换串
+        xyz-----&gt; 新串
+            g---&gt; s命令的选项，表示在当前行如果有多个被替换传的话，每个都替换                          </code></pre></div></div><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAXABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQFA//EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHF60aE1mKjNHcKlCf/xAAbEAACAwEBAQAAAAAAAAAAAAABAgADEhEEE//aAAgBAQABBQICZdZiUAfS4dXnAvlyLkBRazn/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPwEIT//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/AVjP/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAECESEQQf/aAAgBAQAGPwIuUc4rGm+W5b6Waf/EABoQAQADAQEBAAAAAAAAAAAAAAEAESFRMbH/2gAIAQEAAT8hoPLYisglHSItVuRkl5kABwlD0MTVMY4fDP/aAAwDAQACAAMAAAAQvDi9/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/ELhFF//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPxDBg1J//8QAHBABAAMAAwEBAAAAAAAAAAAAAQARITFBUYHR/9oACAEBAAE/EKBLDQezsF5qslE0EsnH80od+ylAGEa8eQ5mAE3IBQYrmj9gUOui1auPLVrENOlvuf/Z" alt="Jun (Jason) Ge" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/176c7c4599ad3435fa225578bbcb0818/9b664/profile-pic.jpg 1x,
+/static/176c7c4599ad3435fa225578bbcb0818/06a10/profile-pic.jpg 1.5x,
+/static/176c7c4599ad3435fa225578bbcb0818/f1b5a/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/176c7c4599ad3435fa225578bbcb0818/9b664/profile-pic.jpg 1x,
+/static/176c7c4599ad3435fa225578bbcb0818/06a10/profile-pic.jpg 1.5x,
+/static/176c7c4599ad3435fa225578bbcb0818/f1b5a/profile-pic.jpg 2x" src="/static/176c7c4599ad3435fa225578bbcb0818/9b664/profile-pic.jpg" alt="Jun (Jason) Ge" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Jun (Jason) Ge</strong> who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kettge">You should follow him on Twitter</a></p></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/hello-world/">← <!-- -->Hello World</a></li><li><a rel="next" href="/hi-folks/">New Beginnings<!-- --> →</a></li></ul></main><footer>© <!-- -->2019<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      
+      
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/my-second-post/";window.webpackCompilationHash="586adbd24e8e3269c183";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-cf2ae78ef5070f643120.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-fd7edd369e267dad4496.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-932d1aafe542191ce6dd.js"],"component---src-pages-404-js":["/component---src-pages-404-js-7533ce43e4e3bb5f9fe0.js"],"component---src-pages-index-js":["/component---src-pages-index-js-b9b66e898af319f7783c.js"]};/*]]>*/</script><script src="/webpack-runtime-4d796bd62b04fad32495.js" async=""></script><script src="/styles-652bd96731c07d176141.js" async=""></script><script src="/app-cf2ae78ef5070f643120.js" async=""></script><script src="/0-f1e21c12b6f552990213.js" async=""></script><script src="/component---src-templates-blog-post-js-932d1aafe542191ce6dd.js" async=""></script></body></html>

@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jason's Blog]]></title><description><![CDATA[Jason's Blog]]></description><link>https://jungejason.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 24 Jul 2019 16:42:03 GMT</lastBuildDate><item><title><![CDATA[VIM Commands]]></title><description><![CDATA[命令模式中的基础命令 VIM…]]></description><link>https://jungejason.github.io/vim-commands/</link><guid isPermaLink="false">https://jungejason.github.io/vim-commands/</guid><pubDate>Sat, 20 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;命令模式中的基础命令&lt;/h2&gt;
+&lt;p&gt;VIM有大量的命令可供你使用，这里我只主要介绍针对单个文件，尤其是代码文件的编辑中最有用的一些命令。我会根据以下编辑文件的逻辑顺序来介绍：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开文件，以及关于整个文件编辑的设置&lt;/li&gt;
+&lt;li&gt;光标移动到需要编辑的位置&lt;/li&gt;
+&lt;li&gt;进行编辑&lt;/li&gt;
+&lt;li&gt;使用图形化的选择帮助编辑&lt;/li&gt;
+&lt;li&gt;查找替换&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;首先是打开文件，以及关于整个文件编辑的设置&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;打开新文件&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:e &lt;file&gt; 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;退出&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:q 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;保存&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:w 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;另存为&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:w &lt;file&gt; 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;查找帮助&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:h &amp;#x3C;帮助主题&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;设置搜索中忽略大小写&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:set ignorecase 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;设置搜索显示高亮&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:set hlsearch 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;设置增量查找。边输入边查找已输入的内容&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:set incsearch 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;设置支持方便编辑多文件&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:set hidden 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;:h用来查找帮助文档。VIM的文档很全面，不过从我的经验来看，初学者使用谷歌搜索效果会跟好一些。&lt;/p&gt;
+&lt;p&gt;:set是在命令行中进行VIM的设置。你也可以把他们写到自己的用户目录下的.vimrc文件里面。在我常用的VIM设置文件里有21项设置，这里只列出了四项最基础的，如果我到了一台服务器上打开一个没有任何配置的VIM，我一般会在命令行里运行这四个设置。可以一次输入:set ic hls is hid回车 就行了。&lt;/p&gt;
+&lt;p&gt;进入文件之后，下一步编辑操作就到了&lt;/p&gt;
+&lt;h3&gt;移动光标&lt;/h3&gt;
+&lt;p&gt;VIM提供了非常细粒度的光标移动命令。在&lt;strong&gt;水平移动&lt;/strong&gt;方面，有一下常用命令：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向左移动一个字符&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;h&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动一个字符&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;l&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向左移动到上一个单词&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到下一个单词开头&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;w&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到下一个单词的末尾&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;e&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向左移动到上一个大单词（空格分开的叫大单词）&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到下一个单词开头&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;W&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到下一个单词的末尾&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;E&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到下一个字母x，光标放到x上&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;fx&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到下一个字母x，光标放到x前&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;tx&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向左移动到本行开头&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;想左移动到本行第一个不是空格的字符&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;^&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到本行结尾&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;你可以看到，这些命令之间，有的差别很细微。比如w和e都是向右边移动一个单词，只不过w光标一个放到下单词开头，e把光标放到这一个单词结尾。另外相似的，f和t也只是一个字符的差别。虽然只是一个字符的区别，但是正是这样的细粒度，是我们能够使用最少的按键次数完成编辑任务。&lt;/p&gt;
+&lt;p&gt;刚才讲的是水平移动的命令。下面列举常用的上下移动的光标命令：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向上移动一行&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;k&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向下移动一行&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;j&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向上移动到文件开头&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;gg&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向下移动到文件结尾&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;G&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;移动到第n行&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;nG&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向上翻页&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CTRL+B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向下翻页&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CTRL+F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;另外还有一些是跟文字单元相关的命令：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;跳转到对应的括号&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;移动光标到上一个空行&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;{&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;移动光标到下一个空行&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;这些命令都可以用来组合命令。举一个基础的例子：我在编辑一个比较长的代码块，代码块里面没有空行，这时”{”和”}”帮不了忙，我常使用命令5k快速上移5行，用5j快速下移5行。&lt;/p&gt;
+&lt;p&gt;移动好了光标，下一步是&lt;/p&gt;
+&lt;h3&gt;进行编辑&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;删除当前字符&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;删除当前字符&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;X&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;删除通用命令&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;d&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;修改通用命令&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;c&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;拷贝通用命令&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;删除当前行&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;dd&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;拷贝当前行&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;yy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;删除当前行并进入编辑模式&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;cc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;取消上一个编辑命令&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;u&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;重做上一个编辑命令&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CTRL+r&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;重复上一个编辑命令&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;其中d,c,y三个是通用修改命令，虽然只有三个，但VIM通过组合的方式使得具体操作非常多样化。以下是一些例子：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;删除到行尾&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;d$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;删除到文件末尾&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;dG&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;删除到这一行开头第一个不是空格的字符&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;c^&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;修改光标所在位置的单词&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;ciw （这个iw是特殊而强大的文件对象定义方法。我在后面会介绍）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;删除到当前行字符串结尾的地方&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;ct“&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;最后面的这个ct”我稍微讲解一下。它是编辑命令c和光标移动命令t的组合。比如在下面的一行代码里面，&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  console.error(&amp;quot;No more round to run&amp;quot;)
+                          ^   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;光标位于“round”的r字母处后面。ct”这个组合命令中c是命令，前面没有数字部分。后面的文字对象部分是t”的，表示从当前位置到最后的双引号。组合起来的操作就是是把r往后直到双引号的部分全部进行修改。 执行之后，文本变为&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  console.error(&amp;quot;No more r&amp;quot;)
+                          ^   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;因为写代码的过程中我常常要修改从当前位置到括号、引号之类的边界，所有类似的常用组合命令还有dt}，cT{等。简单三个字母就完成了我想进行的操作。相信你也看出来命令组合的威力了吧。&lt;/p&gt;
+&lt;p&gt;最后再强调一下这些编辑命令都是原子性。比如取消命令u、重复命令.都是针对上一个完整的编辑命令而言。用重复操作为例，比如你要把下面几个时间都修改成20ms。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  config = {
+    timeout: 1000000ms,
+    waiting: 300000ms,
+    starting: 40000ms,
+  }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;你可以把光标挪到1000000ms里数字1的地方，用命令”ctm20”对第一行进行修改。然后两次使用用”j.”命令将光标挪到第二、三行并重复刚才的编辑命令，就可以完成整个编辑任务。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  config = {
+    timeout: 20ms,
+    waiting: 20ms,
+    starting: 20ms,
+  }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;讲到这里，不知道你有没有注意到一个问题。的这些命令，功能强大，但是在执行之后马上得到结果，在运行之前没有一个给我们一个进行确认的机会。如果这个命令是简单的操作，比如说dw，那不存在任何问题。但是如果这个命令的操作比较复杂，比如上面这个ct”命令，如果在当前行里有好几个双引号，我们就会希望在删除内容之前，我能有一个机会确认我没有看错引号。没问题，这就是下面我要讲的&lt;/p&gt;
+&lt;h3&gt;可视模式（Visual Mode）&lt;/h3&gt;
+&lt;p&gt;可视模式是VIM中除了命令模式和编辑模式之外的另一个模式。进入这种模式后，当前字符会高亮显示，表示已经被选择，然后你可以使用光标移动命令来调整你选择的文字范围，选择完成之后再使用编辑命令对所选内容进行操作。再次使用上面t”命令为例。我们可以先用命令v进入可视模式，这时字母n被高亮显示。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;                          _
+console.error(&amp;quot;No more round to run&amp;quot;)
+                          ^   
+// 注：字幕上面有横线表示高亮显示。&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;然后，我输入t”，这时从n到结尾的双引号全部被高亮显示，让我可以确认我的选择是正确的：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;                          _________
+console.error(&amp;quot;No more round to run&amp;quot;) // 字符上面的横线表示该字符高亮显示
+                                  ^&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;最后，我再输入编辑命令c，将选择的字符删除并进入编辑模式。最终实现了和ct”一样的效果。这个通过视觉模式进行的操作虽然按键较多，但是让我在进行修改之前有了确认的机会，让我安心了许多。&lt;/p&gt;
+&lt;p&gt;事实上可视模式一共有三种，v只是其中一种。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;命令&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;基于字符的可视模式&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;v&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;基于行的可视模式&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;V&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;基于列的可视模式&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;CTRL+v&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;其中V比较简单，每次的选择以一行文字为单位。相比起来，基于列的可视模式针对一个矩形进行操作，功能比较强大。下面用两个例子来说明。&lt;/p&gt;
+&lt;p&gt;第一个例子，一段文本，每一行都是用var声明变量，比如”var gameMode”。现在我希望改成使用const来声明。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://uploader.shimo.im/f/0s9G8AjEmgsZY9AU.png!thumbnail&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+&lt;p&gt;首先，把光标挪到第一行的开头 v 字符处，然后使用组合键CTRL-v进入列可视模式，然后使用7je选中一个矩形区域，包含所有的”var”&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://uploader.shimo.im/f/S6CnffTAiu4wvHak.png!thumbnail&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+&lt;p&gt;然后输入c，删除所有的var，并进入编辑模式&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://uploader.shimo.im/f/Sb3KlQqUp9ICX0CW.png!thumbnail&quot; alt=&quot;图片&quot;&gt;
+最后输入const，并输入Esc完成编辑操作回到命令模式。这样就完成了整个修改。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://uploader.shimo.im/f/BK0yFKn51kg847zO.png!thumbnail&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://uploader.shimo.im/f/7TBHdU7OeE4I2e6J.png!thumbnail&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+&lt;p&gt;第二个例子，我希望在上面这段文字的每一行末尾都添加一个分号”;“。我可以这样来操作：首先，我用$命令把光标挪到第一行的末尾，然后用7次”j”命令将光标挪到第8行，这时，每一行的末尾都被包含到了一个方块里。不过因为每一行的长度不同，所以方块没有显示完全。
+&lt;img src=&quot;https://uploader.shimo.im/f/iggu7pvI6Bwvm9f7.png!thumbnail&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+&lt;p&gt;然后输入A命令，光标挪到每一行的末尾，并进入编辑模式。
+&lt;img src=&quot;https://uploader.shimo.im/f/xYIp3BNkfLolItU7.png!thumbnail&quot; alt=&quot;图片&quot;&gt;
+输入分号”;“，然后Esc回到命令模式，完成编辑。每一行的末尾都添加了一个分号”;“。
+&lt;img src=&quot;https://uploader.shimo.im/f/J69c9IiQLR0uKhax.png!thumbnail&quot; alt=&quot;图片&quot;&gt;
+&lt;img src=&quot;https://uploader.shimo.im/f/fstQe1J8eacKa41z.png!thumbnail&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这两个列模式中的例子，第一个例子在很多支持列模式的编辑器都能做到。不过第二个例子，能做到的编辑器就不多。&lt;/p&gt;
+&lt;p&gt;最后，送你三个在可视模式比较有用的小贴士：&lt;/p&gt;
+&lt;p&gt;第一个是当你退出了可视模式之后，你可以使用gv命令重新进入可视模式并选择上一次的选择。这个命令出乎意料的有用。因为我常常会需要对上一次的选择再进行操作；&lt;/p&gt;
+&lt;p&gt;第二个是进入了可视模式之后，你不用退出就可直接使用v，V，CTRL-v在三种模式之间切换。比如，你一开始使用v进入了字符可视模式。这时，你发现你需要的实际上是删除几行，这个时候你可以输入V直接进入行的可视模式；&lt;/p&gt;
+&lt;p&gt;第三个贴士是关于可视区域范围的调整。当你进入可视模式之后，光标默认处于所选区域的结尾处，这时你可以挪动光标调节选择区域的结尾部分。但是如果你想调节的是所选区域的开头部分，你可以使用命令o将光标跳到选择区域的开始部分。一个更好玩的情况是在列模式中，你可以使用小写o在对角线上跳转，大写O在水平方向的两个角跳转。从而实现矩形的四个角都可以调整。&lt;/p&gt;
+&lt;h3&gt;最后一组常用命令是查找/替换命令&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;向下搜素&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;查找当前光标所在单词&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;*&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;把abc替换成xyz&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:%s/abc/xyz/g&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;进行查找的过程中，使用n查找下一个，N查找上一个。&lt;/p&gt;
+&lt;p&gt;这个替换命令，有一些复杂，我稍微讲解一下。这是一个ex风格的命令。前面提到过，ex是对一行文本使用命令进行编辑的工具，是VI的前身。命令中的百分号%后面的部分就是一个ex命令。下面是每一个部分的解释：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;:%s/abc/xyz/g
+:---------------&amp;gt; 命令行模式
+ %--------------&amp;gt; 针对所有行运行后面的命令
+  s-------------&amp;gt; 这个一个Substitute(替换)命令。格式为s///g
+    abc---------&amp;gt; 被替换串
+        xyz-----&amp;gt; 新串
+            g---&amp;gt; s命令的选项，表示在当前行如果有多个被替换传的话，每个都替换                          &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
+Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://jungejason.github.io/hi-folks/</link><guid isPermaLink="false">https://jungejason.github.io/hi-folks/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
+Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+right at the coast of the Semantics, a large language ocean. A small river named
+Duden flows by their place and supplies it with the necessary regelialia.&lt;/p&gt;
+&lt;h2&gt;On deer horse aboard tritely yikes and much&lt;/h2&gt;
+&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
+Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
+didn’t listen. She packed her seven versalia, put her initial into the belt and
+made herself on the way.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This however showed weasel&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Well uncritical so misled&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;this is very interesting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Goodness much until that fluid owl&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When she reached the first hills of the &lt;strong&gt;Italic Mountains&lt;/strong&gt;, she had a last
+view back on the skyline of her hometown &lt;em&gt;Bookmarksgrove&lt;/em&gt;, the headline of
+&lt;a href=&quot;http://google.com&quot;&gt;Alphabet Village&lt;/a&gt; and the subline of her own road, the Line
+Lane. Pityful a rhetoric question ran over her cheek, then she continued her
+way. On her way she met a copy.&lt;/p&gt;
+&lt;h3&gt;Overlaid the jeepers uselessly much excluding&lt;/h3&gt;
+&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
+few insidious Copy Writers ambushed her, made her drunk with
+&lt;a href=&quot;http://google.com&quot;&gt;Longe and Parole&lt;/a&gt; and dragged her into their agency, where
+they abused her for their projects again and again. And if she hasn’t been
+rewritten, then they are still using her.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
+Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+right at the coast of the Semantics, a large language ocean.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It is a paradisematic country, in which roasted parts of sentences fly into your
+mouth. Even the all-powerful Pointing has no control about the blind texts it is
+an almost unorthographic life One day however a small line of blind text by the
+name of Lorem Ipsum decided to leave for the far World of Grammar.&lt;/p&gt;
+&lt;h3&gt;According a funnily until pre-set or arrogant well cheerful&lt;/h3&gt;
+&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
+Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
+didn’t listen. She packed her seven versalia, put her initial into the belt and
+made herself on the way.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;So baboon this&lt;/li&gt;
+&lt;li&gt;Mounted militant weasel gregariously admonishingly straightly hey&lt;/li&gt;
+&lt;li&gt;Dear foresaw hungry and much some overhung&lt;/li&gt;
+&lt;li&gt;Rash opossum less because less some amid besides yikes jeepers frenetic
+impassive fruitlessly shut&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When she reached the first hills of the Italic Mountains, she had a last view
+back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
+Village and the subline of her own road, the Line Lane. Pityful a rhetoric
+question ran over her cheek, then she continued her way. On her way she met a
+copy.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
+been rewritten a thousand times and everything that was left from its origin
+would be the word “and” and the Little Blind Text should turn around and
+return to its own, safe country.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
+few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
+and dragged her into their agency, where they abused her for their projects
+again and again. And if she hasn’t been rewritten, then they are still using
+her. Far far away, behind the word mountains, far from the countries Vokalia and
+Consonantia, there live the blind texts.&lt;/p&gt;
+&lt;h4&gt;Silent delightfully including because before one up barring chameleon&lt;/h4&gt;
+&lt;p&gt;Separated they live in Bookmarksgrove right at the coast of the Semantics, a
+large language ocean. A small river named Duden flows by their place and
+supplies it with the necessary regelialia. It is a paradisematic country, in
+which roasted parts of sentences fly into your mouth.&lt;/p&gt;
+&lt;p&gt;Even the all-powerful Pointing has no control about the blind texts it is an
+almost unorthographic life One day however a small line of blind text by the
+name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
+advised her not to do so, because there were thousands of bad Commas, wild
+Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.&lt;/p&gt;
+&lt;h5&gt;Wherever far wow thus a squirrel raccoon jeez jaguar this from along&lt;/h5&gt;
+&lt;p&gt;She packed her seven versalia, put her initial into the belt and made herself on
+the way. When she reached the first hills of the Italic Mountains, she had a
+last view back on the skyline of her hometown Bookmarksgrove, the headline of
+Alphabet Village and the subline of her own road, the Line Lane. Pityful a
+rhetoric question ran over her cheek, then she continued her way. On her way she
+met a copy.&lt;/p&gt;
+&lt;h6&gt;Slapped cozy a that lightheartedly and far&lt;/h6&gt;
+&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
+been rewritten a thousand times and everything that was left from its origin
+would be the word “and” and the Little Blind Text should turn around and return
+to its own, safe country. But nothing the copy said could convince her and so it
+didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
+with Longe and Parole and dragged her into their agency, where they abused her
+for their projects again and again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[Wow! I love blogging so much already. Did you know that “despite its name, salted duck eggs can also be made from
+chicken eggs, though the…]]></description><link>https://jungejason.github.io/my-second-post/</link><guid isPermaLink="false">https://jungejason.github.io/my-second-post/</guid><pubDate>Wed, 06 May 2015 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Wow! I love blogging so much already.&lt;/p&gt;
+&lt;p&gt;Did you know that “despite its name, salted duck eggs can also be made from
+chicken eggs, though the taste and texture will be somewhat different, and the
+egg yolk will be less rich.”?
+(&lt;a href=&quot;http://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;Wikipedia Link&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Yeah, I didn’t either.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;path: “/vim-commands”
+date: “2019-07-20”
+title: “VIM Commands”
+tags: [‘vi’, ‘deveff’]
+excerpt: “Common commands for VIM”&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;命令模式中的基础命令&lt;/h2&gt;
+&lt;p&gt;VIM有大量的命令可供你使用，这里我只主要介绍针对单个文件，尤其是代码文件的编辑中最有用的一些命令。我会根据以下编辑文件的逻辑顺序来介绍：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开文件，以及关于整个文件编辑的设置&lt;/li&gt;
+&lt;li&gt;光标移动到需要编辑的位置&lt;/li&gt;
+&lt;li&gt;进行编辑&lt;/li&gt;
+&lt;li&gt;使用图形化的选择帮助编辑&lt;/li&gt;
+&lt;li&gt;查找替换&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;首先是打开文件，以及关于整个文件编辑的设置&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;打开新文件&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:e &lt;file&gt; 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;退出&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:q 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;保存&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:w 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;另存为&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:w &lt;file&gt; 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;查找帮助&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:h &amp;#x3C;帮助主题&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;设置搜索中忽略大小写&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:set ignorecase 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;设置搜索显示高亮&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:set hlsearch 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;设置增量查找。边输入边查找已输入的内容&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:set incsearch 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;设置支持方便编辑多文件&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:set hidden 回车&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;:h用来查找帮助文档。VIM的文档很全面，不过从我的经验来看，初学者使用谷歌搜索效果会跟好一些。&lt;/p&gt;
+&lt;p&gt;:set是在命令行中进行VIM的设置。你也可以把他们写到自己的用户目录下的.vimrc文件里面。在我常用的VIM设置文件里有21项设置，这里只列出了四项最基础的，如果我到了一台服务器上打开一个没有任何配置的VIM，我一般会在命令行里运行这四个设置。可以一次输入:set ic hls is hid回车 就行了。&lt;/p&gt;
+&lt;p&gt;进入文件之后，下一步编辑操作就到了&lt;/p&gt;
+&lt;h3&gt;移动光标&lt;/h3&gt;
+&lt;p&gt;VIM提供了非常细粒度的光标移动命令。在&lt;strong&gt;水平移动&lt;/strong&gt;方面，有一下常用命令：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向左移动一个字符&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;h&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动一个字符&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;l&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向左移动到上一个单词&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;b&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到下一个单词开头&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;w&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到下一个单词的末尾&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;e&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向左移动到上一个大单词（空格分开的叫大单词）&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到下一个单词开头&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;W&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到下一个单词的末尾&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;E&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到下一个字母x，光标放到x上&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;fx&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到下一个字母x，光标放到x前&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;tx&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向左移动到本行开头&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;想左移动到本行第一个不是空格的字符&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;^&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向右移动到本行结尾&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;你可以看到，这些命令之间，有的差别很细微。比如w和e都是向右边移动一个单词，只不过w光标一个放到下单词开头，e把光标放到这一个单词结尾。另外相似的，f和t也只是一个字符的差别。虽然只是一个字符的区别，但是正是这样的细粒度，是我们能够使用最少的按键次数完成编辑任务。&lt;/p&gt;
+&lt;p&gt;刚才讲的是水平移动的命令。下面列举常用的上下移动的光标命令：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向上移动一行&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;k&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向下移动一行&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;j&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向上移动到文件开头&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;gg&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向下移动到文件结尾&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;G&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;移动到第n行&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;nG&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向上翻页&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CTRL+B&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;向下翻页&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CTRL+F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;另外还有一些是跟文字单元相关的命令：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;跳转到对应的括号&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;移动光标到上一个空行&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;{&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;移动光标到下一个空行&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;这些命令都可以用来组合命令。举一个基础的例子：我在编辑一个比较长的代码块，代码块里面没有空行，这时”{”和”}”帮不了忙，我常使用命令5k快速上移5行，用5j快速下移5行。&lt;/p&gt;
+&lt;p&gt;移动好了光标，下一步是&lt;/p&gt;
+&lt;h3&gt;进行编辑&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;删除当前字符&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;删除当前字符&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;X&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;删除通用命令&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;d&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;修改通用命令&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;c&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;拷贝通用命令&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;y&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;删除当前行&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;dd&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;拷贝当前行&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;yy&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;删除当前行并进入编辑模式&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;cc&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;取消上一个编辑命令&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;u&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;重做上一个编辑命令&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;CTRL+r&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;重复上一个编辑命令&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;其中d,c,y三个是通用修改命令，虽然只有三个，但VIM通过组合的方式使得具体操作非常多样化。以下是一些例子：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;删除到行尾&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;d$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;删除到文件末尾&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;dG&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;删除到这一行开头第一个不是空格的字符&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;c^&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;修改光标所在位置的单词&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;ciw （这个iw是特殊而强大的文件对象定义方法。我在后面会介绍）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;删除到当前行字符串结尾的地方&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;ct“&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;最后面的这个ct”我稍微讲解一下。它是编辑命令c和光标移动命令t的组合。比如在下面的一行代码里面，&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  console.error(&amp;quot;No more round to run&amp;quot;)
+                          ^   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;光标位于“round”的r字母处后面。ct”这个组合命令中c是命令，前面没有数字部分。后面的文字对象部分是t”的，表示从当前位置到最后的双引号。组合起来的操作就是是把r往后直到双引号的部分全部进行修改。 执行之后，文本变为&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  console.error(&amp;quot;No more r&amp;quot;)
+                          ^   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;因为写代码的过程中我常常要修改从当前位置到括号、引号之类的边界，所有类似的常用组合命令还有dt}，cT{等。简单三个字母就完成了我想进行的操作。相信你也看出来命令组合的威力了吧。&lt;/p&gt;
+&lt;p&gt;最后再强调一下这些编辑命令都是原子性。比如取消命令u、重复命令.都是针对上一个完整的编辑命令而言。用重复操作为例，比如你要把下面几个时间都修改成20ms。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  config = {
+    timeout: 1000000ms,
+    waiting: 300000ms,
+    starting: 40000ms,
+  }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;你可以把光标挪到1000000ms里数字1的地方，用命令”ctm20”对第一行进行修改。然后两次使用用”j.”命令将光标挪到第二、三行并重复刚才的编辑命令，就可以完成整个编辑任务。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  config = {
+    timeout: 20ms,
+    waiting: 20ms,
+    starting: 20ms,
+  }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;讲到这里，不知道你有没有注意到一个问题。的这些命令，功能强大，但是在执行之后马上得到结果，在运行之前没有一个给我们一个进行确认的机会。如果这个命令是简单的操作，比如说dw，那不存在任何问题。但是如果这个命令的操作比较复杂，比如上面这个ct”命令，如果在当前行里有好几个双引号，我们就会希望在删除内容之前，我能有一个机会确认我没有看错引号。没问题，这就是下面我要讲的&lt;/p&gt;
+&lt;h3&gt;可视模式（Visual Mode）&lt;/h3&gt;
+&lt;p&gt;可视模式是VIM中除了命令模式和编辑模式之外的另一个模式。进入这种模式后，当前字符会高亮显示，表示已经被选择，然后你可以使用光标移动命令来调整你选择的文字范围，选择完成之后再使用编辑命令对所选内容进行操作。再次使用上面t”命令为例。我们可以先用命令v进入可视模式，这时字母n被高亮显示。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;                          _
+console.error(&amp;quot;No more round to run&amp;quot;)
+                          ^   
+// 注：字幕上面有横线表示高亮显示。&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;然后，我输入t”，这时从n到结尾的双引号全部被高亮显示，让我可以确认我的选择是正确的：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;                          _________
+console.error(&amp;quot;No more round to run&amp;quot;) // 字符上面的横线表示该字符高亮显示
+                                  ^&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;最后，我再输入编辑命令c，将选择的字符删除并进入编辑模式。最终实现了和ct”一样的效果。这个通过视觉模式进行的操作虽然按键较多，但是让我在进行修改之前有了确认的机会，让我安心了许多。&lt;/p&gt;
+&lt;p&gt;事实上可视模式一共有三种，v只是其中一种。
+| &lt;strong&gt;命令&lt;/strong&gt;   | &lt;strong&gt;按键&lt;/strong&gt;   |
+|:----|:----:|
+| 基于字符的可视模式   | v |
+| 基于行的可视模式 | V |
+| 基于列的可视模式   | CTRL+v | &lt;/p&gt;
+&lt;p&gt;其中V比较简单，每次的选择以一行文字为单位。相比起来，基于列的可视模式针对一个矩形进行操作，功能比较强大。下面用两个例子来说明。&lt;/p&gt;
+&lt;p&gt;第一个例子，一段文本，每一行都是用var声明变量，比如”var gameMode”。现在我希望改成使用const来声明。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://uploader.shimo.im/f/0s9G8AjEmgsZY9AU.png!thumbnail&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+&lt;p&gt;首先，把光标挪到第一行的开头 v 字符处，然后使用组合键CTRL-v进入列可视模式，然后使用7je选中一个矩形区域，包含所有的”var”&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://uploader.shimo.im/f/S6CnffTAiu4wvHak.png!thumbnail&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+&lt;p&gt;然后输入c，删除所有的var，并进入编辑模式&lt;/p&gt;
+&lt;p&gt; &lt;img src=&quot;https://uploader.shimo.im/f/Sb3KlQqUp9ICX0CW.png!thumbnail&quot; alt=&quot;图片&quot;&gt;
+最后输入const，并输入Esc完成编辑操作回到命令模式。这样就完成了整个修改。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://uploader.shimo.im/f/BK0yFKn51kg847zO.png!thumbnail&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://uploader.shimo.im/f/7TBHdU7OeE4I2e6J.png!thumbnail&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+&lt;p&gt;第二个例子，我希望在上面这段文字的每一行末尾都添加一个分号”;“。我可以这样来操作：首先，我用$命令把光标挪到第一行的末尾，然后用7次”j”命令将光标挪到第8行，这时，每一行的末尾都被包含到了一个方块里。不过因为每一行的长度不同，所以方块没有显示完全。
+&lt;img src=&quot;https://uploader.shimo.im/f/iggu7pvI6Bwvm9f7.png!thumbnail&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+&lt;p&gt;然后输入A命令，光标挪到每一行的末尾，并进入编辑模式。
+&lt;img src=&quot;https://uploader.shimo.im/f/xYIp3BNkfLolItU7.png!thumbnail&quot; alt=&quot;图片&quot;&gt;
+输入分号”;“，然后Esc回到命令模式，完成编辑。每一行的末尾都添加了一个分号”;“。
+&lt;img src=&quot;https://uploader.shimo.im/f/J69c9IiQLR0uKhax.png!thumbnail&quot; alt=&quot;图片&quot;&gt;
+&lt;img src=&quot;https://uploader.shimo.im/f/fstQe1J8eacKa41z.png!thumbnail&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这两个列模式中的例子，第一个例子在很多支持列模式的编辑器都能做到。不过第二个例子，能做到的编辑器就不多。&lt;/p&gt;
+&lt;p&gt;最后，送你三个在可视模式比较有用的小贴士：&lt;/p&gt;
+&lt;p&gt;第一个是当你退出了可视模式之后，你可以使用gv命令重新进入可视模式并选择上一次的选择。这个命令出乎意料的有用。因为我常常会需要对上一次的选择再进行操作；&lt;/p&gt;
+&lt;p&gt;第二个是进入了可视模式之后，你不用退出就可直接使用v，V，CTRL-v在三种模式之间切换。比如，你一开始使用v进入了字符可视模式。这时，你发现你需要的实际上是删除几行，这个时候你可以输入V直接进入行的可视模式；&lt;/p&gt;
+&lt;p&gt;第三个贴士是关于可视区域范围的调整。当你进入可视模式之后，光标默认处于所选区域的结尾处，这时你可以挪动光标调节选择区域的结尾部分。但是如果你想调节的是所选区域的开头部分，你可以使用命令o将光标跳到选择区域的开始部分。一个更好玩的情况是在列模式中，你可以使用小写o在对角线上跳转，大写O在水平方向的两个角跳转。从而实现矩形的四个角都可以调整。&lt;/p&gt;
+&lt;h3&gt;最后一组常用命令是查找/替换命令&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;目的&lt;/strong&gt;&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;&lt;strong&gt;按键&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;向下搜素&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;/&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;查找当前光标所在单词&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;*&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;把abc替换成xyz&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;:%s/abc/xyz/g&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;进行查找的过程中，使用n查找下一个，N查找上一个。&lt;/p&gt;
+&lt;p&gt;这个替换命令，有一些复杂，我稍微讲解一下。这是一个ex风格的命令。前面提到过，ex是对一行文本使用命令进行编辑的工具，是VI的前身。命令中的百分号%后面的部分就是一个ex命令。下面是每一个部分的解释：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;:%s/abc/xyz/g
+:---------------&amp;gt; 命令行模式
+ %--------------&amp;gt; 针对所有行运行后面的命令
+  s-------------&amp;gt; 这个一个Substitute(替换)命令。格式为s///g
+    abc---------&amp;gt; 被替换串
+        xyz-----&amp;gt; 新串
+            g---&amp;gt; s命令的选项，表示在当前行如果有多个被替换传的话，每个都替换                          &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://jungejason.github.io/hello-world/</link><guid isPermaLink="false">https://jungejason.github.io/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
+&lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
+&lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A salted duck egg is a Chinese preserved food product made by soaking duck
+eggs in brine, or packing each egg in damp, salted charcoal. In Asian
+supermarkets, these eggs are sometimes sold covered in a thick layer of salted
+charcoal paste. The eggs may also be sold with the salted paste removed,
+wrapped in plastic, and vacuum packed. From the salt curing process, the
+salted duck eggs have a briny aroma, a gelatin-like egg white and a
+firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/2b40c/salty_egg.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMB/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAEEBf/aAAwDAQACEAMQAAABgik0dXC//8QAGRABAAMBAQAAAAAAAAAAAAAAAQACEhEy/9oACAEBAAEFAkqW2DlnRj73yf/EABcRAQADAAAAAAAAAAAAAAAAAAAREkH/2gAIAQMBAT8B1WX/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQL/2gAIAQIBAT8Bi6f/xAAbEAABBAMAAAAAAAAAAAAAAAAAAQIRISIxMv/aAAgBAQAGPwK9GNocyS8hCj//xAAcEAADAQACAwAAAAAAAAAAAAABESEAMUGBobH/2gAIAQEAAT8hsTTH2wx5gg2ZgM8d5JIfmMRAIe//2gAMAwEAAgADAAAAEMgv/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxARwyusv//EABgRAAIDAAAAAAAAAAAAAAAAAAABESFR/9oACAECAQE/EFoktI//xAAcEAEBAAIDAQEAAAAAAAAAAAABEQAxIWGBQeH/2gAIAQEAAT8QRswtDR5g4a7R5C/RHFM3BKk6zThoVp3lEYcnjGIYES7/ACZ//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Chinese Salty Egg&quot;
+        title=&quot;Chinese Salty Egg&quot;
+        src=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/c739e/salty_egg.jpg&quot;
+        srcset=&quot;/static/8058f3f26913fea3b6a89a73344fe94a/8ee9c/salty_egg.jpg 148w,
+/static/8058f3f26913fea3b6a89a73344fe94a/ebbe7/salty_egg.jpg 295w,
+/static/8058f3f26913fea3b6a89a73344fe94a/c739e/salty_egg.jpg 590w,
+/static/8058f3f26913fea3b6a89a73344fe94a/5413e/salty_egg.jpg 885w,
+/static/8058f3f26913fea3b6a89a73344fe94a/4efde/salty_egg.jpg 1180w,
+/static/8058f3f26913fea3b6a89a73344fe94a/2b40c/salty_egg.jpg 2048w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
