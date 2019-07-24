@@ -4,8 +4,8 @@
 <li>打开文件，以及关于整个文件编辑的设置</li>
 <li>光标移动到需要编辑的位置</li>
 <li>进行编辑</li>
-<li>使用图形化的选择帮助编辑</li>
 <li>查找替换</li>
+<li>使用图形化的选择帮助编辑</li>
 </ol>
 <h3>首先是打开文件，以及关于整个文件编辑的设置</h3>
 <table>
@@ -55,7 +55,7 @@
 </tbody>
 </table>
 <p>:h用来查找帮助文档。VIM的文档很全面，不过从我的经验来看，初学者使用谷歌搜索效果会跟好一些。</p>
-<p>:set是在命令行中进行VIM的设置。你也可以把他们写到自己的用户目录下的.vimrc文件里面。在我常用的VIM设置文件里有21项设置，这里只列出了四项最基础的，如果我到了一台服务器上打开一个没有任何配置的VIM，我一般会在命令行里运行这四个设置。可以一次输入:set ic hls is hid回车 就行了。</p>
+<p>:set是在命令行中进行VIM的设置。你也可以把他们写到自己的用户目录下的.vimrc文件里面。</p>
 <p>进入文件之后，下一步编辑操作就到了</p>
 <h3>移动光标</h3>
 <p>VIM提供了非常细粒度的光标移动命令。在<strong>水平移动</strong>方面，有一下常用命令：</p>
@@ -121,8 +121,7 @@
 </tr>
 </tbody>
 </table>
-<p>你可以看到，这些命令之间，有的差别很细微。比如w和e都是向右边移动一个单词，只不过w光标一个放到下单词开头，e把光标放到这一个单词结尾。另外相似的，f和t也只是一个字符的差别。虽然只是一个字符的区别，但是正是这样的细粒度，是我们能够使用最少的按键次数完成编辑任务。</p>
-<p>刚才讲的是水平移动的命令。下面列举常用的上下移动的光标命令：</p>
+<p>下面列举常用的上下移动的光标命令：</p>
 <table>
 <thead>
 <tr>
@@ -279,20 +278,39 @@
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  console.error(&quot;No more r&quot;)
                           ^   </code></pre></div>
 <p>因为写代码的过程中我常常要修改从当前位置到括号、引号之类的边界，所有类似的常用组合命令还有dt}，cT{等。简单三个字母就完成了我想进行的操作。相信你也看出来命令组合的威力了吧。</p>
-<p>最后再强调一下这些编辑命令都是原子性。比如取消命令u、重复命令.都是针对上一个完整的编辑命令而言。用重复操作为例，比如你要把下面几个时间都修改成20ms。</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  config = {
-    timeout: 1000000ms,
-    waiting: 300000ms,
-    starting: 40000ms,
-  }</code></pre></div>
-<p>你可以把光标挪到1000000ms里数字1的地方，用命令”ctm20”对第一行进行修改。然后两次使用用”j.”命令将光标挪到第二、三行并重复刚才的编辑命令，就可以完成整个编辑任务。</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  config = {
-    timeout: 20ms,
-    waiting: 20ms,
-    starting: 20ms,
-  }</code></pre></div>
-<p>讲到这里，不知道你有没有注意到一个问题。的这些命令，功能强大，但是在执行之后马上得到结果，在运行之前没有一个给我们一个进行确认的机会。如果这个命令是简单的操作，比如说dw，那不存在任何问题。但是如果这个命令的操作比较复杂，比如上面这个ct”命令，如果在当前行里有好几个双引号，我们就会希望在删除内容之前，我能有一个机会确认我没有看错引号。没问题，这就是下面我要讲的</p>
-<h3>可视模式（Visual Mode）</h3>
+<h3>第四组常用命令是查找/替换命令</h3>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>目的</strong></th>
+<th align="center"><strong>按键</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">向下搜素</td>
+<td align="center">/</td>
+</tr>
+<tr>
+<td align="center">查找当前光标所在单词</td>
+<td align="center">*</td>
+</tr>
+<tr>
+<td align="center">把abc替换成xyz</td>
+<td align="center">:%s/abc/xyz/g</td>
+</tr>
+</tbody>
+</table>
+<p>进行查找的过程中，使用n查找下一个，N查找上一个。</p>
+<p>这个替换命令，有一些复杂，我稍微讲解一下。这是一个ex风格的命令。前面提到过，ex是对一行文本使用命令进行编辑的工具，是VI的前身。命令中的百分号%后面的部分就是一个ex命令。下面是每一个部分的解释：</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">:%s/abc/xyz/g
+:---------------&gt; 命令行模式
+ %--------------&gt; 针对所有行运行后面的命令
+  s-------------&gt; 这个一个Substitute(替换)命令。格式为s///g
+    abc---------&gt; 被替换串
+        xyz-----&gt; 新串
+            g---&gt; s命令的选项，表示在当前行如果有多个被替换传的话，每个都替换                          </code></pre></div>
+<h3>最后一组是可视模式（Visual Mode）</h3>
 <p>可视模式是VIM中除了命令模式和编辑模式之外的另一个模式。进入这种模式后，当前字符会高亮显示，表示已经被选择，然后你可以使用光标移动命令来调整你选择的文字范围，选择完成之后再使用编辑命令对所选内容进行操作。再次使用上面t”命令为例。我们可以先用命令v进入可视模式，这时字母n被高亮显示。</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">                          _
 console.error(&quot;No more round to run&quot;)
@@ -325,61 +343,7 @@ console.error(&quot;No more round to run&quot;) // 字符上面的横线表示�
 <td align="center">CTRL+v</td>
 </tr>
 </tbody>
-</table>
-<p>其中V比较简单，每次的选择以一行文字为单位。相比起来，基于列的可视模式针对一个矩形进行操作，功能比较强大。下面用两个例子来说明。</p>
-<p>第一个例子，一段文本，每一行都是用var声明变量，比如”var gameMode”。现在我希望改成使用const来声明。</p>
-<p><img src="https://uploader.shimo.im/f/0s9G8AjEmgsZY9AU.png!thumbnail" alt="图片"></p>
-<p>首先，把光标挪到第一行的开头 v 字符处，然后使用组合键CTRL-v进入列可视模式，然后使用7je选中一个矩形区域，包含所有的”var”</p>
-<p><img src="https://uploader.shimo.im/f/S6CnffTAiu4wvHak.png!thumbnail" alt="图片"></p>
-<p>然后输入c，删除所有的var，并进入编辑模式</p>
-<p> <img src="https://uploader.shimo.im/f/Sb3KlQqUp9ICX0CW.png!thumbnail" alt="图片">
-最后输入const，并输入Esc完成编辑操作回到命令模式。这样就完成了整个修改。</p>
-<p><img src="https://uploader.shimo.im/f/BK0yFKn51kg847zO.png!thumbnail" alt="图片"></p>
-<p><img src="https://uploader.shimo.im/f/7TBHdU7OeE4I2e6J.png!thumbnail" alt="图片"></p>
-<p>第二个例子，我希望在上面这段文字的每一行末尾都添加一个分号”;“。我可以这样来操作：首先，我用$命令把光标挪到第一行的末尾，然后用7次”j”命令将光标挪到第8行，这时，每一行的末尾都被包含到了一个方块里。不过因为每一行的长度不同，所以方块没有显示完全。
-<img src="https://uploader.shimo.im/f/iggu7pvI6Bwvm9f7.png!thumbnail" alt="图片"></p>
-<p>然后输入A命令，光标挪到每一行的末尾，并进入编辑模式。
-<img src="https://uploader.shimo.im/f/xYIp3BNkfLolItU7.png!thumbnail" alt="图片">
-输入分号”;“，然后Esc回到命令模式，完成编辑。每一行的末尾都添加了一个分号”;“。
-<img src="https://uploader.shimo.im/f/J69c9IiQLR0uKhax.png!thumbnail" alt="图片">
-<img src="https://uploader.shimo.im/f/fstQe1J8eacKa41z.png!thumbnail" alt="图片"></p>
-<p>这两个列模式中的例子，第一个例子在很多支持列模式的编辑器都能做到。不过第二个例子，能做到的编辑器就不多。</p>
-<p>最后，送你三个在可视模式比较有用的小贴士：</p>
-<p>第一个是当你退出了可视模式之后，你可以使用gv命令重新进入可视模式并选择上一次的选择。这个命令出乎意料的有用。因为我常常会需要对上一次的选择再进行操作；</p>
-<p>第二个是进入了可视模式之后，你不用退出就可直接使用v，V，CTRL-v在三种模式之间切换。比如，你一开始使用v进入了字符可视模式。这时，你发现你需要的实际上是删除几行，这个时候你可以输入V直接进入行的可视模式；</p>
-<p>第三个贴士是关于可视区域范围的调整。当你进入可视模式之后，光标默认处于所选区域的结尾处，这时你可以挪动光标调节选择区域的结尾部分。但是如果你想调节的是所选区域的开头部分，你可以使用命令o将光标跳到选择区域的开始部分。一个更好玩的情况是在列模式中，你可以使用小写o在对角线上跳转，大写O在水平方向的两个角跳转。从而实现矩形的四个角都可以调整。</p>
-<h3>最后一组常用命令是查找/替换命令</h3>
-<table>
-<thead>
-<tr>
-<th align="center"><strong>目的</strong></th>
-<th align="center"><strong>按键</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">向下搜素</td>
-<td align="center">/</td>
-</tr>
-<tr>
-<td align="center">查找当前光标所在单词</td>
-<td align="center">*</td>
-</tr>
-<tr>
-<td align="center">把abc替换成xyz</td>
-<td align="center">:%s/abc/xyz/g</td>
-</tr>
-</tbody>
-</table>
-<p>进行查找的过程中，使用n查找下一个，N查找上一个。</p>
-<p>这个替换命令，有一些复杂，我稍微讲解一下。这是一个ex风格的命令。前面提到过，ex是对一行文本使用命令进行编辑的工具，是VI的前身。命令中的百分号%后面的部分就是一个ex命令。下面是每一个部分的解释：</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">:%s/abc/xyz/g
-:---------------&gt; 命令行模式
- %--------------&gt; 针对所有行运行后面的命令
-  s-------------&gt; 这个一个Substitute(替换)命令。格式为s///g
-    abc---------&gt; 被替换串
-        xyz-----&gt; 新串
-            g---&gt; s命令的选项，表示在当前行如果有多个被替换传的话，每个都替换                          </code></pre></div></div><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAXABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQFA//EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHF60aE1mKjNHcKlCf/xAAbEAACAwEBAQAAAAAAAAAAAAABAgADEhEEE//aAAgBAQABBQICZdZiUAfS4dXnAvlyLkBRazn/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPwEIT//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/AVjP/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAECESEQQf/aAAgBAQAGPwIuUc4rGm+W5b6Waf/EABoQAQADAQEBAAAAAAAAAAAAAAEAESFRMbH/2gAIAQEAAT8hoPLYisglHSItVuRkl5kABwlD0MTVMY4fDP/aAAwDAQACAAMAAAAQvDi9/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/ELhFF//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPxDBg1J//8QAHBABAAMAAwEBAAAAAAAAAAAAAQARITFBUYHR/9oACAEBAAE/EKBLDQezsF5qslE0EsnH80od+ylAGEa8eQ5mAE3IBQYrmj9gUOui1auPLVrENOlvuf/Z" alt="Jun (Jason) Ge" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/176c7c4599ad3435fa225578bbcb0818/9b664/profile-pic.jpg 1x,
+</table></div><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAXABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQFA//EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHF60aE1mKjNHcKlCf/xAAbEAACAwEBAQAAAAAAAAAAAAABAgADEhEEE//aAAgBAQABBQICZdZiUAfS4dXnAvlyLkBRazn/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPwEIT//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/AVjP/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAECESEQQf/aAAgBAQAGPwIuUc4rGm+W5b6Waf/EABoQAQADAQEBAAAAAAAAAAAAAAEAESFRMbH/2gAIAQEAAT8hoPLYisglHSItVuRkl5kABwlD0MTVMY4fDP/aAAwDAQACAAMAAAAQvDi9/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/ELhFF//EABYRAQEBAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPxDBg1J//8QAHBABAAMAAwEBAAAAAAAAAAAAAQARITFBUYHR/9oACAEBAAE/EKBLDQezsF5qslE0EsnH80od+ylAGEa8eQ5mAE3IBQYrmj9gUOui1auPLVrENOlvuf/Z" alt="Jun (Jason) Ge" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/176c7c4599ad3435fa225578bbcb0818/9b664/profile-pic.jpg 1x,
 /static/176c7c4599ad3435fa225578bbcb0818/06a10/profile-pic.jpg 1.5x,
 /static/176c7c4599ad3435fa225578bbcb0818/f1b5a/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/176c7c4599ad3435fa225578bbcb0818/9b664/profile-pic.jpg 1x,
 /static/176c7c4599ad3435fa225578bbcb0818/06a10/profile-pic.jpg 1.5x,
