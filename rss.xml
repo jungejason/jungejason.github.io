@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jason's Blog]]></title><description><![CDATA[Jason's Blog]]></description><link>https://jungejason.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 01 Oct 2019 07:27:06 GMT</lastBuildDate><item><title><![CDATA[VIM Commands]]></title><description><![CDATA[命令模式中的基础命令 VIM…]]></description><link>https://jungejason.github.io/vim-commands/</link><guid isPermaLink="false">https://jungejason.github.io/vim-commands/</guid><pubDate>Sat, 20 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;命令模式中的基础命令&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jason's Blog]]></title><description><![CDATA[Jason's Blog]]></description><link>https://jungejason.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 01 Oct 2019 10:20:58 GMT</lastBuildDate><item><title><![CDATA[Git Bisect Run]]></title><description><![CDATA[自动化寻找问题commit的利器: git bisect run 线性的代码提交历史，能给自动化定位问题带来很大帮助，使得我们可以从当前有问题的提交回溯，找到历史上第一个有问题的提交。更棒的是，我们还可以使用折半查找的办法，用O(LogN…]]></description><link>https://jungejason.github.io/git-bisect-run/</link><guid isPermaLink="false">https://jungejason.github.io/git-bisect-run/</guid><pubDate>Tue, 01 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;自动化寻找问题commit的利器: git bisect run&lt;/h1&gt;
+&lt;p&gt;线性的代码提交历史，能给自动化定位问题带来很大帮助，使得我们可以从当前有问题的提交回溯，找到历史上第一个有问题的提交。更棒的是，我们还可以使用折半查找的办法，用O(LogN)的时间找到那个有问题的提交。&lt;/p&gt;
+&lt;p&gt;比如，在一个代码仓中，有C101 ~C200 的线性提交历史。我们知道一个测试在C101处通过测试，但是在C200处失败。我们可以依次checkout C101、C102，直到C200，每次checkout之后运行测试，从而能找到第一个让测试失败的提交。&lt;/p&gt;
+&lt;p&gt;另外，&lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; 提供了一个工具，&lt;code class=&quot;language-text&quot;&gt;git bisect&lt;/code&gt;，帮助我们使用折半查找。如果我们有自动化的测试脚本，还可以使用&lt;code class=&quot;language-text&quot;&gt;git bisect run&lt;/code&gt;来进一步自动化。我创建了一个&lt;a href=&quot;https://github.com/jungejason/git-bisect-run-demo&quot;&gt;用来演示的repo&lt;/a&gt;。下面是一个运行的输出：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; bisect start
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; bisect bad HEAD
+
+&lt;span class=&quot;token comment&quot;&gt;# find the commit id for C101&lt;/span&gt;
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; log --grep&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;C101&apos;&lt;/span&gt; --oneline &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt;
+37f5823 C101 - change another number
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; bisect good 37f5823
+Bisecting: &lt;span class=&quot;token number&quot;&gt;49&lt;/span&gt; revisions left to &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt; after this &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;roughly &lt;span class=&quot;token number&quot;&gt;6&lt;/span&gt; steps&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;086697d6e7359d9e8d5478a760e07cd295ffc30b&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; C150 - some change
+
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; bisect run &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt; test.sh
+running &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt; test.sh
+Test Passed
+Bisecting: &lt;span class=&quot;token number&quot;&gt;24&lt;/span&gt; revisions left to &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt; after this &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;roughly &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt; steps&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;35d8ef662b82d3d9ece4d78cb07e996182671417&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; C175 - some change
+running &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt; test.sh
+Test Passed
+Bisecting: &lt;span class=&quot;token number&quot;&gt;12&lt;/span&gt; revisions left to &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt; after this &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;roughly &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt; steps&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;69bd28f607c733f0da71a8d30e99ff1be9f6baca&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; C187 - some change
+running &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt; test.sh
+Test Failed
+Bisecting: &lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt; revisions left to &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt; after this &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;roughly &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; steps&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;94a263f8e014c54fa4715be10fb09864fb15923e&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; C181 - some change
+running &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt; test.sh
+Test Failed
+Bisecting: &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; revisions left to &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt; after this &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;roughly &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; steps&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;fe6062f2e90be523a920796aa0cb08ea8e2a8f8e&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; C178 - some change
+running &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt; test.sh
+Test Passed
+Bisecting: &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; revisions left to &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt; after this &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;roughly &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; step&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;20d83815050683e8d04eba6dbab60ce0b3b57b59&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; C180 - some change
+running &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt; test.sh
+Test Passed
+94a263f8e014c54fa4715be10fb09864fb15923e is the first bad commit   &lt;span class=&quot;token comment&quot;&gt;# &amp;lt;-- result found&lt;/span&gt;
+commit 94a263f8e014c54fa4715be10fb09864fb15923e
+Author: Jason Ge &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;gejun_1978@yahoo.comgc
+Date:   Tue Oct &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;:50:32 &lt;span class=&quot;token number&quot;&gt;2019&lt;/span&gt; +0800
+
+    C181 - some change
+
+    Summary: &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; one line
+
+    Test: none
+
+:100644 &lt;span class=&quot;token number&quot;&gt;100644&lt;/span&gt; a413ec3d7ad61d11032ea57df7859028c8504c65 0240cded988f3be236923bf104fced2f1143b53b M	inventory.csv
+bisect run success
+
+&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; bisect reset
+Previous HEAD position was 20d8381 C180 - some change
+Switched to branch &lt;span class=&quot;token string&quot;&gt;&apos;master&apos;&lt;/span&gt;
+Your branch is ahead of &lt;span class=&quot;token string&quot;&gt;&apos;origin/master&apos;&lt;/span&gt; by &lt;span class=&quot;token number&quot;&gt;104&lt;/span&gt; commits.
+  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;token string&quot;&gt;&quot;git push&quot;&lt;/span&gt; to publish your &lt;span class=&quot;token builtin class-name&quot;&gt;local&lt;/span&gt; commits&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;可以看到，&lt;code class=&quot;language-text&quot;&gt;git bisect run&lt;/code&gt;自动查找到C181是第一个问题提交：&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;94a263f8e014c54fa4715be10fb09864fb15923e is the first bad commit   &lt;span class=&quot;token comment&quot;&gt;# &amp;lt;-- result found&lt;/span&gt;
+commit 94a263f8e014c54fa4715be10fb09864fb15923e
+Author: Jason Ge &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;gejun_1978@yahoo.comgc
+Date:   Tue Oct &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;16&lt;/span&gt;:50:32 &lt;span class=&quot;token number&quot;&gt;2019&lt;/span&gt; +0800
+
+    C181 - some change
+
+    Summary: &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; one line
+
+    Test: none
+
+:100644 &lt;span class=&quot;token number&quot;&gt;100644&lt;/span&gt; a413ec3d7ad61d11032ea57df7859028c8504c65 0240cded988f3be236923bf104fced2f1143b53b M	inventory.csv
+bisect run success&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[VIM Commands]]></title><description><![CDATA[命令模式中的基础命令 VIM…]]></description><link>https://jungejason.github.io/vim-commands/</link><guid isPermaLink="false">https://jungejason.github.io/vim-commands/</guid><pubDate>Sat, 20 Jul 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;命令模式中的基础命令&lt;/h2&gt;
 &lt;p&gt;VIM有大量的命令可供你使用，这里我只主要介绍针对单个文件，尤其是代码文件的编辑中最有用的一些命令。我会根据以下编辑文件的逻辑顺序来介绍：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;打开文件，以及关于整个文件编辑的设置&lt;/li&gt;
