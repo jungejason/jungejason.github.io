@@ -1,18 +1,340 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Dec 2020 04:36:45 GMT</lastBuildDate><item><title><![CDATA[Common Diff Scenarios Optimization]]></title><description><![CDATA[常见diff的场景的优化 查看 diff 是开发工作中常见一个场景，值得优化。下面做一些总结。 总结的基本思路是少就是多。比如 使用尽量少的工具，尽量少安装插件。这样可以减少工具入口，减少不必要的心智负担。 只处理最常见的场景。至于更偏的场景临时Google…]]></description><link>https://jungejason.github.io/common-dif-scenarios/</link><guid isPermaLink="false">https://jungejason.github.io/common-dif-scenarios/</guid><pubDate>Sat, 05 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;常见diff的场景的优化&lt;/h1&gt;
-&lt;p&gt;查看 diff 是开发工作中常见一个场景，值得优化。下面做一些总结。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Dec 2020 07:12:12 GMT</lastBuildDate><item><title><![CDATA[常见diff的场景的优化]]></title><description><![CDATA[查看 diff 是开发工作中常见一个场景，值得优化。下面做一些总结。 总结的基本思路是少就是多。比如 使用尽量少的工具，尽量少安装插件。这样可以减少工具入口，减少不必要的心智负担。 只处理最常见的场景。至于更偏的场景临时Google找解决办法。 场景一：在 git diff…]]></description><link>https://jungejason.github.io/common-dif-scenarios/</link><guid isPermaLink="false">https://jungejason.github.io/common-dif-scenarios/</guid><pubDate>Sat, 05 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;查看 diff 是开发工作中常见一个场景，值得优化。下面做一些总结。&lt;/p&gt;
 &lt;p&gt;总结的基本思路是&lt;strong&gt;少就是多&lt;/strong&gt;。比如&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;使用尽量少的工具，尽量少安装插件。这样可以减少工具入口，减少不必要的心智负担。&lt;/li&gt;
+&lt;li&gt;使用尽量少的工具&lt;sup id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot; class=&quot;footnote-ref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;，尽量少安装插件。这样可以减少工具入口，减少不必要的心智负担。&lt;/li&gt;
 &lt;li&gt;只处理最常见的场景。至于更偏的场景临时Google找解决办法。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;场景一：在 git diff中显示更细节的差别&lt;/h2&gt;
+&lt;h2&gt;场景一：在 git diff 中显示更细粒度差别&lt;/h2&gt;
 &lt;p&gt;默认的&lt;code class=&quot;language-text&quot;&gt;git diff&lt;/code&gt;显示粒度以行为单位，比较粗。比如&lt;/p&gt;
-&lt;p&gt;使用—color-words=.&lt;/p&gt;
-&lt;p&gt;使用vimdiff&lt;/p&gt;
-&lt;h2&gt;场景二：比较两个文件显示跟细节的差别&lt;/h2&gt;
-&lt;p&gt;使用idea diff&lt;/p&gt;
-&lt;p&gt;使用vimdiff&lt;/p&gt;
-&lt;p&gt;使用git diff —no-index&lt;/p&gt;</content:encoded></item><item><title><![CDATA[自动化寻找问题commit的利器: git bisect run]]></title><description><![CDATA[线性的代码提交历史，能给自动化定位问题带来很大帮助，使得我们可以从当前有问题的提交回溯，找到历史上第一个有问题的提交。更棒的是，我们还可以使用折半查找的办法，用O(LogN)的时间找到那个有问题的提交。 比如，在一个代码仓中，有C101 ~C20…]]></description><link>https://jungejason.github.io/git-bisect-run/</link><guid isPermaLink="false">https://jungejason.github.io/git-bisect-run/</guid><pubDate>Tue, 01 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;线性的代码提交历史，能给自动化定位问题带来很大帮助，使得我们可以从当前有问题的提交回溯，找到历史上第一个有问题的提交。更棒的是，我们还可以使用折半查找的办法，用O(LogN)的时间找到那个有问题的提交。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/eb05aa9cd9538e7192a38b47a05ca3e1/d7e70/git-diff-default.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 59.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAACDUlEQVQoz52TyW7bMBCGqVi0FdqyJVmmqcWrLK9xHDdJGwdFszTooUlzy8sYvLkPUPTYFw1QAvzLFkYDNMiCHj7MDDHzAzOcIdz1VuWsuNnh1no6nMlB3pGtVirzfCiXy7kcDLqyUCDSsixJCHmKteGr4Yq8O4o2b0855osAtzcZVicxbr/0cXnRxo2Jb6574NyBSX4NP0gzdtbjcRXX1+n93V1bTaau4oKqILCV5+0o3ysok/gS91vBb+RsfCSP8wnOl1P16WRfr/I93a1l2gsCHYlEezVfp0mihRDaFGjLIn/sP/zcCn4n1V1fjoZ7yHoTlQ9mOo17mM8WZgT7CDkHFxFEFMNh5edafRCs7FLZ9lx0PFcl1bLueBWMGgH8UglhkSJmDoISRchMbHzhMhDrGUEvrcrsKEL+PlHdVaSHH1qYXHWQvOFIFw3jdyH6PtJRHY1WFfGwDpvZTwvajEo39sHHsWov+5pyhsY0RnpgRGcd1PrhQ6H1ipYZLcmgVAYjBcWIrR0z5Aop6CLZ0cyiJrY0NW/FraXkhU8JY3e9PExxeNy5P1i21PnlSH38PFXZpKkmI6FOz3I1nkZqOo9VnjfV3iJVjusou2Ars+yP14buFje1pI4gbUBkCX77XitEsx3Bj0LwXoxKvYqSx+CLOuomj0ccoilAKX282GWHrSpFttmej/xP/p7eLy/D+RWRNxGbAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;git-diff-default&quot;
+        title=&quot;git-diff-default&quot;
+        src=&quot;/static/eb05aa9cd9538e7192a38b47a05ca3e1/fcda8/git-diff-default.png&quot;
+        srcset=&quot;/static/eb05aa9cd9538e7192a38b47a05ca3e1/12f09/git-diff-default.png 148w,
+/static/eb05aa9cd9538e7192a38b47a05ca3e1/e4a3f/git-diff-default.png 295w,
+/static/eb05aa9cd9538e7192a38b47a05ca3e1/fcda8/git-diff-default.png 590w,
+/static/eb05aa9cd9538e7192a38b47a05ca3e1/efc66/git-diff-default.png 885w,
+/static/eb05aa9cd9538e7192a38b47a05ca3e1/c83ae/git-diff-default.png 1180w,
+/static/eb05aa9cd9538e7192a38b47a05ca3e1/d7e70/git-diff-default.png 1286w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;解决方案1 - 使用 git diff 的 option：&lt;/h3&gt;
+&lt;p&gt;如果希望一目了然看到更细微的差别，可以使用 &lt;code class=&quot;language-text&quot;&gt;--color-words&lt;/code&gt; 选项：&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/abb0bea705cfb71052285cf70f34d1d1/0d98f/git-diff-color-words-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.72972972972974%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACLklEQVQoz42Ry27TUBCGjxvfr7Fjx6nrY8eOcRuTJk0vAqktoivaDdAtfQJegS1kg9hDBYpghXgXUF4A8RpUzZF/TqJKgQVVF59mzuifXzNnSL/Xfkm3rZ+trvZjPOzNdne7s9GQzoY8PzzcnO3vZzPPlWeEkNv4zvnFeUUe7kdvRwc+ii0Hjx91cXRIcfokw/FxirPTHs9zxLEBLr4LnwnN1Dfb2w7Oz+nVi4suG41t1runsTRRGaUqyzOdCQJhXHwbVzeGH8hJdTA5KEs8PxnPn56M6qP+oI6MtHY9v3bdoDatZh0E7ToMw5o3/I/rG8NL0s8HkzKv0OtW8yKr6nSjwGiwg37VRyfsIKUJok4EQ7t17ZVhyzYmnqEjNM25qyh12zQQ6AY0WQIRCQRNQMMWIXIUT0FDa0BVVei6DkVRlkiSdL2oCYJwSahtTgZ5iL0H2Xxrh9bjUYy9YYKSH6h3XmL9eANaqMMuHTQrFzI3dRwHvu/Dtm24rruI14t8aag79kRzHThRMHejoCaqCKvjwwt9hEEbkijd5bqrleNm83WoafBF8SqQlXluWSySFaapDSYGMlM7GjMTi1m5zZxNl0lNmVlc02q1mGmay5yv/5vHxYTvCfW8d+V6B1WaYCtJcJ/G6G/EyIsU6U4XSZUgyAPY1EG2m8OPA+R5jqIowA2Xf6nxgRZwwy+k2fKfrcnyVz7uJ850xdoyCkSY/l1fvHnj9F8t+cj5xrn4A+1M761H3ayUAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;git-diff-color-words-1&quot;
+        title=&quot;git-diff-color-words-1&quot;
+        src=&quot;/static/abb0bea705cfb71052285cf70f34d1d1/fcda8/git-diff-color-words-1.png&quot;
+        srcset=&quot;/static/abb0bea705cfb71052285cf70f34d1d1/12f09/git-diff-color-words-1.png 148w,
+/static/abb0bea705cfb71052285cf70f34d1d1/e4a3f/git-diff-color-words-1.png 295w,
+/static/abb0bea705cfb71052285cf70f34d1d1/fcda8/git-diff-color-words-1.png 590w,
+/static/abb0bea705cfb71052285cf70f34d1d1/efc66/git-diff-color-words-1.png 885w,
+/static/abb0bea705cfb71052285cf70f34d1d1/c83ae/git-diff-color-words-1.png 1180w,
+/static/abb0bea705cfb71052285cf70f34d1d1/0d98f/git-diff-color-words-1.png 1276w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;可以看到，它会显示以 word 为单位的比较。这里 word 是以空格键作为分割的单元。&lt;/p&gt;
+&lt;p&gt;希望更细粒度的比较，比如按照 char 比较，可以使用  &lt;code class=&quot;language-text&quot;&gt;--color-words=.&lt;/code&gt; 选项：&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bac5778fbe41b71e370954a0d782b593/71b12/git-diff-color-words-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 52.70270270270271%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB0UlEQVQoz42Sy27TQBSG7ThOnDr2TOxcHBNfEycNJVFSkYJq0YIgqEWoS27vABvEcwALFrwWwktWPASUGc3PNAoFIWiy+HRGR2f++c85o+wt3C+tkfF5sZ8WeZ4Vh4ehZLc4ujMszs7mRTZwCk1TCkW5kk+Sr5IXSn7Uxe6U4uRhgnt3Izw6TXB60sfyQYznz8YYjx2UyyXI4m14raT9HSyX3vmTpyG7eUB5yyvzbrfCKdW419F5qaRwWbiJ72vBl8qt4XXcX9zgj49n4ng6EQOaiabriWazLRynJXFFEARCVVUhL/yPH2vBV8peNkGWjPl4OBVpb4DJaIL5fIZOp4Mg6MH3fRBCNrXKLgVtYoNSws3ajmhQikajAaNmQJUFRsWAruswDAPVahWmaULTtKsF/b6Pwe0hjxaxiPcT9A8GiPMEwSyU+QwWsVYOzbq5ihcPbHRImpS3e22h6irq1ILbaaLtt2FYxrbb/S3oOi6ITc4t02Jdz2dey2XUJ6xSrjCn4TDXdZl0xmzbZpRSVq/XmWybrUV+8e1yyxdDj+IIcRwjDCOEwTUko2S1lDRNV1GKrJbzJ7Va7V9O3yhy2B/k4d2a99sgv9DfubeSj5L8J8SC7K9tex2sAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;git-diff-color-words-2&quot;
+        title=&quot;git-diff-color-words-2&quot;
+        src=&quot;/static/bac5778fbe41b71e370954a0d782b593/fcda8/git-diff-color-words-2.png&quot;
+        srcset=&quot;/static/bac5778fbe41b71e370954a0d782b593/12f09/git-diff-color-words-2.png 148w,
+/static/bac5778fbe41b71e370954a0d782b593/e4a3f/git-diff-color-words-2.png 295w,
+/static/bac5778fbe41b71e370954a0d782b593/fcda8/git-diff-color-words-2.png 590w,
+/static/bac5778fbe41b71e370954a0d782b593/efc66/git-diff-color-words-2.png 885w,
+/static/bac5778fbe41b71e370954a0d782b593/c83ae/git-diff-color-words-2.png 1180w,
+/static/bac5778fbe41b71e370954a0d782b593/71b12/git-diff-color-words-2.png 1308w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;解决方案2 - 使用 vimdiff:&lt;/h3&gt;
+&lt;p&gt;我们可以使用 vimdiff。首先在.gitconfig 中设置：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; ~/.gitconfig
+&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;diff&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  tool &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; vimdiff
+&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;然后 &lt;code class=&quot;language-text&quot;&gt;git difftool&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/38de8d2dacb14aa2935954e830a10560/1078c/git-difftool-vimdiff.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 38.513513513513516%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB+klEQVQozyWRyU7cQBiE/RbhgieMmNhu78t473bbnoUINEMksoOSYRQhCJc8SS4Jt+QxkM/JCyH1BdSW/vzjHEpVUn2H7vqVaV5C2bQPlJWioKUIpoHwY19YjiV0YghiEWFZpihYI3g9E7TIRVlSEYbIhd7QGbr2YFsmOLb1XbH9KbD2JVDGgfEGpkkGQRyD44Vg2h642Ou6Dl6YAm+QoxzqikMcpxBEU3AdHyzTBc8NkTN/KzRM4NvbzePV6Tt5dfpRXr86l9vjM9TrQbdnn2TiBDJhhdzc3sg3m408317ID9tLzJ/l+y+XOz1e3FzDYr36oXiOC0f1UvK8gjrLYVa1wDIKNCnRGczYDGzTxpf60C6OIGc1VDSDup1h5oPKqpFVM0cmvFNcL4CKL2VW1sAqhmWLUANZXuMMC5gv1uC4Pn7NA14tIS9qqGmKbAN5iVyGU9G5bJtj/HZ8pziOjXtET55v90nm965n98TQ+8lk3I9G+/3BwfN+PB73yPVRFPUucnEWDJyua/3h4bhXVfVpNFJhb+/ZT4UQAwghQEwCuqGDgVnTNJhMJoN2eeiJjuMTwKsiawxuGBr2L/AY2pBVdf+XkmXRnyQJ71FdmkZdHIfdLkdR0Pm+3wVB0HGedsvlf61XZbdeU3Q6+MlJ0a1W9B7z3zg2v/4DFWYAJtDq7PIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;git-difftool-vimdiff&quot;
+        title=&quot;git-difftool-vimdiff&quot;
+        src=&quot;/static/38de8d2dacb14aa2935954e830a10560/fcda8/git-difftool-vimdiff.png&quot;
+        srcset=&quot;/static/38de8d2dacb14aa2935954e830a10560/12f09/git-difftool-vimdiff.png 148w,
+/static/38de8d2dacb14aa2935954e830a10560/e4a3f/git-difftool-vimdiff.png 295w,
+/static/38de8d2dacb14aa2935954e830a10560/fcda8/git-difftool-vimdiff.png 590w,
+/static/38de8d2dacb14aa2935954e830a10560/efc66/git-difftool-vimdiff.png 885w,
+/static/38de8d2dacb14aa2935954e830a10560/c83ae/git-difftool-vimdiff.png 1180w,
+/static/38de8d2dacb14aa2935954e830a10560/1078c/git-difftool-vimdiff.png 2180w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;场景二：比较两个文件显示更细粒度的差别&lt;/h2&gt;
+&lt;p&gt;比较两个文件时，默认的&lt;code class=&quot;language-text&quot;&gt;diff&lt;/code&gt;命令也有力度不好的问题：&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7d68581e535a7378083e14f4c0672823/4a00e/diff-default.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 36.486486486486484%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAABV0lEQVQoz32QWUoDQRRFKx+ZO0mPGXqg02lCN+QrZB9uxD24gFA/KvlyCe4gUAvQhQTcQCJWU+V9jygi4seh3qvh1n1XeJ737CTOqyjFMU1TVde1iqJIlWWpiqJQVVWpMAyVEOI/juAF3Io4js9Zltn5Ym4nk4l1XdcGQcA4jmPH4zHXg8GA616vx/u0QuA3T8L3/dN0OrV5nl/gTKNvUDNUQ6SB82Y2mzU4/4bOIPDF+1XwngTfyAFcfkDEJEliVquVgYjByAafcQ/npt1um+FwaLrdLq+tVstAhNBXwUexXC5PeGCR0wVuNDLVqMmpxiM9Go14DyNy3+l0dL/f5/UqpH84fBC4fIaAhTOLUSxGo/EZypNyQ870IYP7nCnl/WeGXhjeLfL8UO92+2S9lsVmI6vtVqKXcVlK1/NkURcyqzIZZIFMq1RGi0jiE4mRJUSIPTiAm094b5OTtEd77wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;diff-default&quot;
+        title=&quot;diff-default&quot;
+        src=&quot;/static/7d68581e535a7378083e14f4c0672823/fcda8/diff-default.png&quot;
+        srcset=&quot;/static/7d68581e535a7378083e14f4c0672823/12f09/diff-default.png 148w,
+/static/7d68581e535a7378083e14f4c0672823/e4a3f/diff-default.png 295w,
+/static/7d68581e535a7378083e14f4c0672823/fcda8/diff-default.png 590w,
+/static/7d68581e535a7378083e14f4c0672823/efc66/diff-default.png 885w,
+/static/7d68581e535a7378083e14f4c0672823/c83ae/diff-default.png 1180w,
+/static/7d68581e535a7378083e14f4c0672823/4a00e/diff-default.png 1406w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;另外，高亮显示也没有&lt;sup id=&quot;fnref-2&quot;&gt;&lt;a href=&quot;#fn-2&quot; class=&quot;footnote-ref&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&quot;fnref-3&quot;&gt;&lt;a href=&quot;#fn-3&quot; class=&quot;footnote-ref&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;h3&gt;解决方案1 - 借用 git diff：&lt;/h3&gt;
+&lt;p&gt;不在git代码仓中，我们也可以使用&lt;code class=&quot;language-text&quot;&gt;git diff&lt;/code&gt;。只要添加一个&lt;code class=&quot;language-text&quot;&gt;--no-index&lt;/code&gt; 选项：&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/141b0804d0c75572c549efd8fab6a69b/5b6ee/git-diff-non-git-files-1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 47.972972972972975%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAACAElEQVQoz42Sy27TQBSGx1PbcRzbidM4dnwZ27mhXGho3CqEpAuyBIJUiUfgIXgCYMOCF6qUF+gjdDGP0E3VRO7P5EKpQAIWn87ozNGnc+YMYUPzNuqUb86zFh+fBnw+a/JX0xZfLHr8/CziWcZ4v59w267yKIp4tVrl9Xqd+76/Q9M0Tgi5EdwKPpHJ3MHLmYvluxZmswbevkmxeM3wftnGxTxAt2PD88pQFBW6rkNVVRQKBRSLxR2UUgjRT76TSebicpncfbhMNxdTf+M39E1RP9qYprxRFLIRRf9iLbg7CD+TcesEPdZZD+Iept0xRt0hQsYQhgyu66HVbKJUKj3t4nceDtLt+StpNHw03Ma6Vq2hdlxHGESoWBWosgrDNKCoyt9kfwrbThnMs9aJW8YwdpA6FqyOCTs7Rik1UGIGys8qMFITmqHBqTmoVCo7TNPcxgfxpr+EHnMRv0jW9bYHO7YRDxnYKEZ0wlCwCvsuJAmS4L86tLUidEm+N6icG9JRvo2KpuSyLudSgeayqeRKWcmpTnOJSrkiiztZzsW2H6PY9P1B+IU8D3z0oxCnSYwsYRhFEVg/QjppIRiEqPUc+FmI5CyFF3oYDAYIgmA3rmEYsCxr95UOwm+Equq1GOmKSHQlEitC6YqSPRKR9jnBLidqxOiPuSdcCa4FH38A6qDfP5mxV1kAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;git-diff-non-git-files-1&quot;
+        title=&quot;git-diff-non-git-files-1&quot;
+        src=&quot;/static/141b0804d0c75572c549efd8fab6a69b/fcda8/git-diff-non-git-files-1.png&quot;
+        srcset=&quot;/static/141b0804d0c75572c549efd8fab6a69b/12f09/git-diff-non-git-files-1.png 148w,
+/static/141b0804d0c75572c549efd8fab6a69b/e4a3f/git-diff-non-git-files-1.png 295w,
+/static/141b0804d0c75572c549efd8fab6a69b/fcda8/git-diff-non-git-files-1.png 590w,
+/static/141b0804d0c75572c549efd8fab6a69b/efc66/git-diff-non-git-files-1.png 885w,
+/static/141b0804d0c75572c549efd8fab6a69b/c83ae/git-diff-non-git-files-1.png 1180w,
+/static/141b0804d0c75572c549efd8fab6a69b/5b6ee/git-diff-non-git-files-1.png 1672w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f353aea63751e7895b8f94aff8ad6d4d/8bb81/git-diff-non-git-files-2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB30lEQVQoz31STYvTUBR9SZM0SZuPNumbpHlJ89GOU2e0Fit1yqC4E9TRjSBu/T1ulCBuHBAF9/O/FLqp8BbH2zAVGYcuDifvvrxzP85l/cR+b4rWRYd3PpR5Xo9GgzrPRV2WWX1yclhnGadYWB8dVcSjuqqquiiKOkmShqfTaR1F0UdFUb4wxt6wx08i3F+GOHsU4fy8wMNTjufPcqxOY7x6WWG5jCBEF0Fgo9XSYBg6dF2HpmkNG4bRfJPYFt/YrSL4OT8e4O3ryebF01yuFokUcVdquiptW5OKwiRjKoHtw+ZK8BM7u71azyf3MD+cyfl4hkU5w3L2AEVVIk0zZNkIk8kY7baxq+ImyCv+zHjE1wPOMQi59Dwf/X6AOB7CMkxoigbbspuWaEbUcqvh/YJDvo7LIdK7qRTHKdJphnxRIBiHyO6MwFMOt+vCdV30ej2qtL1f0O27ay/0cJBH0uMetK6OgzRCOAwRJCGYyva1+r+g7/m/nK4D27Q2ruNKr0MIHGm0DWm3bek4DpljS8uyGjZNk4xSrpvy+68ptE8QqSADUtBeIaH5jacFeMybmBACvu+D05y3/9LONaAEN1X6lVHGC1VVLynrdwr82IHODf6N7eJk0vW77dtLwrs/VLvWGelTsBMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;git-diff-non-git-files-2&quot;
+        title=&quot;git-diff-non-git-files-2&quot;
+        src=&quot;/static/f353aea63751e7895b8f94aff8ad6d4d/fcda8/git-diff-non-git-files-2.png&quot;
+        srcset=&quot;/static/f353aea63751e7895b8f94aff8ad6d4d/12f09/git-diff-non-git-files-2.png 148w,
+/static/f353aea63751e7895b8f94aff8ad6d4d/e4a3f/git-diff-non-git-files-2.png 295w,
+/static/f353aea63751e7895b8f94aff8ad6d4d/fcda8/git-diff-non-git-files-2.png 590w,
+/static/f353aea63751e7895b8f94aff8ad6d4d/efc66/git-diff-non-git-files-2.png 885w,
+/static/f353aea63751e7895b8f94aff8ad6d4d/c83ae/git-diff-non-git-files-2.png 1180w,
+/static/f353aea63751e7895b8f94aff8ad6d4d/8bb81/git-diff-non-git-files-2.png 1602w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;解决方案2 - 使用 vimdiff：&lt;/h3&gt;
+&lt;p&gt;使用&lt;code class=&quot;language-text&quot;&gt;vimdiff index.js new-index.js&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/716214bc4eb8f6d4834817a5fa9d54cb/5522e/vimdiff-files.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAABzklEQVQozyWP3Y7SUBDH+yJCobSU0k/S0p5z+r0L/QIFQV3YDSY+na/gG+zFWo2JJibeqXcmJnpudE8zHtmLX2bmP79kMoJuGLfhZdXhOP2V5DmdI0SNmU1126JjTaMKZ6LrVJtO6RxnNI4zmiYpxQGipmVSwzDpZDz5rSrqH03VvgiiOPicpiU0yzWngfKihCRKISEpYI8AmYcQBTHIsgIkK6FsNlBUKyiLAkiaQZTlgEgMOEzAR+FPod/rtZs4g1f15u9VXrGX1ZadijW7ykt2uCjZzWLFrpdrpioKW6xLtj8dWb3fst1xz7bHF+zxYceeXD+7f3o6wOr57qswGIjvA5xAlFYM4xiSJAccLyHAOZBoAUnWcGpQlDEEfsT3FYQogjwMIYy4F2RA8GWX8pyQxXdhOBy8830EGEf3GPtdFONu7qPOdefdzHE7zwvOyLLc+QHq+NEOE+5FPP/vedybeYw7YDvuN0GShp8MQwfTNMGwpmDaOqiqCqORBKIoQr/fA0mS+DyCs2eZZ8d0DNC0Ccjc41+e6fUe/RDy3HtdFMHHukZ3dYXbitM0hFfUliXi/UNGiNe6rtPaltWa5gO2bZ9xHPstrx8sy3jzDyzC4jKKk0VfAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;vimdiff-files&quot;
+        title=&quot;vimdiff-files&quot;
+        src=&quot;/static/716214bc4eb8f6d4834817a5fa9d54cb/fcda8/vimdiff-files.png&quot;
+        srcset=&quot;/static/716214bc4eb8f6d4834817a5fa9d54cb/12f09/vimdiff-files.png 148w,
+/static/716214bc4eb8f6d4834817a5fa9d54cb/e4a3f/vimdiff-files.png 295w,
+/static/716214bc4eb8f6d4834817a5fa9d54cb/fcda8/vimdiff-files.png 590w,
+/static/716214bc4eb8f6d4834817a5fa9d54cb/efc66/vimdiff-files.png 885w,
+/static/716214bc4eb8f6d4834817a5fa9d54cb/c83ae/vimdiff-files.png 1180w,
+/static/716214bc4eb8f6d4834817a5fa9d54cb/5522e/vimdiff-files.png 2680w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;解决方案3 - 使用IDE：&lt;/h3&gt;
+&lt;p&gt;如果你常用的IDE支持的话，使用它做 diff 也很方便。比如Intellij 系列IDEA支持命令行diff选项。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;idea diff index.js new-index.js&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;webstorm diff index.js new-index.js&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;下面是Webstorm截屏：&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ac67923de60f04a65b9034334070ceb1/f291a/webstorm-diff.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAACHklEQVQoz22RzY6bMBSFeZpJAGODjY0N4S8kIUlnpuqm+z5BdzNSpT5kq6yr7kdi3TZGpzd00VaaxSffC8fnXg7B+fH0Yzw/vJzePEz78Tgdz/fT7nCclv54ns4Pb6fT/ePS3zgS2/049cN+oWq6adN0L8N+9HXbfwzGww6H0z124wltv0U/DCg3NeqmXc6m26Ld7jAMWxwOewzjGU0/oG47VHUDXdiFW23L8nPQuRyu6X8WZe3TjPtEcB+zxIdR7MMw8iLLfaqdL6TwjSu83fTe2MoLwTznpI2Zj8LoB53gIn0KyqZH0Q7edTvYooDMDTJtwVIFJiSUa2EO72GP7+B2W9jTGW48wDYOqtkga2okzl55VUK2/XNgXA1VbbwqKxityFBDGgehNBlmkLZGvtlB2YookBkDXZbI8hyx4Ih5gjBhV5YKCJk9B9qWJCy9NBpKy0WYFyVyep6QIX0uTHtE0exhNx10N9ACFQojYVwFVw80oL1yaZAq8xwUjlal7LSMIaVEknCE4Rrheo0oDJGmGRTFkGvazFAkIoKWDNmiTcDiGIzFVwKcJ8+Boo2kUteE8zmO4/+IomhOMznnhZspiplMZynTOZNi/qNniyaMol+MzIUQT0Gu9TL5No1egoz+Qj0ZIqdMC4rAkE4bi9sf/Vd7qxljt/pTsF6tvq1Wq69hGF5eI+Hikil9oaEXunSJovg13Rfi+93d3YffsBs6G1af528AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;webstorm-diff&quot;
+        title=&quot;webstorm-diff&quot;
+        src=&quot;/static/ac67923de60f04a65b9034334070ceb1/fcda8/webstorm-diff.png&quot;
+        srcset=&quot;/static/ac67923de60f04a65b9034334070ceb1/12f09/webstorm-diff.png 148w,
+/static/ac67923de60f04a65b9034334070ceb1/e4a3f/webstorm-diff.png 295w,
+/static/ac67923de60f04a65b9034334070ceb1/fcda8/webstorm-diff.png 590w,
+/static/ac67923de60f04a65b9034334070ceb1/efc66/webstorm-diff.png 885w,
+/static/ac67923de60f04a65b9034334070ceb1/c83ae/webstorm-diff.png 1180w,
+/static/ac67923de60f04a65b9034334070ceb1/f291a/webstorm-diff.png 2258w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&quot;fn-1&quot;&gt;
+&lt;p&gt;如果愿意使用更多工具，则可以考虑使用&lt;a href=&quot;https://www.colordiff.org/&quot;&gt;colordiff&lt;/a&gt; , &lt;a href=&quot;https://www.npmjs.com/package/diff-so-fancy&quot;&gt;diff-so-fancy&lt;/a&gt;, &lt;a href=&quot;https://www.gnu.org/software/wdiff/&quot;&gt;wdiff&lt;/a&gt;等。&lt;/p&gt;
+&lt;a href=&quot;#fnref-1&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn-2&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.colordiff.org/&quot;&gt;colordiff&lt;/a&gt; 可以有高亮显示：&lt;code class=&quot;language-text&quot;&gt;colordiff file1 file2&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;colordiff -u file1 file2&lt;/code&gt;.&lt;/p&gt;
+&lt;a href=&quot;#fnref-2&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn-3&quot;&gt;
+&lt;p&gt;有的工具也可以从pipe接受diff的输出屏显示高亮。比如 &lt;a href=&quot;https://jonas.github.io/tig/&quot;&gt;tig&lt;/a&gt; &lt;code class=&quot;language-text&quot;&gt;diff -u file1 file2 | tig&lt;/code&gt;;  &lt;a href=&quot;https://www.npmjs.com/package/diff-so-fancy&quot;&gt;diff-so-fancy&lt;/a&gt; &lt;code class=&quot;language-text&quot;&gt;diff -u index.js new-index.js | diff-so-fancy&lt;/code&gt;; &lt;a href=&quot;https://www.colordiff.org/&quot;&gt;colordiff&lt;/a&gt;  &lt;code class=&quot;language-text&quot;&gt;diff -u file1 file2 | colordiff&lt;/code&gt;&lt;/p&gt;
+&lt;a href=&quot;#fnref-3&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[自动化寻找问题commit的利器: git bisect run]]></title><description><![CDATA[线性的代码提交历史，能给自动化定位问题带来很大帮助，使得我们可以从当前有问题的提交回溯，找到历史上第一个有问题的提交。更棒的是，我们还可以使用折半查找的办法，用O(LogN)的时间找到那个有问题的提交。 比如，在一个代码仓中，有C101 ~C20…]]></description><link>https://jungejason.github.io/git-bisect-run/</link><guid isPermaLink="false">https://jungejason.github.io/git-bisect-run/</guid><pubDate>Tue, 01 Oct 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;线性的代码提交历史，能给自动化定位问题带来很大帮助，使得我们可以从当前有问题的提交回溯，找到历史上第一个有问题的提交。更棒的是，我们还可以使用折半查找的办法，用O(LogN)的时间找到那个有问题的提交。&lt;/p&gt;
 &lt;p&gt;比如，在一个代码仓中，有C101 ~C200 的线性提交历史。我们知道一个测试在C101处通过测试，但是在C200处失败。我们可以依次checkout C101、C102，直到C200，每次checkout之后运行测试，从而能找到第一个让测试失败的提交。&lt;/p&gt;
 &lt;p&gt;另外，&lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; 提供了一个工具，&lt;code class=&quot;language-text&quot;&gt;git bisect&lt;/code&gt;，帮助我们使用折半查找。如果我们有自动化的测试脚本，还可以使用&lt;code class=&quot;language-text&quot;&gt;git bisect run&lt;/code&gt;来进一步自动化。我创建了一个&lt;a href=&quot;https://github.com/jungejason/git-bisect-run-demo&quot;&gt;用来演示的repo&lt;/a&gt;。下面是一个运行的输出：&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; bisect start

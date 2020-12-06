@@ -1,0 +1,341 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.04a63f1887ecd50550b5.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}table,td,th{border:1px solid grey;padding:5px}td:first-child,th:first-child{padding:5px}p{margin-bottom:.75em}h1{font-size:2rem}h1,h2,h3,h4,h5,h6{margin-top:2.5rem}tr:hover{background-color:#f5f5f5}tr:nth-child(2n){background-color:#f2f2f2}th{background-color:#d3d3d3}ol{display:block;list-style-type:decimal;margin:1em 0;padding-left:40px}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.27.4"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">常见diff的场景的优化 | Mushyroom Blog</title><meta data-react-helmet="true" name="description" content="Optimization of common scenarios of diff"/><meta data-react-helmet="true" property="og:title" content="常见diff的场景的优化"/><meta data-react-helmet="true" property="og:description" content="Optimization of common scenarios of diff"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Jason Ge 葛俊"/><meta data-react-helmet="true" name="twitter:title" content="常见diff的场景的优化"/><meta data-react-helmet="true" name="twitter:description" content="Optimization of common scenarios of diff"/><link as="script" rel="preload" href="/webpack-runtime-ba934305187fa4bae4ea.js"/><link as="script" rel="preload" href="/styles-31f023f48facb69035d3.js"/><link as="script" rel="preload" href="/framework-6c3ead24af170cdcb87c.js"/><link as="script" rel="preload" href="/app-bfc2ddb37f4a9372edbe.js"/><link as="script" rel="preload" href="/133dca110fad53aa1997b630637bbac3134a2d14-24646acf9c6ca53d0d13.js"/><link as="script" rel="preload" href="/d5d7a013bc6c1e2b6d7db819052c16d7efea5559-35a0b8233fe2a8ffbbb2.js"/><link as="script" rel="preload" href="/cd7d5f864fc9e15ed8adef086269b0aeff617554-aac6006b7b90d596efef.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-3c26c1234354621042c6.js"/><link as="fetch" rel="preload" href="/page-data/common-dif-scenarios/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/426816048.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:1.75rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Mushyroom Blog</a></h3></header><main><h1 style="margin-top:1.75rem;margin-bottom:0">常见diff的场景的优化</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">December 05, 2020</p><div><p>查看 diff 是开发工作中常见一个场景，值得优化。下面做一些总结。</p>
+<p>总结的基本思路是<strong>少就是多</strong>。比如</p>
+<ul>
+<li>使用尽量少的工具<sup id="fnref-1"><a href="#fn-1" class="footnote-ref">1</a></sup>，尽量少安装插件。这样可以减少工具入口，减少不必要的心智负担。</li>
+<li>只处理最常见的场景。至于更偏的场景临时Google找解决办法。</li>
+</ul>
+<h2>场景一：在 git diff 中显示更细粒度差别</h2>
+<p>默认的<code class="language-text">git diff</code>显示粒度以行为单位，比较粗。比如</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/eb05aa9cd9538e7192a38b47a05ca3e1/d7e70/git-diff-default.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 59.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABYlAAAWJQFJUiTwAAACDUlEQVQoz52TyW7bMBCGqVi0FdqyJVmmqcWrLK9xHDdJGwdFszTooUlzy8sYvLkPUPTYFw1QAvzLFkYDNMiCHj7MDDHzAzOcIdz1VuWsuNnh1no6nMlB3pGtVirzfCiXy7kcDLqyUCDSsixJCHmKteGr4Yq8O4o2b0855osAtzcZVicxbr/0cXnRxo2Jb6574NyBSX4NP0gzdtbjcRXX1+n93V1bTaau4oKqILCV5+0o3ysok/gS91vBb+RsfCSP8wnOl1P16WRfr/I93a1l2gsCHYlEezVfp0mihRDaFGjLIn/sP/zcCn4n1V1fjoZ7yHoTlQ9mOo17mM8WZgT7CDkHFxFEFMNh5edafRCs7FLZ9lx0PFcl1bLueBWMGgH8UglhkSJmDoISRchMbHzhMhDrGUEvrcrsKEL+PlHdVaSHH1qYXHWQvOFIFw3jdyH6PtJRHY1WFfGwDpvZTwvajEo39sHHsWov+5pyhsY0RnpgRGcd1PrhQ6H1ipYZLcmgVAYjBcWIrR0z5Aop6CLZ0cyiJrY0NW/FraXkhU8JY3e9PExxeNy5P1i21PnlSH38PFXZpKkmI6FOz3I1nkZqOo9VnjfV3iJVjusou2Ars+yP14buFje1pI4gbUBkCX77XitEsx3Bj0LwXoxKvYqSx+CLOuomj0ccoilAKX282GWHrSpFttmej/xP/p7eLy/D+RWRNxGbAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="git-diff-default"
+        title="git-diff-default"
+        src="/static/eb05aa9cd9538e7192a38b47a05ca3e1/fcda8/git-diff-default.png"
+        srcset="/static/eb05aa9cd9538e7192a38b47a05ca3e1/12f09/git-diff-default.png 148w,
+/static/eb05aa9cd9538e7192a38b47a05ca3e1/e4a3f/git-diff-default.png 295w,
+/static/eb05aa9cd9538e7192a38b47a05ca3e1/fcda8/git-diff-default.png 590w,
+/static/eb05aa9cd9538e7192a38b47a05ca3e1/efc66/git-diff-default.png 885w,
+/static/eb05aa9cd9538e7192a38b47a05ca3e1/c83ae/git-diff-default.png 1180w,
+/static/eb05aa9cd9538e7192a38b47a05ca3e1/d7e70/git-diff-default.png 1286w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>解决方案1 - 使用 git diff 的 option：</h3>
+<p>如果希望一目了然看到更细微的差别，可以使用 <code class="language-text">--color-words</code> 选项：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/abb0bea705cfb71052285cf70f34d1d1/0d98f/git-diff-color-words-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 54.72972972972974%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAACLklEQVQoz42Ry27TUBCGjxvfr7Fjx6nrY8eOcRuTJk0vAqktoivaDdAtfQJegS1kg9hDBYpghXgXUF4A8RpUzZF/TqJKgQVVF59mzuifXzNnSL/Xfkm3rZ+trvZjPOzNdne7s9GQzoY8PzzcnO3vZzPPlWeEkNv4zvnFeUUe7kdvRwc+ii0Hjx91cXRIcfokw/FxirPTHs9zxLEBLr4LnwnN1Dfb2w7Oz+nVi4suG41t1runsTRRGaUqyzOdCQJhXHwbVzeGH8hJdTA5KEs8PxnPn56M6qP+oI6MtHY9v3bdoDatZh0E7ToMw5o3/I/rG8NL0s8HkzKv0OtW8yKr6nSjwGiwg37VRyfsIKUJok4EQ7t17ZVhyzYmnqEjNM25qyh12zQQ6AY0WQIRCQRNQMMWIXIUT0FDa0BVVei6DkVRlkiSdL2oCYJwSahtTgZ5iL0H2Xxrh9bjUYy9YYKSH6h3XmL9eANaqMMuHTQrFzI3dRwHvu/Dtm24rruI14t8aag79kRzHThRMHejoCaqCKvjwwt9hEEbkijd5bqrleNm83WoafBF8SqQlXluWSySFaapDSYGMlM7GjMTi1m5zZxNl0lNmVlc02q1mGmay5yv/5vHxYTvCfW8d+V6B1WaYCtJcJ/G6G/EyIsU6U4XSZUgyAPY1EG2m8OPA+R5jqIowA2Xf6nxgRZwwy+k2fKfrcnyVz7uJ850xdoyCkSY/l1fvHnj9F8t+cj5xrn4A+1M761H3ayUAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="git-diff-color-words-1"
+        title="git-diff-color-words-1"
+        src="/static/abb0bea705cfb71052285cf70f34d1d1/fcda8/git-diff-color-words-1.png"
+        srcset="/static/abb0bea705cfb71052285cf70f34d1d1/12f09/git-diff-color-words-1.png 148w,
+/static/abb0bea705cfb71052285cf70f34d1d1/e4a3f/git-diff-color-words-1.png 295w,
+/static/abb0bea705cfb71052285cf70f34d1d1/fcda8/git-diff-color-words-1.png 590w,
+/static/abb0bea705cfb71052285cf70f34d1d1/efc66/git-diff-color-words-1.png 885w,
+/static/abb0bea705cfb71052285cf70f34d1d1/c83ae/git-diff-color-words-1.png 1180w,
+/static/abb0bea705cfb71052285cf70f34d1d1/0d98f/git-diff-color-words-1.png 1276w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>可以看到，它会显示以 word 为单位的比较。这里 word 是以空格键作为分割的单元。</p>
+<p>希望更细粒度的比较，比如按照 char 比较，可以使用  <code class="language-text">--color-words=.</code> 选项：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/bac5778fbe41b71e370954a0d782b593/71b12/git-diff-color-words-2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 52.70270270270271%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB0UlEQVQoz42Sy27TQBSG7ThOnDr2TOxcHBNfEycNJVFSkYJq0YIgqEWoS27vABvEcwALFrwWwktWPASUGc3PNAoFIWiy+HRGR2f++c85o+wt3C+tkfF5sZ8WeZ4Vh4ehZLc4ujMszs7mRTZwCk1TCkW5kk+Sr5IXSn7Uxe6U4uRhgnt3Izw6TXB60sfyQYznz8YYjx2UyyXI4m14raT9HSyX3vmTpyG7eUB5yyvzbrfCKdW419F5qaRwWbiJ72vBl8qt4XXcX9zgj49n4ng6EQOaiabriWazLRynJXFFEARCVVUhL/yPH2vBV8peNkGWjPl4OBVpb4DJaIL5fIZOp4Mg6MH3fRBCNrXKLgVtYoNSws3ajmhQikajAaNmQJUFRsWAruswDAPVahWmaULTtKsF/b6Pwe0hjxaxiPcT9A8GiPMEwSyU+QwWsVYOzbq5ihcPbHRImpS3e22h6irq1ILbaaLtt2FYxrbb/S3oOi6ITc4t02Jdz2dey2XUJ6xSrjCn4TDXdZl0xmzbZpRSVq/XmWybrUV+8e1yyxdDj+IIcRwjDCOEwTUko2S1lDRNV1GKrJbzJ7Va7V9O3yhy2B/k4d2a99sgv9DfubeSj5L8J8SC7K9tex2sAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="git-diff-color-words-2"
+        title="git-diff-color-words-2"
+        src="/static/bac5778fbe41b71e370954a0d782b593/fcda8/git-diff-color-words-2.png"
+        srcset="/static/bac5778fbe41b71e370954a0d782b593/12f09/git-diff-color-words-2.png 148w,
+/static/bac5778fbe41b71e370954a0d782b593/e4a3f/git-diff-color-words-2.png 295w,
+/static/bac5778fbe41b71e370954a0d782b593/fcda8/git-diff-color-words-2.png 590w,
+/static/bac5778fbe41b71e370954a0d782b593/efc66/git-diff-color-words-2.png 885w,
+/static/bac5778fbe41b71e370954a0d782b593/c83ae/git-diff-color-words-2.png 1180w,
+/static/bac5778fbe41b71e370954a0d782b593/71b12/git-diff-color-words-2.png 1308w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>解决方案2 - 使用 vimdiff:</h3>
+<p>我们可以使用 vimdiff。首先在.gitconfig 中设置：</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">cat</span> ~/.gitconfig
+<span class="token punctuation">..</span>.
+<span class="token punctuation">[</span>diff<span class="token punctuation">]</span>
+  tool <span class="token operator">=</span> vimdiff
+<span class="token punctuation">..</span>.</code></pre></div>
+<p>然后 <code class="language-text">git difftool</code>:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/38de8d2dacb14aa2935954e830a10560/1078c/git-difftool-vimdiff.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 38.513513513513516%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB+klEQVQozyWRyU7cQBiE/RbhgieMmNhu78t473bbnoUINEMksoOSYRQhCJc8SS4Jt+QxkM/JCyH1BdSW/vzjHEpVUn2H7vqVaV5C2bQPlJWioKUIpoHwY19YjiV0YghiEWFZpihYI3g9E7TIRVlSEYbIhd7QGbr2YFsmOLb1XbH9KbD2JVDGgfEGpkkGQRyD44Vg2h642Ou6Dl6YAm+QoxzqikMcpxBEU3AdHyzTBc8NkTN/KzRM4NvbzePV6Tt5dfpRXr86l9vjM9TrQbdnn2TiBDJhhdzc3sg3m408317ID9tLzJ/l+y+XOz1e3FzDYr36oXiOC0f1UvK8gjrLYVa1wDIKNCnRGczYDGzTxpf60C6OIGc1VDSDup1h5oPKqpFVM0cmvFNcL4CKL2VW1sAqhmWLUANZXuMMC5gv1uC4Pn7NA14tIS9qqGmKbAN5iVyGU9G5bJtj/HZ8pziOjXtET55v90nm965n98TQ+8lk3I9G+/3BwfN+PB73yPVRFPUucnEWDJyua/3h4bhXVfVpNFJhb+/ZT4UQAwghQEwCuqGDgVnTNJhMJoN2eeiJjuMTwKsiawxuGBr2L/AY2pBVdf+XkmXRnyQJ71FdmkZdHIfdLkdR0Pm+3wVB0HGedsvlf61XZbdeU3Q6+MlJ0a1W9B7z3zg2v/4DFWYAJtDq7PIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="git-difftool-vimdiff"
+        title="git-difftool-vimdiff"
+        src="/static/38de8d2dacb14aa2935954e830a10560/fcda8/git-difftool-vimdiff.png"
+        srcset="/static/38de8d2dacb14aa2935954e830a10560/12f09/git-difftool-vimdiff.png 148w,
+/static/38de8d2dacb14aa2935954e830a10560/e4a3f/git-difftool-vimdiff.png 295w,
+/static/38de8d2dacb14aa2935954e830a10560/fcda8/git-difftool-vimdiff.png 590w,
+/static/38de8d2dacb14aa2935954e830a10560/efc66/git-difftool-vimdiff.png 885w,
+/static/38de8d2dacb14aa2935954e830a10560/c83ae/git-difftool-vimdiff.png 1180w,
+/static/38de8d2dacb14aa2935954e830a10560/1078c/git-difftool-vimdiff.png 2180w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>场景二：比较两个文件显示更细粒度的差别</h2>
+<p>比较两个文件时，默认的<code class="language-text">diff</code>命令也有力度不好的问题：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7d68581e535a7378083e14f4c0672823/4a00e/diff-default.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 36.486486486486484%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAABV0lEQVQoz32QWUoDQRRFKx+ZO0mPGXqg02lCN+QrZB9uxD24gFA/KvlyCe4gUAvQhQTcQCJWU+V9jygi4seh3qvh1n1XeJ737CTOqyjFMU1TVde1iqJIlWWpiqJQVVWpMAyVEOI/juAF3Io4js9Zltn5Ym4nk4l1XdcGQcA4jmPH4zHXg8GA616vx/u0QuA3T8L3/dN0OrV5nl/gTKNvUDNUQ6SB82Y2mzU4/4bOIPDF+1XwngTfyAFcfkDEJEliVquVgYjByAafcQ/npt1um+FwaLrdLq+tVstAhNBXwUexXC5PeGCR0wVuNDLVqMmpxiM9Go14DyNy3+l0dL/f5/UqpH84fBC4fIaAhTOLUSxGo/EZypNyQ870IYP7nCnl/WeGXhjeLfL8UO92+2S9lsVmI6vtVqKXcVlK1/NkURcyqzIZZIFMq1RGi0jiE4mRJUSIPTiAm094b5OTtEd77wAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="diff-default"
+        title="diff-default"
+        src="/static/7d68581e535a7378083e14f4c0672823/fcda8/diff-default.png"
+        srcset="/static/7d68581e535a7378083e14f4c0672823/12f09/diff-default.png 148w,
+/static/7d68581e535a7378083e14f4c0672823/e4a3f/diff-default.png 295w,
+/static/7d68581e535a7378083e14f4c0672823/fcda8/diff-default.png 590w,
+/static/7d68581e535a7378083e14f4c0672823/efc66/diff-default.png 885w,
+/static/7d68581e535a7378083e14f4c0672823/c83ae/diff-default.png 1180w,
+/static/7d68581e535a7378083e14f4c0672823/4a00e/diff-default.png 1406w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>另外，高亮显示也没有<sup id="fnref-2"><a href="#fn-2" class="footnote-ref">2</a></sup><sup id="fnref-3"><a href="#fn-3" class="footnote-ref">3</a></sup>。</p>
+<h3>解决方案1 - 借用 git diff：</h3>
+<p>不在git代码仓中，我们也可以使用<code class="language-text">git diff</code>。只要添加一个<code class="language-text">--no-index</code> 选项：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/141b0804d0c75572c549efd8fab6a69b/5b6ee/git-diff-non-git-files-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 47.972972972972975%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAACAElEQVQoz42Sy27TQBSGx1PbcRzbidM4dnwZ27mhXGho3CqEpAuyBIJUiUfgIXgCYMOCF6qUF+gjdDGP0E3VRO7P5EKpQAIWn87ozNGnc+YMYUPzNuqUb86zFh+fBnw+a/JX0xZfLHr8/CziWcZ4v59w267yKIp4tVrl9Xqd+76/Q9M0Tgi5EdwKPpHJ3MHLmYvluxZmswbevkmxeM3wftnGxTxAt2PD88pQFBW6rkNVVRQKBRSLxR2UUgjRT76TSebicpncfbhMNxdTf+M39E1RP9qYprxRFLIRRf9iLbg7CD+TcesEPdZZD+Iept0xRt0hQsYQhgyu66HVbKJUKj3t4nceDtLt+StpNHw03Ma6Vq2hdlxHGESoWBWosgrDNKCoyt9kfwrbThnMs9aJW8YwdpA6FqyOCTs7Rik1UGIGys8qMFITmqHBqTmoVCo7TNPcxgfxpr+EHnMRv0jW9bYHO7YRDxnYKEZ0wlCwCvsuJAmS4L86tLUidEm+N6icG9JRvo2KpuSyLudSgeayqeRKWcmpTnOJSrkiiztZzsW2H6PY9P1B+IU8D3z0oxCnSYwsYRhFEVg/QjppIRiEqPUc+FmI5CyFF3oYDAYIgmA3rmEYsCxr95UOwm+Equq1GOmKSHQlEitC6YqSPRKR9jnBLidqxOiPuSdcCa4FH38A6qDfP5mxV1kAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="git-diff-non-git-files-1"
+        title="git-diff-non-git-files-1"
+        src="/static/141b0804d0c75572c549efd8fab6a69b/fcda8/git-diff-non-git-files-1.png"
+        srcset="/static/141b0804d0c75572c549efd8fab6a69b/12f09/git-diff-non-git-files-1.png 148w,
+/static/141b0804d0c75572c549efd8fab6a69b/e4a3f/git-diff-non-git-files-1.png 295w,
+/static/141b0804d0c75572c549efd8fab6a69b/fcda8/git-diff-non-git-files-1.png 590w,
+/static/141b0804d0c75572c549efd8fab6a69b/efc66/git-diff-non-git-files-1.png 885w,
+/static/141b0804d0c75572c549efd8fab6a69b/c83ae/git-diff-non-git-files-1.png 1180w,
+/static/141b0804d0c75572c549efd8fab6a69b/5b6ee/git-diff-non-git-files-1.png 1672w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f353aea63751e7895b8f94aff8ad6d4d/8bb81/git-diff-non-git-files-2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB30lEQVQoz31STYvTUBR9SZM0SZuPNumbpHlJ89GOU2e0Fit1yqC4E9TRjSBu/T1ulCBuHBAF9/O/FLqp8BbH2zAVGYcuDifvvrxzP85l/cR+b4rWRYd3PpR5Xo9GgzrPRV2WWX1yclhnGadYWB8dVcSjuqqquiiKOkmShqfTaR1F0UdFUb4wxt6wx08i3F+GOHsU4fy8wMNTjufPcqxOY7x6WWG5jCBEF0Fgo9XSYBg6dF2HpmkNG4bRfJPYFt/YrSL4OT8e4O3ryebF01yuFokUcVdquiptW5OKwiRjKoHtw+ZK8BM7u71azyf3MD+cyfl4hkU5w3L2AEVVIk0zZNkIk8kY7baxq+ImyCv+zHjE1wPOMQi59Dwf/X6AOB7CMkxoigbbspuWaEbUcqvh/YJDvo7LIdK7qRTHKdJphnxRIBiHyO6MwFMOt+vCdV30ej2qtL1f0O27ay/0cJBH0uMetK6OgzRCOAwRJCGYyva1+r+g7/m/nK4D27Q2ruNKr0MIHGm0DWm3bek4DpljS8uyGjZNk4xSrpvy+68ptE8QqSADUtBeIaH5jacFeMybmBACvu+D05y3/9LONaAEN1X6lVHGC1VVLynrdwr82IHODf6N7eJk0vW77dtLwrs/VLvWGelTsBMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="git-diff-non-git-files-2"
+        title="git-diff-non-git-files-2"
+        src="/static/f353aea63751e7895b8f94aff8ad6d4d/fcda8/git-diff-non-git-files-2.png"
+        srcset="/static/f353aea63751e7895b8f94aff8ad6d4d/12f09/git-diff-non-git-files-2.png 148w,
+/static/f353aea63751e7895b8f94aff8ad6d4d/e4a3f/git-diff-non-git-files-2.png 295w,
+/static/f353aea63751e7895b8f94aff8ad6d4d/fcda8/git-diff-non-git-files-2.png 590w,
+/static/f353aea63751e7895b8f94aff8ad6d4d/efc66/git-diff-non-git-files-2.png 885w,
+/static/f353aea63751e7895b8f94aff8ad6d4d/c83ae/git-diff-non-git-files-2.png 1180w,
+/static/f353aea63751e7895b8f94aff8ad6d4d/8bb81/git-diff-non-git-files-2.png 1602w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>解决方案2 - 使用 vimdiff：</h3>
+<p>使用<code class="language-text">vimdiff index.js new-index.js</code></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/716214bc4eb8f6d4834817a5fa9d54cb/5522e/vimdiff-files.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 34.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAABzklEQVQozyWP3Y7SUBDH+yJCobSU0k/S0p5z+r0L/QIFQV3YDSY+na/gG+zFWo2JJibeqXcmJnpudE8zHtmLX2bmP79kMoJuGLfhZdXhOP2V5DmdI0SNmU1126JjTaMKZ6LrVJtO6RxnNI4zmiYpxQGipmVSwzDpZDz5rSrqH03VvgiiOPicpiU0yzWngfKihCRKISEpYI8AmYcQBTHIsgIkK6FsNlBUKyiLAkiaQZTlgEgMOEzAR+FPod/rtZs4g1f15u9VXrGX1ZadijW7ykt2uCjZzWLFrpdrpioKW6xLtj8dWb3fst1xz7bHF+zxYceeXD+7f3o6wOr57qswGIjvA5xAlFYM4xiSJAccLyHAOZBoAUnWcGpQlDEEfsT3FYQogjwMIYy4F2RA8GWX8pyQxXdhOBy8830EGEf3GPtdFONu7qPOdefdzHE7zwvOyLLc+QHq+NEOE+5FPP/vedybeYw7YDvuN0GShp8MQwfTNMGwpmDaOqiqCqORBKIoQr/fA0mS+DyCs2eZZ8d0DNC0Ccjc41+e6fUe/RDy3HtdFMHHukZ3dYXbitM0hFfUliXi/UNGiNe6rtPaltWa5gO2bZ9xHPstrx8sy3jzDyzC4jKKk0VfAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="vimdiff-files"
+        title="vimdiff-files"
+        src="/static/716214bc4eb8f6d4834817a5fa9d54cb/fcda8/vimdiff-files.png"
+        srcset="/static/716214bc4eb8f6d4834817a5fa9d54cb/12f09/vimdiff-files.png 148w,
+/static/716214bc4eb8f6d4834817a5fa9d54cb/e4a3f/vimdiff-files.png 295w,
+/static/716214bc4eb8f6d4834817a5fa9d54cb/fcda8/vimdiff-files.png 590w,
+/static/716214bc4eb8f6d4834817a5fa9d54cb/efc66/vimdiff-files.png 885w,
+/static/716214bc4eb8f6d4834817a5fa9d54cb/c83ae/vimdiff-files.png 1180w,
+/static/716214bc4eb8f6d4834817a5fa9d54cb/5522e/vimdiff-files.png 2680w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>解决方案3 - 使用IDE：</h3>
+<p>如果你常用的IDE支持的话，使用它做 diff 也很方便。比如Intellij 系列IDEA支持命令行diff选项。</p>
+<p><code class="language-text">idea diff index.js new-index.js</code></p>
+<p><code class="language-text">webstorm diff index.js new-index.js</code></p>
+<p>下面是Webstorm截屏：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ac67923de60f04a65b9034334070ceb1/f291a/webstorm-diff.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 48.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABYlAAAWJQFJUiTwAAACHklEQVQoz22RzY6bMBSFeZpJAGODjY0N4S8kIUlnpuqm+z5BdzNSpT5kq6yr7kdi3TZGpzd00VaaxSffC8fnXg7B+fH0Yzw/vJzePEz78Tgdz/fT7nCclv54ns4Pb6fT/ePS3zgS2/049cN+oWq6adN0L8N+9HXbfwzGww6H0z124wltv0U/DCg3NeqmXc6m26Ld7jAMWxwOewzjGU0/oG47VHUDXdiFW23L8nPQuRyu6X8WZe3TjPtEcB+zxIdR7MMw8iLLfaqdL6TwjSu83fTe2MoLwTznpI2Zj8LoB53gIn0KyqZH0Q7edTvYooDMDTJtwVIFJiSUa2EO72GP7+B2W9jTGW48wDYOqtkga2okzl55VUK2/XNgXA1VbbwqKxityFBDGgehNBlmkLZGvtlB2YookBkDXZbI8hyx4Ih5gjBhV5YKCJk9B9qWJCy9NBpKy0WYFyVyep6QIX0uTHtE0exhNx10N9ACFQojYVwFVw80oL1yaZAq8xwUjlal7LSMIaVEknCE4Rrheo0oDJGmGRTFkGvazFAkIoKWDNmiTcDiGIzFVwKcJ8+Boo2kUteE8zmO4/+IomhOMznnhZspiplMZynTOZNi/qNniyaMol+MzIUQT0Gu9TL5No1egoz+Qj0ZIqdMC4rAkE4bi9sf/Vd7qxljt/pTsF6tvq1Wq69hGF5eI+Hikil9oaEXunSJovg13Rfi+93d3YffsBs6G1af528AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="webstorm-diff"
+        title="webstorm-diff"
+        src="/static/ac67923de60f04a65b9034334070ceb1/fcda8/webstorm-diff.png"
+        srcset="/static/ac67923de60f04a65b9034334070ceb1/12f09/webstorm-diff.png 148w,
+/static/ac67923de60f04a65b9034334070ceb1/e4a3f/webstorm-diff.png 295w,
+/static/ac67923de60f04a65b9034334070ceb1/fcda8/webstorm-diff.png 590w,
+/static/ac67923de60f04a65b9034334070ceb1/efc66/webstorm-diff.png 885w,
+/static/ac67923de60f04a65b9034334070ceb1/c83ae/webstorm-diff.png 1180w,
+/static/ac67923de60f04a65b9034334070ceb1/f291a/webstorm-diff.png 2258w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn-1">
+<p>如果愿意使用更多工具，则可以考虑使用<a href="https://www.colordiff.org/">colordiff</a> , <a href="https://www.npmjs.com/package/diff-so-fancy">diff-so-fancy</a>, <a href="https://www.gnu.org/software/wdiff/">wdiff</a>等。</p>
+<a href="#fnref-1" class="footnote-backref">↩</a>
+</li>
+<li id="fn-2">
+<p><a href="https://www.colordiff.org/">colordiff</a> 可以有高亮显示：<code class="language-text">colordiff file1 file2</code>, <code class="language-text">colordiff -u file1 file2</code>.</p>
+<a href="#fnref-2" class="footnote-backref">↩</a>
+</li>
+<li id="fn-3">
+<p>有的工具也可以从pipe接受diff的输出屏显示高亮。比如 <a href="https://jonas.github.io/tig/">tig</a> <code class="language-text">diff -u file1 file2 | tig</code>;  <a href="https://www.npmjs.com/package/diff-so-fancy">diff-so-fancy</a> <code class="language-text">diff -u index.js new-index.js | diff-so-fancy</code>; <a href="https://www.colordiff.org/">colordiff</a>  <code class="language-text">diff -u file1 file2 | colordiff</code></p>
+<a href="#fnref-3" class="footnote-backref">↩</a>
+</li>
+</ol>
+</div></div><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAeTfPcXgXtHSkYsYr//EABsQAAICAwEAAAAAAAAAAAAAAAECAxIABBET/9oACAEBAAEFAlUkvrtGK9EBAeavM8UVZVBREFf/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPwEIT//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/AWM//8QAGxAAAgIDAQAAAAAAAAAAAAAAAAEQIRESMQL/2gAIAQEABj8CSXWbbZMlqhxXnk//xAAcEAEAAgMAAwAAAAAAAAAAAAABABEhMUFhcaH/2gAIAQEAAT8himYGI5ABTZADZ1KMRT8llQFos3fmEFNwA77n/9oADAMBAAIAAwAAABBT8H7/xAAWEQEBAQAAAAAAAAAAAAAAAAABICH/2gAIAQMBAT8QJNh//8QAFhEBAQEAAAAAAAAAAAAAAAAAARAx/9oACAECAQE/EEjNE//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExQVFhgf/aAAgBAQABPxAkmkJ1jZbwDdO8AUQcB17Cw9wCpgbC/XWEEkhJ5j5QCtrHL7gR1i/uB09aDL1xxn//2Q==" alt="Jason Ge 葛俊" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/176c7c4599ad3435fa225578bbcb0818/99438/profile-pic.jpg 1x,
+/static/176c7c4599ad3435fa225578bbcb0818/aba1d/profile-pic.jpg 1.5x,
+/static/176c7c4599ad3435fa225578bbcb0818/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/176c7c4599ad3435fa225578bbcb0818/99438/profile-pic.jpg 1x,
+/static/176c7c4599ad3435fa225578bbcb0818/aba1d/profile-pic.jpg 1.5x,
+/static/176c7c4599ad3435fa225578bbcb0818/b315d/profile-pic.jpg 2x" src="/static/176c7c4599ad3435fa225578bbcb0818/99438/profile-pic.jpg" alt="Jason Ge 葛俊" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><div><div><strong>Jason Ge 葛俊</strong></div><div><a href="https://time.geekbang.org/column/intro/222">研发效率破局之道专栏</a></div></div></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/git-bisect-run/">← <!-- -->自动化寻找问题commit的利器: git bisect run</a></li><li></li></ul></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/common-dif-scenarios/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-30a761bdd526fe06de9d.js"],"app":["/app-bfc2ddb37f4a9372edbe.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-36dc033f967ae9fe9cda.js"],"component---src-pages-404-js":["/component---src-pages-404-js-b410945d5e980a3bf2b7.js"],"component---src-pages-about-js":["/component---src-pages-about-js-a056939790705504d0a3.js"],"component---src-pages-index-js":["/component---src-pages-index-js-6f552ff0a8085a195b04.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-3c26c1234354621042c6.js"]};/*]]>*/</script><script src="/polyfill-30a761bdd526fe06de9d.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-3c26c1234354621042c6.js" async=""></script><script src="/cd7d5f864fc9e15ed8adef086269b0aeff617554-aac6006b7b90d596efef.js" async=""></script><script src="/d5d7a013bc6c1e2b6d7db819052c16d7efea5559-35a0b8233fe2a8ffbbb2.js" async=""></script><script src="/133dca110fad53aa1997b630637bbac3134a2d14-24646acf9c6ca53d0d13.js" async=""></script><script src="/app-bfc2ddb37f4a9372edbe.js" async=""></script><script src="/framework-6c3ead24af170cdcb87c.js" async=""></script><script src="/styles-31f023f48facb69035d3.js" async=""></script><script src="/webpack-runtime-ba934305187fa4bae4ea.js" async=""></script></body></html>
