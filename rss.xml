@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Dec 2020 07:12:12 GMT</lastBuildDate><item><title><![CDATA[常见diff的场景的优化]]></title><description><![CDATA[查看 diff 是开发工作中常见一个场景，值得优化。下面做一些总结。 总结的基本思路是少就是多。比如 使用尽量少的工具，尽量少安装插件。这样可以减少工具入口，减少不必要的心智负担。 只处理最常见的场景。至于更偏的场景临时Google找解决办法。 场景一：在 git diff…]]></description><link>https://jungejason.github.io/common-dif-scenarios/</link><guid isPermaLink="false">https://jungejason.github.io/common-dif-scenarios/</guid><pubDate>Sat, 05 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;查看 diff 是开发工作中常见一个场景，值得优化。下面做一些总结。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Dec 2020 16:29:45 GMT</lastBuildDate><item><title><![CDATA[常见diff的场景的优化]]></title><description><![CDATA[查看 diff 是开发工作中常见一个场景，值得优化。下面做一些总结。 总结的基本思路是少就是多。比如 使用尽量少的工具，尽量少安装插件。这样可以减少工具入口，减少不必要的心智负担。 只处理最常见的场景。至于更偏的场景临时Google找解决办法。 场景一：在 git diff…]]></description><link>https://jungejason.github.io/common-diff-scenarios/</link><guid isPermaLink="false">https://jungejason.github.io/common-diff-scenarios/</guid><pubDate>Sat, 05 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;查看 diff 是开发工作中常见一个场景，值得优化。下面做一些总结。&lt;/p&gt;
 &lt;p&gt;总结的基本思路是&lt;strong&gt;少就是多&lt;/strong&gt;。比如&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;使用尽量少的工具&lt;sup id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot; class=&quot;footnote-ref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;，尽量少安装插件。这样可以减少工具入口，减少不必要的心智负担。&lt;/li&gt;
@@ -140,6 +140,40 @@
 /static/38de8d2dacb14aa2935954e830a10560/efc66/git-difftool-vimdiff.png 885w,
 /static/38de8d2dacb14aa2935954e830a10560/c83ae/git-difftool-vimdiff.png 1180w,
 /static/38de8d2dacb14aa2935954e830a10560/1078c/git-difftool-vimdiff.png 2180w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;解决方案3 - 使用 IDE:&lt;/h3&gt;
+&lt;p&gt;也可以使用常用的IDE。这样的好处是对大的改动比较好，比如，在WebStorm中， 使用Local Change窗口。可以看到，WebStorm提供可视化的比较选项，很方便。不过，坏处是没有命令行查看快捷，尤其是简单的改动。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/28d848b40d6be86009eb0830aed52efc/88745/git-diff-in-ide.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 85.13513513513513%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAABYlAAAWJQFJUiTwAAADvklEQVQ4y01Uu47kRBT1/zA7Pe52266yy+9X+dnv6dmZYTZASEggESBSAgICImiR8BEEfAG0CPkLUIM6I1iJxZYPt3pWsMHRLbtct845915ru1X1Y7dZvC6k/DMtynOUpP8jzc6yqs9l0xK6syS0y9W5qJpznObnJJfnuJDnVMo/iqp+Q+e/0tab9a/7+3ssVwuUdYO8KJDLApmKhLptUDYKLRaLDncPj1hs9kiyHGleIM7zC1L6lkh8r3lp/VO1eQm5evmGRdVgK8TP0QzkYIYlxWIQwh2ahA+y7oaibAbHZYPNzcGYTYfZdPa3YRgwTfMbLSmqY7vaYLO9G4K0hBvnEEnxDiTcKIPtCISBC9e1wF0GweZg5hSmZY2GMe1vbm5g2/ZBy6U8Lvf3eHh6GiqSpqRmUlKUz7JpHZM85goEgQNBCR3uwhcOZrMpdF0fKVmv3+iwLOugkanH5e4W29v9QIYjoURk9n9I6TmihFx4CHwHjjuHyeewLR3MnsJxxOi5Vj8zZqDEB40qeVQMKA4JmawSKIOV4RfQWu1zV7GyL0lMa0psZuQZrefmyC2jn051vLi6IoZZcUxlpZgN6mCcZVQ1klnUhOoSw1SCiQheGFFiAc/hcIUPxwth2Hw0LKef2y4Mix+0tGyPy6fP8erTr4f9h1+guf8MxfoDyMWWsEO9ukNLXVAubiGXe2qjDR6bJR6rDrfNCs3uccyqVd+s7+jbPTHM5bFcv8Lu/U+G1cPHaPcfoaJDSxmgW25QNR2yPEacBHCJmUPSF5nAuqtRSFIRR6PwWM+5RfuMqlzWR1XNMA6HKIkQpwmiOEREBfCjCCIIwZgJY25CyWJxDS/wEUY+RJxQsfhoM6ufM7osiA8ajcyRcPGQRgcKyscgJI8EI0Y+fE/AshksLuDkG0Rth6QOIQpiXmejyPzejDzaSxTD6kigFimG9G2V45QSEgsRerB9n5qZbhfU1AFVO2kgLu8YbNcBc5zRts3etDm9Dw/aars7yrp9Tlg8912cp88955hg3AR3bJAsmgROF6RUdUIowAOC546Oa/euF1CbVQeNhv7nS5Is7wkjJR6DOB7nc33UJ1ejMXlvpB4bdf1mnEyux5lpjdyhcZteX/bmFGeG8c9kcoXr6xffKg9/UR4qluqPohCS2aalWHFYCuSfaVpvfaTCcJLKSDKzL2BcFYZhOjO+09Jc/kAe/kW/rt+rpj0p0AUnmud3UJ5IxSnJihNN1IlUnNquOlVtd6q7xWmx3vy2XG9fy7r58l9vHk+m+kGt8gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;git-diff-in-ide&quot;
+        title=&quot;git-diff-in-ide&quot;
+        src=&quot;/static/28d848b40d6be86009eb0830aed52efc/fcda8/git-diff-in-ide.png&quot;
+        srcset=&quot;/static/28d848b40d6be86009eb0830aed52efc/12f09/git-diff-in-ide.png 148w,
+/static/28d848b40d6be86009eb0830aed52efc/e4a3f/git-diff-in-ide.png 295w,
+/static/28d848b40d6be86009eb0830aed52efc/fcda8/git-diff-in-ide.png 590w,
+/static/28d848b40d6be86009eb0830aed52efc/efc66/git-diff-in-ide.png 885w,
+/static/28d848b40d6be86009eb0830aed52efc/c83ae/git-diff-in-ide.png 1180w,
+/static/28d848b40d6be86009eb0830aed52efc/88745/git-diff-in-ide.png 2148w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
