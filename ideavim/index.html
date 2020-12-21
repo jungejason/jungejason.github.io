@@ -1,0 +1,394 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.04a63f1887ecd50550b5.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}table,td,th{border:1px solid grey;padding:5px}td:first-child,th:first-child{padding:5px}p{margin-bottom:.75em}h1{font-size:2rem}h1,h2,h3,h4,h5,h6{margin-top:2.5rem}tr:hover{background-color:#f5f5f5}tr:nth-child(2n){background-color:#f2f2f2}th{background-color:#d3d3d3}ol{display:block;list-style-type:decimal;margin:1em 0;padding-left:40px}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.27.4"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">核心工具之 ideavim | Mushyroom Blog</title><meta data-react-helmet="true" name="description" content="core toolset ideavim"/><meta data-react-helmet="true" property="og:title" content="核心工具之 ideavim"/><meta data-react-helmet="true" property="og:description" content="core toolset ideavim"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Jason Ge 葛俊"/><meta data-react-helmet="true" name="twitter:title" content="核心工具之 ideavim"/><meta data-react-helmet="true" name="twitter:description" content="core toolset ideavim"/><link as="script" rel="preload" href="/webpack-runtime-ba934305187fa4bae4ea.js"/><link as="script" rel="preload" href="/styles-31f023f48facb69035d3.js"/><link as="script" rel="preload" href="/framework-6c3ead24af170cdcb87c.js"/><link as="script" rel="preload" href="/app-bfc2ddb37f4a9372edbe.js"/><link as="script" rel="preload" href="/133dca110fad53aa1997b630637bbac3134a2d14-24646acf9c6ca53d0d13.js"/><link as="script" rel="preload" href="/d5d7a013bc6c1e2b6d7db819052c16d7efea5559-35a0b8233fe2a8ffbbb2.js"/><link as="script" rel="preload" href="/cd7d5f864fc9e15ed8adef086269b0aeff617554-aac6006b7b90d596efef.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-3c26c1234354621042c6.js"/><link as="fetch" rel="preload" href="/page-data/ideavim/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/426816048.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:1.75rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Mushyroom Blog</a></h3></header><main><h1 style="margin-top:1.75rem;margin-bottom:0">核心工具之 ideavim</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">December 21, 2020</p><div><p>对于个人的核心工具集的选择，因为编程中熟练使用主力IDE能够大大提高效率，所以IDE是一个必选项。而IDE与VIM结合的插件，对于VIM使用者，常常是一个必选项。</p>
+<p>在Jetbrains系列工具中，插件IdeaVim非常优秀，对我个人而言是一个必选项。</p>
+<p>选用IdeaVim原因有以下几个：</p>
+<ol>
+<li>安装配置简便</li>
+<li>对原生的VIM命令支持在IDE中基本做到无缝集成</li>
+<li>因为IDE对语法的理解比VIM更强，使一些VIM命令更“聪明”</li>
+<li>提供最常用VIM插件的实现</li>
+<li>可以通过VIM命令行快捷键调用IDE命令</li>
+</ol>
+<p>下面进行一些展开介绍。</p>
+<h2>1. 安装配置简便</h2>
+<p>在JetBrains系列软件中，比如IntelliJ IDEA, WebStorm, DataGrip等等，可以使用Cmd + Shift + A，输入plugins进入plugin安装界面，然后在market place中查找IdeaVim进行安装。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e96a299f4fbc09659d80079f9aecdc21/61c89/ideavim-install-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACXklEQVQ4y5VTa3PSQBTl//8OZ/zmjB/VNm2qiNPpWAghgUAICSRp84K8Hywc725pB7U6ejNndnM3OXvuq9e/+fDm9v7u83CoXKjqWDIMgzCTjPlcms2m0kSbSMPRSBopI0nXNWmxWEiqqkqapknTKZ1PJtJYm1xOZ1OZ/O96mj71LGuFIAiRJAl22y08z8NqtYFlWnBdH7btwvceET5GCB5D7NIUeZ6jKAqxZnmGMAzhOE7Ri+LIWDkbftABYBxlkbI4DFiR5oy1HWvKmrVlRSgYWMtc12HW0mS6rjOKiBHRvmkafsFDL4iThWU7iKPoQGSo6gbrjQPL8bC0fRimg7UXIUxSJLsEru9BUQ1oUxPj8RiKomBhmgfLsnhkASlMFmVVo8gLIjwi2hb49EXD5V2C6/strr5vcTPKIA9TXN2nuLiL8fE2xtdRiONRaOAmNofDIehVZbk4d7Zti/V6Dc/dII4jlGWBpqlR0Xo8MCJhwuc/eNjtdqjrmnxPzPv9ngirShA+Ozkh5UQUiO/P7UgPt7TKMJgM0FB6SNXLv4yxPxNydF1HfnH2Am5ZnaE/7mPf7XH+718J4zjGr/YTodpH13b/Tuj7PuWqBJ2LlfLzEvJ/EfJ+4kWJokiQ0EcCv4X8CqEoCt1unJw8IYwUMtu2GVVQNPmRl/W0Pu+zOmVEyCiH7DQM+1PbPPTSNHVPL0JB0z4p5CFzta9Z1mT4pg+EQq6eR8JBLZT3aLjfEgY07Nc03DKNkkxdL8/nc5mIZSqOTGplulggz3I5iANZmSny0lyK7zhoDPsTdfT+B69wGZbs4ibhAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-ideavim-install-1"
+        title="image-ideavim-install-1"
+        src="/static/e96a299f4fbc09659d80079f9aecdc21/fcda8/ideavim-install-1.png"
+        srcset="/static/e96a299f4fbc09659d80079f9aecdc21/12f09/ideavim-install-1.png 148w,
+/static/e96a299f4fbc09659d80079f9aecdc21/e4a3f/ideavim-install-1.png 295w,
+/static/e96a299f4fbc09659d80079f9aecdc21/fcda8/ideavim-install-1.png 590w,
+/static/e96a299f4fbc09659d80079f9aecdc21/efc66/ideavim-install-1.png 885w,
+/static/e96a299f4fbc09659d80079f9aecdc21/c83ae/ideavim-install-1.png 1180w,
+/static/e96a299f4fbc09659d80079f9aecdc21/61c89/ideavim-install-1.png 2678w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a2ba00f4354232c0cf99e98bdb4e07fb/647f4/ideavim-install-2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACbklEQVQ4y4VT2W7bMBD0/z/3of9Q9AuaqAkCBG7qxk3quLHj2JJIij502rosrzRd0k7RtEC6wPBczg6Xy954PL6azedns9nMkUI4SiknCLSjAmXnrudZCCkcrbUjlXRc17V+wuy7nuNJcS6lvJg+Td/3FgsXQkjEcYwsy5DEEXxPwl34kEoj0GtIoRGFMcJ1iCRJkKapxXa7xW6XI0kTLJca0+l03NtEMXyhGnQdxUlIQRySkIqChUdq8kTiaU7yWZAWAa30ioIgIL3eUJQk5AtBk8mEOMihrmsjaNDTm5AVeW1eFNi4C4TDG2xZRb5idcNbyOcZhmoGf7mCDhSrSZF5LlLfw+P9HUYPD+AUdAyj/rZXVjWKomgzlv/4MIIejVF7HsqIr5XX2O52+KhWWKc7CF7P8gq0DNCEGxQc+GSdacqyvO2dFlojWXDO+FqIVYBD1SDf77GrKnBM7BvirHQgatGeDsVMaM4ZQrNnCc3AEPKEE7yzCY7TY+SGapR1Ad/3MZ/PbX+EhyiK7MMcDofXCl8IK1aSppl1itk559ermvJIKBSW6w3CMLQwZCa4AbX0BmF2JMzzHG3bMmGFmkk38RY6PJaKKS9DZMwS0luEL2TdMUv7Q41qX6LidBAd8Lf9lzA5KTCkxsyVDaFxN36vAet3Om8b5vj9yg1PiCMQJ9mC1xgd8YHT+F+kaUJccsbfGP8cLmwj2UQx0bJsi6ZpbCkYxXV17P9EzSjKCjIl/Hz2sfAEl09qv6Qv5Jj/8uKKS+GM/6Fzc/PV6ff7b+IL4/zzpfPuw7Xz6bLvjH7cO8Pvd+eDweDi7tv1+18JPBfIQEHo5gAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-ideavim-install-2"
+        title="image-ideavim-install-2"
+        src="/static/a2ba00f4354232c0cf99e98bdb4e07fb/fcda8/ideavim-install-2.png"
+        srcset="/static/a2ba00f4354232c0cf99e98bdb4e07fb/12f09/ideavim-install-2.png 148w,
+/static/a2ba00f4354232c0cf99e98bdb4e07fb/e4a3f/ideavim-install-2.png 295w,
+/static/a2ba00f4354232c0cf99e98bdb4e07fb/fcda8/ideavim-install-2.png 590w,
+/static/a2ba00f4354232c0cf99e98bdb4e07fb/efc66/ideavim-install-2.png 885w,
+/static/a2ba00f4354232c0cf99e98bdb4e07fb/c83ae/ideavim-install-2.png 1180w,
+/static/a2ba00f4354232c0cf99e98bdb4e07fb/647f4/ideavim-install-2.png 2682w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>安装好之后，可以在使用Cmd + Shift + A 进行打开/关闭 IdeaVim插件。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4af63350c1cecd4d56ff181b2485ebc7/6871f/ideavim-config-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB9klEQVQ4y7VU25KaQBDl/79jvyDP7mzcTaWSSioBFQW5eGVVRhBUFsSGkx5WLTfZy1O66sy1+3B6egbt6/f2g97ptXRdF5ZlieFwyHCaXs2NblfohiG63DuOI2zbbsZqr9/vi55pCtMa3FrW4M4wjBttNBpjNptjs9k0iKMI48kcI3+C6XiK2XyB2SSADCOslhJRFGO73WK/31+QpAmWyyU8319okh0m06AEagJAFZW0S9aURDEd8oKOxYEOWU7lU0Z1mVO2T2nke+Q6Dg2sAXEmtJaS8jyvd7udqy0kKxqPq7JkTrZFGOOX6cH2AsYMQz/AY5hAxhuEa4mhO4bRszGwLXCKYFJ4nlczh1Lua1leKNlVXhRMV+NbV+LTlyXaRoq2nuKznuC+s8W9sWvmrR8xWj/nmIcSV1arpigKXzstVKohIlTVEf9a/RcAThGcIk6Z1WzPhGrAuBASVc9hzTpeB+8rouPxyAKqlwpV4LVCBVwI34Yiu+g/kXxI+Jqd1xXh1Qf+M+HLM3w/5fPe2e+tKpfNpa4qUsYB70L55vkTZVlGTEKHw6EJ47mrqSpdH/Spah/aiu+h47jNk1utVog3McJQLjTTNB8YLYbodDoiCAIRx7EIw1BIKZtxmqYvwC+C/R6F7/vCdV31I7nVu8adbf6++QNVlSXSNqOrngAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-ideavim-config-1"
+        title="image-ideavim-config-1"
+        src="/static/4af63350c1cecd4d56ff181b2485ebc7/fcda8/ideavim-config-1.png"
+        srcset="/static/4af63350c1cecd4d56ff181b2485ebc7/12f09/ideavim-config-1.png 148w,
+/static/4af63350c1cecd4d56ff181b2485ebc7/e4a3f/ideavim-config-1.png 295w,
+/static/4af63350c1cecd4d56ff181b2485ebc7/fcda8/ideavim-config-1.png 590w,
+/static/4af63350c1cecd4d56ff181b2485ebc7/efc66/ideavim-config-1.png 885w,
+/static/4af63350c1cecd4d56ff181b2485ebc7/c83ae/ideavim-config-1.png 1180w,
+/static/4af63350c1cecd4d56ff181b2485ebc7/6871f/ideavim-config-1.png 2688w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>或者点击工具栏下方的图标：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/95ddc93eeaf984bea884fcd07a28b31b/5522e/ideavim-config-2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB+0lEQVQ4y61UXW+bMBTl//+TPe1pj3uapVRb2rVNyEJIY/M9wEkIXyZguL12oM0qVVOlWjo5F659dH05N8av+dxcW9awo6xyXVdEYSg85B11hG3bgjJHbOwnfOeJMAhFiHnf9zVHUSSCIBBeENSO63a43zfM1R+fUgZJmsLxeIRTlkEU/QXGfKBPFMIAY+pBHCWQxhzShEOe51BVlUZZllAg+J6D53mVkfLUYm4Ap1PeAoBUKPJM8iSReVbIc9NKUTWIWjZVKWV7loxRaVkbuVqt5GazwWfW1XWtxGMj5gebuR7sOe9hXFWZQVGcQG1qmgbObQtd1wAMArMd3N3ewmw2g8ViobHdbofdbgfYhtTg+4Ndi0aV30sptWCeFzDF12sYLoy909e+Tqmfvu9TA4Xs8eVLhUVRQNu2o8jwD9RZIYTeM/VxuCy8RZcaeC17PNgPYwlqMyZfBN8yVqLz6hYKw5jE+LXCjwhO8WsrPknwqhWfJ3j9UbTgez1876O8heph17XqARkF0YzWeLCbjI2WkPLim/9ivkrk1+/bjoWFUomNLMu80UMaaulxwioVT/EEZZNWG73TzA8nCOMjjl+t7FQa6PQviJ/L5fIHMkEm6/Wa4FgR0zQ14xQQHC9CKSWO4+gY/wgIjh0xlwvycH9HHhb3N4+Pv789A9DRLL+37izpAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-ideavim-config-2"
+        title="image-ideavim-config-2"
+        src="/static/95ddc93eeaf984bea884fcd07a28b31b/fcda8/ideavim-config-2.png"
+        srcset="/static/95ddc93eeaf984bea884fcd07a28b31b/12f09/ideavim-config-2.png 148w,
+/static/95ddc93eeaf984bea884fcd07a28b31b/e4a3f/ideavim-config-2.png 295w,
+/static/95ddc93eeaf984bea884fcd07a28b31b/fcda8/ideavim-config-2.png 590w,
+/static/95ddc93eeaf984bea884fcd07a28b31b/efc66/ideavim-config-2.png 885w,
+/static/95ddc93eeaf984bea884fcd07a28b31b/c83ae/ideavim-config-2.png 1180w,
+/static/95ddc93eeaf984bea884fcd07a28b31b/5522e/ideavim-config-2.png 2680w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>安装好了之后，基本的VIM命令就都可以使用了。如果需要进一步配置，可以产生~/.ideavimrc文件。比如，这个是我的配置文件：</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&quot; ~/.ideavimrc
+
+filetype plugin on
+syntax on
+
+set hidden
+
+set shiftwidth=2
+set expandtab
+set tabstop=2
+set softtabstop=2
+set autoindent
+set smartindent
+
+set ic smartcase
+set hlsearch
+set incsearch
+set lbr
+set nu
+
+set visualbell
+set ruler
+set scrolloff=4
+set cursorline
+
+set backspace=2
+
+set dictionary=/usr/share/dict/words
+set dir=~/.vimswap//,/var/tmp//,/tmp//,.
+
+let g:netrw_home=$HOME.&#39;/.cache/vim&#39;
+
+&quot; Search for selected text in visula mode for * and #
+vnoremap * y/&lt;C-R&gt;=substitute(escape(@@,&quot;/\\&quot;),&quot;\n&quot;,&quot;\\\\n&quot;,&quot;ge&quot;)&lt;CR&gt;&lt;CR&gt;
+vnoremap # y?&lt;C-R&gt;=substitute(escape(@@,&quot;?\\&quot;),&quot;\n&quot;,&quot;\\\\n&quot;,&quot;ge&quot;)&lt;CR&gt;&lt;CR&gt;
+
+&quot;&quot;&quot; Map leader to space ---------------------
+let mapleader=&quot; &quot;
+
+&quot;&quot;&quot; Plugins  --------------------------------
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+set exchange
+
+&quot;&quot;&quot; Plugin settings -------------------------
+let g:argtextobj_pairs=&quot;[:],(:),&lt;:&gt;&quot;
+
+&quot;&quot;&quot; Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+&quot;&quot;&quot; Mappings --------------------------------
+map &lt;leader&gt;f &lt;Plug&gt;(easymotion-s)
+map &lt;leader&gt;e &lt;Plug&gt;(easymotion-f)
+
+map &lt;leader&gt;d :action Debug&lt;CR&gt;
+map &lt;leader&gt;r :action RenameElement&lt;CR&gt;
+map &lt;leader&gt;c :action Stop&lt;CR&gt;
+map &lt;leader&gt;z :action ToggleDistractionFreeMode&lt;CR&gt;
+
+map &lt;leader&gt;s :action SelectInProjectView&lt;CR&gt;
+map &lt;leader&gt;a :action Annotate&lt;CR&gt;
+map &lt;leader&gt;h :action Vcs.ShowTabbedFileHistory&lt;CR&gt;
+map &lt;S-Space&gt; :action GotoNextError&lt;CR&gt;
+
+map &lt;leader&gt;b :action ToggleLineBreakpoint&lt;CR&gt;
+map &lt;leader&gt;o :action FileStructurePopup&lt;CR&gt;</code></pre></div>
+<p>另外， 这个配置文件是对所有JetBrains 工具都共享的。配置一次就可以在所有工具上生效。</p>
+<h2>2. 对原生的VIM命令支持在IDE中基本做到无缝集成</h2>
+<p>这一点没有太多解释。如果有快捷键冲突的话，可以在这个配置界页面进行调整：</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1d0ff814a5d900c9bdaebdfbadd2b23c/bc43a/ideavim-key-conflict.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACsUlEQVQ4y22T22+bMBTG+f/f9zRpT5P2MmnTpL1taNHUVm01tV0vQELCxUAAAwl3Aibfjp2p09Ra+mRj7J+/c46tmZb13nGcnxvH+eZ7nh5FkR6GoR5SHwSBzkiO4+qM+SRXj+Ot7vu++ifXMsZ0j7HvLGALZ7P5qBEwcj0P7tqB7TpwXB/22sXK3sA0DOptGIYJ27bonwnGPBBQiWDwaG+03aJqamR5Xml5ni8dL8BqtRw95oq6qUTTVsLzXGGaprAsS5AbkSSpiONE9Wl6UpIkNBeLNEmmUQg0XRdpSV7YLPDxRTfmNx/XePc1wNuvW5jrGHVdwWMhOd6gqlvsqxpt16PrBzRth7zYqfmU85kaDodDrGVFYXd9h8dVMF8/xbhf7/DL5GARh5iPYEEE12ME6DHNwGEUGGnQdgPKqsGBxpxnCjgMQ6x1XWeDWprlc1rswUkpnZzwnDbPCub6AfZlQ3nq0R8mkqBxh11ZoxsmpCn/B+z73j4ej4hiPgfJDiHfI0gK8KxQDn0WwFqulJtxEsrhJI6oCVg3rXJ7ckjOx5EcEhAgYMLnMN0hImCYFojTDANtZuGWDkvJyai+e3IkoaXKaYOB3KYEFFQUop4cvgAmJ6A8XRYljGIV6qDCnVQq/gdyBSS97lCGnFMuZcg8y5X64fAcsjyo6w+qUKoomXQ4EXD636HKYboHi3N1LWST+f0bzukbL9uu4PM0VhBTHWtt1y3l5DbhU5ztRZKXQvZlVQs67FXRzRBt2yrFu17IvbIopEgryzKUQPl8llRNm54avRA8PT3h4eEB9/f3z7q7u1NzUnKNQU/z09kaprMlAl3scSq1x8fHD7T54vb29sfFxcXi8vJycX19vTg/P1eSczc3N8+i9QuCq/HV1dXC+P1rsbKMhbG0zkzj4fMf3W8LdVy/wcQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-ideavim-key-conflict"
+        title="image-ideavim-key-conflict"
+        src="/static/1d0ff814a5d900c9bdaebdfbadd2b23c/fcda8/ideavim-key-conflict.png"
+        srcset="/static/1d0ff814a5d900c9bdaebdfbadd2b23c/12f09/ideavim-key-conflict.png 148w,
+/static/1d0ff814a5d900c9bdaebdfbadd2b23c/e4a3f/ideavim-key-conflict.png 295w,
+/static/1d0ff814a5d900c9bdaebdfbadd2b23c/fcda8/ideavim-key-conflict.png 590w,
+/static/1d0ff814a5d900c9bdaebdfbadd2b23c/efc66/ideavim-key-conflict.png 885w,
+/static/1d0ff814a5d900c9bdaebdfbadd2b23c/c83ae/ideavim-key-conflict.png 1180w,
+/static/1d0ff814a5d900c9bdaebdfbadd2b23c/bc43a/ideavim-key-conflict.png 2676w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>3. 因为IDE对语法的理解比VIM更强，使一些VIM命令更“聪明”</h2>
+<p>这里举一个最常用的例子。<code class="language-text">]m</code>将光标跳转到下一个函数开始的地方。在VIM中要做到精准的跳转很不容易，所以我基本上没有使用。然而在IdeaVim中，因为IDE对语法语义理解精准，所以用起来很爽。类似的命令还有<code class="language-text">[m</code>, <code class="language-text">]M</code>, <code class="language-text"></code>[M`</p>
+<h2>4. 提供最常用VIM插件的实现</h2>
+<p>IdeaVim是JetBrains的开源软件<sup id="fnref-1"><a href="#fn-1" class="footnote-ref">1</a></sup>，是使用Kotlin实现的插件。所以我们不能直接使用vim的现有插件。不过，IdeaVim选择实现了一些最常用的VIM插件。比如，<a href="https://github.com/tpope">tpope</a>/<strong><a href="https://github.com/tpope/vim-surround">vim-surround</a></strong>, <a href="https://github.com/tpope">tpope</a>/<strong><a href="https://github.com/tpope/vim-commentary">vim-commentary</a></strong>, <a href="https://github.com/vim-scripts">vim-scripts</a>/<strong><a href="https://github.com/vim-scripts/argtextobj.vim">argtextobj.vim</a></strong>, 等等。</p>
+<p>从我的使用体验来看，这些选择非常成功，每一个精品。做到了“插件中的插件，精品中的精品”。举一个例子，argtextobj。变成中我们常常需要修改函数声明中或者函数调用语句中的整个参数。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a063d42f83b24c97860e6430f10fcdcc/bc43a/ideavim-argtextobj.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACoklEQVQ4y31UyZKbMBDl/78jVbnkkHMqoUJNpeY2iccLq21sDBYSAowBsUjuacmTrbLgerQsWk+vF8l6fPjwZrF+fvBc7+NqtbK/LRHPG9v3IjvaxfZuv7N937M9z7ODMLDX67UdhqFBEAS26/u2F/ifXM9zVqv1O8v1w+yYJFAUBZyyDBgrIM8pJCmBlFY4z4Hif8YYsJJBdalA9AKGYTAQQkDf92gHKHjRWJSxIDtnwHkx4SJ5u93kOA6SMSqrkktaUEkYkbRksukbKSYhp3mW0zRJJJIzjgFgRmjizCrLKjqlmVaockoBHaHtBFDKjKq6uUDTtUYNbgZSqTukAiQDhWOcV5qwrmtilVUVUQxzEEJRRnGhMGGfTgmGTqAXPdzwB+atjP0dmlAZwpJzYjVNEx2OCZzPZ1XXBTRNBV3XgJIDqhDGKmMRcw9y6mEe2zv0GOemqVfaNycpsa7Xa6STmpxSRUiOiibgVQs5w2JgCnSxGCLPUiCbFRSBD93xAD05o6/AYoyYokl1Xaf9iIU5MyFrhXrxOI5AixyOZ1SdYtirr1DzHK5Dh0lvYcLvGOMdPx8TMnLdCY9JCmmaKswBCEz+tWmxNXroWmyHtrun6pfnRwaR9BWGEAtHLAw3Sg6xqTJHwmmcoKwaSLEnT6iQlxzGacSNhMGIG6p7Df4gxOiIxas62u5j2O/3ipelaQWGxFG8hQNWOsNc6YbmF25aSOfqX4RGIaubINwfIArDuSxL06hVVckCmxx7Udb1RY7DqJv3f5hfFWYWYTyN4gMcMGwkNAr0cRKvx0pDq9YN/zd8/yal1L4XCw/7W7wUHl3X/YzWWS6XBovFwtinpydns9k4eBEYRFHkxHHs7HY7By8Ix/d9Z7vdOpvA/YIc718AtMkbWJoWb/oAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-ideavim-argtextobj"
+        title="image-ideavim-argtextobj"
+        src="/static/a063d42f83b24c97860e6430f10fcdcc/fcda8/ideavim-argtextobj.png"
+        srcset="/static/a063d42f83b24c97860e6430f10fcdcc/12f09/ideavim-argtextobj.png 148w,
+/static/a063d42f83b24c97860e6430f10fcdcc/e4a3f/ideavim-argtextobj.png 295w,
+/static/a063d42f83b24c97860e6430f10fcdcc/fcda8/ideavim-argtextobj.png 590w,
+/static/a063d42f83b24c97860e6430f10fcdcc/efc66/ideavim-argtextobj.png 885w,
+/static/a063d42f83b24c97860e6430f10fcdcc/c83ae/ideavim-argtextobj.png 1180w,
+/static/a063d42f83b24c97860e6430f10fcdcc/bc43a/ideavim-argtextobj.png 2676w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>这个时候，一些额外的单词以及逗号就很讨厌。这时可以使用如下操作方便工作：</p>
+<ul>
+<li>daa: 删除这个参数，包括逗号</li>
+<li>dia: 删除这个参数，不包括逗号</li>
+<li>cia: 删除这个参数，不包括逗号，并进入编辑模式</li>
+<li>vaa: 选中这个参数，包括逗号</li>
+</ul>
+<h2>5. 可以通过VIM命令行快捷键调用IDE命令</h2>
+<p>VIM的一个根本优势是默认模式是命令模式，所以很多按键很简洁，不需要组合键，从而在IdeaVim中我们可以方便定义很多快捷键。同时，IDE暴露了大量的命令可以用IdeaVim快捷键触发。</p>
+<p>列举可用命令，在命令行中输入<code class="language-text">:actionlist</code>:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/482fe0a066e327f861b2a5409fa91a5f/bc43a/ideavim-acitonlist-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACjklEQVQ4y41UyY7UMBDN/38HEhcOnBFEhAbNlaHTdLYhnT1tZ187iTOPslkEA0ikVXJ1pfL8qurZ2t3h1bP706eDdbZem6apfzya+v3xrB9NW3c9X/d9X7dsS7csS3dcRz+dTrrrusocx9HPlq3brvPGsm3jaJovtLPtpmEUoSgKxGkKzgtcrwxxkiFnFcqyBKP/nHPwiqNua8zTjNvtpmyeZ0zTpHzC6DTGuZNmKX1YrPSReHx8FMtyE5wzUVeVYAUTOc8Fq7jopk7M6yzWbRPrugoCEhv5ADYyCZxqVVV7cZJK9J0xBkrEMEyQPoGi6zoM44D5NoM2g9gF2Q4hBAgMO/kU3yVg0zS5VtW1J8sk6juxVUll2SCOE1X6siz4j0cBVlWVa8TAC8IIeZ7vVDYBTxBUhdxZ7a5WAUlC2q7YbYrhj5Wq3mWcsWuu9X3vyaZGcbJznmMcanAaUH5NiWFEfkaJCW0YIctCakOGoa8xjS21psY49iCMfegrcJblGvXMY1RylmV7UZRYlxWsvCJMQ2TUw2vBUPcNhnnAROzXbf1nyYT1DTCMEiRJslckkXm+oe9oCMR6HGcli6ePHM4TU4AknVyjcr0ouKgpS81JhlXdISFNxnEk5YRlXTDRlOWk5ZBkv54AqwC9y7WybrwH/wI6EQpwI9kUtHqXBwRJhPSaKUGXbYW2a4n1+E9AxZA3neP6ATzX3eq2FaRsQeMXnHFBshF13QhKlOL9zeQB+MW27wxTLedl4l0ChL4P9uUBZRiQbLafwpXr33r4R4x+1O9Wo8P+nC6Fu/Pp9NZ8fzDuD+8M27KMz+ezQReCQe8MuggMaomyIAiMOI6NKIqMy+WiYtK3H5wPlP/yK7X4HWaorQv0AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-ideavim-acitonlist-1"
+        title="image-ideavim-acitonlist-1"
+        src="/static/482fe0a066e327f861b2a5409fa91a5f/fcda8/ideavim-acitonlist-1.png"
+        srcset="/static/482fe0a066e327f861b2a5409fa91a5f/12f09/ideavim-acitonlist-1.png 148w,
+/static/482fe0a066e327f861b2a5409fa91a5f/e4a3f/ideavim-acitonlist-1.png 295w,
+/static/482fe0a066e327f861b2a5409fa91a5f/fcda8/ideavim-acitonlist-1.png 590w,
+/static/482fe0a066e327f861b2a5409fa91a5f/efc66/ideavim-acitonlist-1.png 885w,
+/static/482fe0a066e327f861b2a5409fa91a5f/c83ae/ideavim-acitonlist-1.png 1180w,
+/static/482fe0a066e327f861b2a5409fa91a5f/bc43a/ideavim-acitonlist-1.png 2676w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a2380c1c4df5c75f114ce3d734fa3169/bc43a/ideavim-acitonlist-2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACBUlEQVQ4y32T246bMBCGef/nqNSbXvS6alGtVbV3UaBQsHEI5yBMOOYcyHTs7iZslNTSyBbGn/+Z+a29vnz7ZNjmi+u43y3L0g3L1g3zj27+dnXGfd33F7rjOCpcRnXbtnXP867hUKpTj/1wKSWWbX/RHOplURxDWZYQJQmkWQZClFCINZRVB33fQ9M0Ktq+haZrYbfbXWP7Fvv9Hoqi6LRCCLbKV5Dn+YlzPgDALS4XNW82myHLsqHru4/7tzhjQNd1mbauai5VIXDEtOB8VnvIuqiQQ95e17VSNN2bxCi/t22baxUCBaaLP4+GYUAYhnLjelCO4/EIh8PhGewKxPLkGsrkYRQrha7rgoTGWNN7ldMLHqxvCpHKZSpJko6WZQN2EbBeHw5NwfeXTIFK4el04kVRKoWmacJsNoPVavUQ9Gy8A7HW/4BRnEhVI/pKKZQWujvwX/A7EDPNtd12xxNshBBCdZkxphSiVWC73cI4jg/r9hS4rhvuByH4i8WIbgeZNr4YWC6X0lfqgLTSvZ0edVkBRdMxjkCPsTOldMAaDvP5fJDrqqoGtMuABwZUqkws1w/i/AbMtFys0wUCwyAAhIC0Dr4Y1Wl5u1Qm056m/mwgsNWwCZ8xxVes30+cCc4EwdcZ9wnWlfi+T4IgIFEUkTRNCXqV4CMgWBq1pgv2C8V8/Qt4iR6vAc39DQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-ideavim-acitonlist-2"
+        title="image-ideavim-acitonlist-2"
+        src="/static/a2380c1c4df5c75f114ce3d734fa3169/fcda8/ideavim-acitonlist-2.png"
+        srcset="/static/a2380c1c4df5c75f114ce3d734fa3169/12f09/ideavim-acitonlist-2.png 148w,
+/static/a2380c1c4df5c75f114ce3d734fa3169/e4a3f/ideavim-acitonlist-2.png 295w,
+/static/a2380c1c4df5c75f114ce3d734fa3169/fcda8/ideavim-acitonlist-2.png 590w,
+/static/a2380c1c4df5c75f114ce3d734fa3169/efc66/ideavim-acitonlist-2.png 885w,
+/static/a2380c1c4df5c75f114ce3d734fa3169/c83ae/ideavim-acitonlist-2.png 1180w,
+/static/a2380c1c4df5c75f114ce3d734fa3169/bc43a/ideavim-acitonlist-2.png 2676w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>这里也有一个<a href="https://gist.github.com/zchee/9c78f91cc5ad771c1f5d">网上的列表</a>供参考。</p>
+<p>然后，可以在~/.ideavimrc中进行配置：</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&quot; ~/.ideavimrc
+
+&quot;&quot;&quot; Map leader to space ---------------------
+let mapleader=&quot; &quot;
+
+&quot;&quot;&quot; Mappings --------------------------------
+map &lt;leader&gt;d :action Debug&lt;CR&gt;
+map &lt;leader&gt;r :action RenameElement&lt;CR&gt;
+map &lt;leader&gt;z :action ToggleDistractionFreeMode&lt;CR&gt;
+map &lt;leader&gt;s :action SelectInProjectView&lt;CR&gt;
+map &lt;leader&gt;a :action Annotate&lt;CR&gt;
+map &lt;S-Space&gt; :action GotoNextError&lt;CR&gt;
+map &lt;leader&gt;b :action ToggleLineBreakpoint&lt;CR&gt;
+map &lt;leader&gt;o :action FileStructurePopup&lt;CR&gt;</code></pre></div>
+<p>比如，可以使用<code class="language-text">&lt;space&gt;a</code> 打开/关闭 annotation view (git blam)，<code class="language-text">&lt;space&gt;s</code>在project窗口中找到当前文件。</p>
+<p>总之，推荐使用IdeaVim！</p>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn-1">
+<p>IdeaVim Repo on GitHub: <a href="https://github.com/JetBrains/ideavim/find/master">JetBrains/Ideavim</a></p>
+<a href="#fnref-1" class="footnote-backref">↩</a>
+</li>
+</ol>
+</div></div><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIDBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAeTfPcXgXtHSkYsYr//EABsQAAICAwEAAAAAAAAAAAAAAAECAxIABBET/9oACAEBAAEFAlUkvrtGK9EBAeavM8UVZVBREFf/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPwEIT//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/AWM//8QAGxAAAgIDAQAAAAAAAAAAAAAAAAEQIRESMQL/2gAIAQEABj8CSXWbbZMlqhxXnk//xAAcEAEAAgMAAwAAAAAAAAAAAAABABEhMUFhcaH/2gAIAQEAAT8himYGI5ABTZADZ1KMRT8llQFos3fmEFNwA77n/9oADAMBAAIAAwAAABBT8H7/xAAWEQEBAQAAAAAAAAAAAAAAAAABICH/2gAIAQMBAT8QJNh//8QAFhEBAQEAAAAAAAAAAAAAAAAAARAx/9oACAECAQE/EEjNE//EABwQAQEAAgMBAQAAAAAAAAAAAAERACExQVFhgf/aAAgBAQABPxAkmkJ1jZbwDdO8AUQcB17Cw9wCpgbC/XWEEkhJ5j5QCtrHL7gR1i/uB09aDL1xxn//2Q==" alt="Jason Ge 葛俊" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/176c7c4599ad3435fa225578bbcb0818/99438/profile-pic.jpg 1x,
+/static/176c7c4599ad3435fa225578bbcb0818/aba1d/profile-pic.jpg 1.5x,
+/static/176c7c4599ad3435fa225578bbcb0818/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/176c7c4599ad3435fa225578bbcb0818/99438/profile-pic.jpg 1x,
+/static/176c7c4599ad3435fa225578bbcb0818/aba1d/profile-pic.jpg 1.5x,
+/static/176c7c4599ad3435fa225578bbcb0818/b315d/profile-pic.jpg 2x" src="/static/176c7c4599ad3435fa225578bbcb0818/99438/profile-pic.jpg" alt="Jason Ge 葛俊" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><div><div><strong>Jason Ge 葛俊</strong></div><div><a href="https://time.geekbang.org/column/intro/222">研发效率破局之道专栏</a></div></div></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/common-diff-scenarios/">← <!-- -->常见diff的场景的优化</a></li><li></li></ul></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/ideavim/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-30a761bdd526fe06de9d.js"],"app":["/app-bfc2ddb37f4a9372edbe.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-36dc033f967ae9fe9cda.js"],"component---src-pages-404-js":["/component---src-pages-404-js-b410945d5e980a3bf2b7.js"],"component---src-pages-about-js":["/component---src-pages-about-js-a056939790705504d0a3.js"],"component---src-pages-index-js":["/component---src-pages-index-js-6f552ff0a8085a195b04.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-3c26c1234354621042c6.js"]};/*]]>*/</script><script src="/polyfill-30a761bdd526fe06de9d.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-3c26c1234354621042c6.js" async=""></script><script src="/cd7d5f864fc9e15ed8adef086269b0aeff617554-aac6006b7b90d596efef.js" async=""></script><script src="/d5d7a013bc6c1e2b6d7db819052c16d7efea5559-35a0b8233fe2a8ffbbb2.js" async=""></script><script src="/133dca110fad53aa1997b630637bbac3134a2d14-24646acf9c6ca53d0d13.js" async=""></script><script src="/app-bfc2ddb37f4a9372edbe.js" async=""></script><script src="/framework-6c3ead24af170cdcb87c.js" async=""></script><script src="/styles-31f023f48facb69035d3.js" async=""></script><script src="/webpack-runtime-ba934305187fa4bae4ea.js" async=""></script></body></html>
