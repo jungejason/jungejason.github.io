@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 21 Dec 2020 21:51:03 GMT</lastBuildDate><item><title><![CDATA[核心工具之 ideavim]]></title><description><![CDATA[对于个人的核心工具集的选择，因为编程中熟练使用主力IDE能够大大提高效率，所以IDE是一个必选项。而IDE与VIM结合的插件，对于VIM使用者，常常是一个必选项。 在Jetbrains系列工具中，插件IdeaVim非常优秀，对我个人而言是一个必选项。 选用IdeaVim…]]></description><link>https://jungejason.github.io/ideavim/</link><guid isPermaLink="false">https://jungejason.github.io/ideavim/</guid><pubDate>Mon, 21 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;对于个人的核心工具集的选择，因为编程中熟练使用主力IDE能够大大提高效率，所以IDE是一个必选项。而IDE与VIM结合的插件，对于VIM使用者，常常是一个必选项。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 22 Dec 2020 17:07:25 GMT</lastBuildDate><item><title><![CDATA[核心工具之 ideavim]]></title><description><![CDATA[对于个人的核心工具集的选择，因为编程中熟练使用主力IDE能够大大提高效率，所以IDE是一个必选项。而IDE与VIM结合的插件，对于VIM使用者，常常是一个必选项。 在Jetbrains系列工具中，插件IdeaVim非常优秀，对我个人而言是一个必选项。 选用IdeaVim…]]></description><link>https://jungejason.github.io/ideavim/</link><guid isPermaLink="false">https://jungejason.github.io/ideavim/</guid><pubDate>Mon, 21 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;对于个人的核心工具集的选择，因为编程中熟练使用主力IDE能够大大提高效率，所以IDE是一个必选项。而IDE与VIM结合的插件，对于VIM使用者，常常是一个必选项。&lt;/p&gt;
 &lt;p&gt;在Jetbrains系列工具中，插件IdeaVim非常优秀，对我个人而言是一个必选项。&lt;/p&gt;
 &lt;p&gt;选用IdeaVim原因有以下几个：&lt;/p&gt;
 &lt;ol&gt;
@@ -254,48 +254,92 @@ map &amp;lt;leader&amp;gt;o :action FileStructurePopup&amp;lt;CR&amp;gt;&lt;/cod
 &lt;p&gt;这里举一个最常用的例子。&lt;code class=&quot;language-text&quot;&gt;]m&lt;/code&gt;将光标跳转到下一个函数开始的地方。在VIM中要做到精准的跳转很不容易，所以我基本上没有使用。然而在IdeaVim中，因为IDE对语法语义理解精准，所以用起来很爽。类似的命令还有&lt;code class=&quot;language-text&quot;&gt;[m&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;]M&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;[M`&lt;/p&gt;
 &lt;h2&gt;4. 提供最常用VIM插件的实现&lt;/h2&gt;
 &lt;p&gt;IdeaVim是JetBrains的开源软件&lt;sup id=&quot;fnref-1&quot;&gt;&lt;a href=&quot;#fn-1&quot; class=&quot;footnote-ref&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;，是使用Kotlin实现的插件。所以我们不能直接使用vim的现有插件。不过，IdeaVim选择实现了一些最常用的VIM插件。比如，&lt;a href=&quot;https://github.com/tpope&quot;&gt;tpope&lt;/a&gt;/&lt;strong&gt;&lt;a href=&quot;https://github.com/tpope/vim-surround&quot;&gt;vim-surround&lt;/a&gt;&lt;/strong&gt;, &lt;a href=&quot;https://github.com/tpope&quot;&gt;tpope&lt;/a&gt;/&lt;strong&gt;&lt;a href=&quot;https://github.com/tpope/vim-commentary&quot;&gt;vim-commentary&lt;/a&gt;&lt;/strong&gt;, &lt;a href=&quot;https://github.com/vim-scripts&quot;&gt;vim-scripts&lt;/a&gt;/&lt;strong&gt;&lt;a href=&quot;https://github.com/vim-scripts/argtextobj.vim&quot;&gt;argtextobj.vim&lt;/a&gt;&lt;/strong&gt;, 等等。&lt;/p&gt;
-&lt;p&gt;从我的使用体验来看，这些选择非常成功，每一个精品。做到了“插件中的插件，精品中的精品”。举一个例子，argtextobj。变成中我们常常需要修改函数声明中或者函数调用语句中的整个参数。&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a063d42f83b24c97860e6430f10fcdcc/bc43a/ideavim-argtextobj.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACoklEQVQ4y31UyZKbMBDl/78jVbnkkHMqoUJNpeY2iccLq21sDBYSAowBsUjuacmTrbLgerQsWk+vF8l6fPjwZrF+fvBc7+NqtbK/LRHPG9v3IjvaxfZuv7N937M9z7ODMLDX67UdhqFBEAS26/u2F/ifXM9zVqv1O8v1w+yYJFAUBZyyDBgrIM8pJCmBlFY4z4Hif8YYsJJBdalA9AKGYTAQQkDf92gHKHjRWJSxIDtnwHkx4SJ5u93kOA6SMSqrkktaUEkYkbRksukbKSYhp3mW0zRJJJIzjgFgRmjizCrLKjqlmVaockoBHaHtBFDKjKq6uUDTtUYNbgZSqTukAiQDhWOcV5qwrmtilVUVUQxzEEJRRnGhMGGfTgmGTqAXPdzwB+atjP0dmlAZwpJzYjVNEx2OCZzPZ1XXBTRNBV3XgJIDqhDGKmMRcw9y6mEe2zv0GOemqVfaNycpsa7Xa6STmpxSRUiOiibgVQs5w2JgCnSxGCLPUiCbFRSBD93xAD05o6/AYoyYokl1Xaf9iIU5MyFrhXrxOI5AixyOZ1SdYtirr1DzHK5Dh0lvYcLvGOMdPx8TMnLdCY9JCmmaKswBCEz+tWmxNXroWmyHtrun6pfnRwaR9BWGEAtHLAw3Sg6xqTJHwmmcoKwaSLEnT6iQlxzGacSNhMGIG6p7Df4gxOiIxas62u5j2O/3ipelaQWGxFG8hQNWOsNc6YbmF25aSOfqX4RGIaubINwfIArDuSxL06hVVckCmxx7Udb1RY7DqJv3f5hfFWYWYTyN4gMcMGwkNAr0cRKvx0pDq9YN/zd8/yal1L4XCw/7W7wUHl3X/YzWWS6XBovFwtinpydns9k4eBEYRFHkxHHs7HY7By8Ix/d9Z7vdOpvA/YIc718AtMkbWJoWb/oAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;image-ideavim-argtextobj&quot;
-        title=&quot;image-ideavim-argtextobj&quot;
-        src=&quot;/static/a063d42f83b24c97860e6430f10fcdcc/fcda8/ideavim-argtextobj.png&quot;
-        srcset=&quot;/static/a063d42f83b24c97860e6430f10fcdcc/12f09/ideavim-argtextobj.png 148w,
-/static/a063d42f83b24c97860e6430f10fcdcc/e4a3f/ideavim-argtextobj.png 295w,
-/static/a063d42f83b24c97860e6430f10fcdcc/fcda8/ideavim-argtextobj.png 590w,
-/static/a063d42f83b24c97860e6430f10fcdcc/efc66/ideavim-argtextobj.png 885w,
-/static/a063d42f83b24c97860e6430f10fcdcc/c83ae/ideavim-argtextobj.png 1180w,
-/static/a063d42f83b24c97860e6430f10fcdcc/bc43a/ideavim-argtextobj.png 2676w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;这个时候，一些额外的单词以及逗号就很讨厌。这时可以使用如下操作方便工作：&lt;/p&gt;
+&lt;p&gt;从我的使用体验来看，这些选择非常成功，每一个精品。做到了“插件中的插件，精品中的精品”。下面就举两个例子。&lt;/p&gt;
+&lt;p&gt;第一个，argtextobj。变成中我们常常需要修改函数声明中或者函数调用语句中的整个参数。这个时候，一些额外的单词以及逗号就很讨厌。&lt;a href=&quot;https://github.com/vim-scripts&quot;&gt;vim-scripts&lt;/a&gt;/&lt;a href=&quot;https://github.com/vim-scripts/argtextobj.vim&quot;&gt;argtextobj.vim&lt;/a&gt; 就是用来解决这个问题的一个插件。比如使用如下操作方便工作：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;daa: 删除这个参数，包括逗号&lt;/li&gt;
 &lt;li&gt;dia: 删除这个参数，不包括逗号&lt;/li&gt;
 &lt;li&gt;cia: 删除这个参数，不包括逗号，并进入编辑模式&lt;/li&gt;
 &lt;li&gt;vaa: 选中这个参数，包括逗号&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d2f56751f020968b40f3817cfa28b609/bc43a/ideavim-argtextobj.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC3ElEQVQ4y31Uya7cNhDU/39HgFxyMOBTjESw4BhOLs+eN5u2WbWMRFLLcEYiJVEqt+Rn5BLkUGhxK1VXN2l9+fThl9X29ZO7d//YbDb2tzXhdWd7bmiHx7N9PB1tz3Nt13VtP/Dt7XZrB0GwwPd9e+95tut7f+5d19lstr9Zey9Ir1EEIQTiNAXnAnnOECUZElbRfAFGY845eMlR3UuotoXWaoFSCi2NldIQhZAW49xPbymKQvR0yEzTZLpOG86ZqcrCMMFMxjPDSmakehhljOlHmH4YTasHM5jRABgIM3FqlWUVxkk6KxxzxtD3PZ6NAmN8UVXLO2TzhO46TIOGkTEhgnnmGOorxq7BBIwzYV3fM6usqpBRmlqpkXG2pDGnHccRpZ6hVS0dWPZj6mrg+jtweg9kfwPHd0CxxtTcRsgjSp5llpQyvFwj3G63sa4FpKzQNBKjITVGYRznqGlM302Oka8wlCFMfcJQBRhagV7VtEzeZ1FmPR6PcDY1ipMxy3JS1KOonsg5FYMUFwSex2AXH9nmK4S7RhPFaIVES84pbfBsh7FpNbgQmUWeLSnPCudKd+QVEzmuN1KdxODf/kLNEzwGg7Yz6DsFsK+AeAUqDyDlePOQuH4QXqMESZKMZVHQHzUe8rm0RtNoqLsgv/6hwzty3ScC8nQgdHeCxERFnt5M1lpnFqUbRpfzUuWCCPuuR1lJJNSTMSksCobuKaAkW9Cp5q1EmKv7A9O0TFF2mVVUdXg4nXE6ncaiLDEMAzgRh+cDLvEVaX4Dr0oU1D7140mqWyrUOLPMRD/xr0JeSz84XRAGwVCWpSFCU1WVEdTk1IuGest0Ws/N+38Y3hSmVsaLJDxfcKG0iZAUNMt1mr1cImFWPTf8f+HnGl2gee/dosv+Kz0KX/b7/UeKznq9XrBarZb48vLi7HY7hx6CBWEYOufz2Tkejw49EI7nec7hcHB2/v4zcbz7DgctFeV0U8wmAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image-ideavim-argtextobj&quot;
+        title=&quot;image-ideavim-argtextobj&quot;
+        src=&quot;/static/d2f56751f020968b40f3817cfa28b609/fcda8/ideavim-argtextobj.png&quot;
+        srcset=&quot;/static/d2f56751f020968b40f3817cfa28b609/12f09/ideavim-argtextobj.png 148w,
+/static/d2f56751f020968b40f3817cfa28b609/e4a3f/ideavim-argtextobj.png 295w,
+/static/d2f56751f020968b40f3817cfa28b609/fcda8/ideavim-argtextobj.png 590w,
+/static/d2f56751f020968b40f3817cfa28b609/efc66/ideavim-argtextobj.png 885w,
+/static/d2f56751f020968b40f3817cfa28b609/c83ae/ideavim-argtextobj.png 1180w,
+/static/d2f56751f020968b40f3817cfa28b609/bc43a/ideavim-argtextobj.png 2676w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;第二个例子，surround。我们常常需要在一段文字两端进行操作，不如添加单引号，双引号，括号，把单引号改成双引号，等等。&lt;a href=&quot;https://github.com/tpope/vim-surround&quot;&gt;vim-surround&lt;/a&gt;插件做这个非常方便。IdeaVim 自带了这个插件。我最常用的命令有&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cs&lt;text-object&gt;&lt;symbol&gt;：修改文本目标两端的符号&lt;/li&gt;
+&lt;li&gt;ds&lt;text-object&gt;&lt;symbol&gt;：删除文本目标两端的符号&lt;/li&gt;
+&lt;li&gt;ys&lt;text-object&gt;&lt;symbol&gt;：在文本目标两端添加符号&lt;/li&gt;
+&lt;li&gt;S&lt;symbol&gt;：在visual 模式中在被选择文本两端添加符号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这里的&lt;symbol&gt;可以是&lt;code class=&quot;language-text&quot;&gt;&amp;#39;&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;&amp;quot;&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;{&lt;/code&gt;，还可以是xml 标签（用&lt;code class=&quot;language-text&quot;&gt;t&lt;/code&gt;触发） 。更过的使用说明可以参考vim-surround插件的链接上的文档说明。&lt;/p&gt;
+&lt;p&gt;而要使用这两个功能，不需要任何安装，只需要在~/.ideavimrc文件中添加以下两行即可：&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;set argtextobj
+set surround&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;5. 可以通过VIM命令行快捷键调用IDE命令&lt;/h2&gt;
-&lt;p&gt;VIM的一个根本优势是默认模式是命令模式，所以很多按键很简洁，不需要组合键，从而在IdeaVim中我们可以方便定义很多快捷键。同时，IDE暴露了大量的命令可以用IdeaVim快捷键触发。&lt;/p&gt;
+&lt;p&gt;VIM的一个根本优势是默认模式是命令模式，所以很多按键很简洁，不需要组合键，从而在IdeaVim中我们可以方便定义很多快捷键。比如，可以使用Space, a 快速切换 Annotation View (Git Blame):&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a32d54adc9ebb654312e165f867b0987/82747/ideavim-toggle-annatation.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAADXUlEQVQ4y0VU2Y6rRhD1F+c5H5EPuPFblF9I5EhZ7sxY15cZb+MVsDHGgFmabsC7oducFIwyQSqQqOqjqnNOdev15Y8v4+lgYhpmb6nrmrkyNd00KNaabljabGlqi+Vce39/1wzD0Ha7nWbbdhPWxtbWm422WpnfdMNYzGazH1tvg2F/Y2/h7/dgYQC9P0H/2wyj73PsV1sE/IyYp/B9D0EQgDEGz/Owp/r6TMhD8JTjcDzC2li/tLZb5zmiooTz8sSZmgws9ef3SD29RYo5e4VKqevtptI0VafTSeV5rngmVJqnKj1m6ng9qUIW91KWWFvWz60kSbphFGPneUoEPuYTB1/7DN1RArYLUD0ULpcLkoSBc44szyByjvSQ4nA6QD5kVapSXu836tBut4QQDWCa5erIY8zftx+AQ9YAPlRJOQKksWOW1HWQqkLzVJ9vWRQFFotFu+mQixSJEOp+yDAb2/jnjeGlAQybDut8FHhggYP75YiqOBATBSqCqqqqAbzf7rDWm3aLxuiyJMFm6ygR+lhMtngexOiNCdDxUJ458LgDBX3ZK5AbQNgDzj7wf5+yLEuYptluEdldKSXihCvXWmNrupiuBJabFML1cDmdkKQnREwgCEMwPyQ+OaI4pogQRmEVMyZJMKxWq3brfD53r9cbJWKVx2EzMqmMr68REi8kcu5YGBaMtQ57t4Hnu/CDHXhOzshisktWHY+5rCoFIXi7RQp28/wIY7VWOQtIlE0DSLaB8HyU9ws8l0HwCOdTToofcbseaMryv6CRS/kgWnjCPkTJUoGt46iCbDAd2fhLi/DcjxE7tcoSYXig4gwxjclI6bKU+CSwanSRtTSciw/bRMTNam2pay5IFPLhW/xpm+ohwXgG23Xg+jv4JJzIBJggnwrypuAV6dCIQli1ysmTT4TPl3oR7mypL3z594DLl7GQzA3rVmTCE7mP9tIP95KJVDLO5LW4yvIhpapHAO51twT4pUX7ObKJK91cIXK3WA4MPHc36PW2iCyHODs1u+u67scO+0F9ELXvlFSoHVKUBW60KQlLfm3puv7TeDx+ms5mv88mk86op3Xeur3OsPfaee/3O3TLdCjfGQ6HHcdxOpZldeim6dCt1ET9T18bv03n0+5ysfzhX0SbQ64j8OyGAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image-ideavim-toggle-annatation.png&quot;
+        title=&quot;image-ideavim-toggle-annatation.png&quot;
+        src=&quot;/static/a32d54adc9ebb654312e165f867b0987/fcda8/ideavim-toggle-annatation.png&quot;
+        srcset=&quot;/static/a32d54adc9ebb654312e165f867b0987/12f09/ideavim-toggle-annatation.png 148w,
+/static/a32d54adc9ebb654312e165f867b0987/e4a3f/ideavim-toggle-annatation.png 295w,
+/static/a32d54adc9ebb654312e165f867b0987/fcda8/ideavim-toggle-annatation.png 590w,
+/static/a32d54adc9ebb654312e165f867b0987/efc66/ideavim-toggle-annatation.png 885w,
+/static/a32d54adc9ebb654312e165f867b0987/c83ae/ideavim-toggle-annatation.png 1180w,
+/static/a32d54adc9ebb654312e165f867b0987/82747/ideavim-toggle-annatation.png 2232w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;IDE暴露了大量的命令可以用IdeaVim快捷键触发。&lt;/p&gt;
 &lt;p&gt;列举可用命令，在命令行中输入&lt;code class=&quot;language-text&quot;&gt;:actionlist&lt;/code&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
