@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 27 Dec 2020 01:30:05 GMT</lastBuildDate><item><title><![CDATA[国际健康码微信小程序上传图片技巧]]></title><description><![CDATA[一个可能的bug…]]></description><link>https://jungejason.github.io/wechat-travel-safety-miniprogram-tips/</link><guid isPermaLink="false">https://jungejason.github.io/wechat-travel-safety-miniprogram-tips/</guid><pubDate>Sat, 26 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;一个可能的bug及其解决办法&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 01 Jan 2021 20:01:07 GMT</lastBuildDate><item><title><![CDATA[Special Holiday Story - Sneaky Edmond!]]></title><description><![CDATA[This is a special holiday story: Sneaky Emond!   Made mainly by the sister, with Big Texts and Procreate.]]></description><link>https://jungejason.github.io/sneaky-edmond/</link><guid isPermaLink="false">https://jungejason.github.io/sneaky-edmond/</guid><pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This is a special holiday story: Sneaky Emond!&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/eb48867328ff64be3afb07614ea06a91/be6b9/sneaky-edmond.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 81.08108108108108%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFAgT/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAABpYQuFY5yn//EABwQAAEEAwEAAAAAAAAAAAAAAAECAxITAAQiEf/aAAgBAQABBQIvd3nG1zSr27oHXlD/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAWEQEBAQAAAAAAAAAAAAAAAAAAASH/2gAIAQIBAT8B1H//xAAaEAADAQADAAAAAAAAAAAAAAAAARECIVGB/9oACAEBAAY/AnmDcKa4I83wd7P/xAAaEAACAwEBAAAAAAAAAAAAAAABEQAhMUHR/9oACAEBAAE/IViFUKwD7MAoy4EdA2C2Q14uMNXgLBP/2gAMAwEAAgADAAAAELTP/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAEDAQE/EFMMm//EABkRAQACAwAAAAAAAAAAAAAAAAEAESExgf/aAAgBAgEBPxDZVxyWon//xAAaEAEBAQADAQAAAAAAAAAAAAABEQAhMVFx/9oACAEBAAE/EOuJqntmBABYVWMgs0w5t4wYDNEweuTjrhWjs/SfdcAVylgQT3vf/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image-sneaky-edmond&quot;
+        title=&quot;image-sneaky-edmond&quot;
+        src=&quot;/static/eb48867328ff64be3afb07614ea06a91/1c72d/sneaky-edmond.jpg&quot;
+        srcset=&quot;/static/eb48867328ff64be3afb07614ea06a91/a80bd/sneaky-edmond.jpg 148w,
+/static/eb48867328ff64be3afb07614ea06a91/1c91a/sneaky-edmond.jpg 295w,
+/static/eb48867328ff64be3afb07614ea06a91/1c72d/sneaky-edmond.jpg 590w,
+/static/eb48867328ff64be3afb07614ea06a91/a8a14/sneaky-edmond.jpg 885w,
+/static/eb48867328ff64be3afb07614ea06a91/be6b9/sneaky-edmond.jpg 983w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt; Made mainly by the sister, with &lt;a href=&quot;https://apps.apple.com/us/app/big-texts/id1476901287&quot;&gt;Big Texts&lt;/a&gt; and &lt;a href=&quot;https://procreate.art/ipad&quot;&gt;Procreate&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[国际健康码微信小程序上传图片技巧]]></title><description><![CDATA[一个可能的bug…]]></description><link>https://jungejason.github.io/wechat-travel-safety-miniprogram-tips/</link><guid isPermaLink="false">https://jungejason.github.io/wechat-travel-safety-miniprogram-tips/</guid><pubDate>Sat, 26 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;一个可能的bug及其解决办法&lt;/h2&gt;
 &lt;p&gt;国际健康码微信小程序上传图片时遇到一个问题，我找到一个解决办法。可能只是我遇到，但是还是分享出来说不定对大家有用。&lt;/p&gt;
 &lt;p&gt;填写好了检测日期之后选择图片上传之后，已经填写过了了的检测日期会被清除。这时如果你没有注意到，并继续填写下面的选项并点击提交的话，页面会报错，显示“需要填写检测日期”。这时补充填写检测时期之后再点击提交，会显示需要上传检测图片，尽管检测图片仍然显示在页面上。之后再也无法成功提交。&lt;/p&gt;
 &lt;p&gt;解决办法就是重新从头开始。选择上传图片之后重新填上检测日期，然后再填写后面的内容最后进行提交。也就是&lt;strong&gt;初次提交时候确保检测日期不为空&lt;/strong&gt;。&lt;/p&gt;
