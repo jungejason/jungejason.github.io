@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Sep 2021 00:23:23 GMT</lastBuildDate><item><title><![CDATA[高效研发资源]]></title><description><![CDATA[本地查看文件并上传到服务器的流程 check-file-locally-and-upload ZSH易用性简单演示 zsh-basic FISH易用性简单演示 fish-basic 在网络不稳定情况下使用Mosh + Tmux mosh-demo 使用fzf目录查询 fzf-…]]></description><link>https://jungejason.github.io/dev-eff-book-resources/</link><guid isPermaLink="false">https://jungejason.github.io/dev-eff-book-resources/</guid><pubDate>Sat, 18 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;本地查看文件并上传到服务器的流程&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 Dec 2023 19:29:29 GMT</lastBuildDate><item><title><![CDATA[Vintage Lens Konica 50mm f1.8]]></title><description><![CDATA[Introduction This lens is pretty sharp, like the other Konica Hexanon lenses. It is a very good lens for portrait photography. The color is…]]></description><link>https://jungejason.github.io/lens-konica-50mm-f18/</link><guid isPermaLink="false">https://jungejason.github.io/lens-konica-50mm-f18/</guid><pubDate>Sun, 03 Dec 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This lens is pretty sharp, like the other Konica Hexanon lenses. It is a very good lens for portrait photography.&lt;/p&gt;
+&lt;p&gt;The color is nice as well.&lt;/p&gt;
+&lt;p&gt;The thing I like most about this lens is that its bokeh is sometimes very interesting. It’s busy but in a good way. I have a photo taken with my kids in Costco, but I can’t find it now. I will post it here when I find it.&lt;/p&gt;
+&lt;h2&gt;Sample Photos&lt;/h2&gt;
+&lt;p&gt;This photo is not a very good one, but it shows the sharpness and the color of the lens. It also shows some interesting flare.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ea6db5418c44d2e1ba6c40dc44a20028/44e8b/konica-50mm-f18-1-DSC00209.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAG/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAEzwDy0tj6v/8QAGRAAAgMBAAAAAAAAAAAAAAAAAAECAwQS/9oACAEBAAEFAow6IZ41j1UJqxlrfR//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAWEQEBAQAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8BTZ//xAAaEAABBQEAAAAAAAAAAAAAAAAAAQIQESIy/9oACAEBAAY/AjTjoWp//8QAHBABAAIBBQAAAAAAAAAAAAAAAQARECExQWFx/9oACAEBAAE/Ib9BvEhArlZRkr0QINHkVZXH/9oADAMBAAIAAwAAABDv7//EABURAQEAAAAAAAAAAAAAAAAAABEQ/9oACAEDAQE/EBn/xAAWEQADAAAAAAAAAAAAAAAAAAAAASH/2gAIAQIBAT8QZTKf/8QAHBABAAICAwEAAAAAAAAAAAAAAQAxESFBUWGx/9oACAEBAAE/EHJ3F8hkliCx3TuOCy1U+RsLm7RgkoO2Krln/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image-konica-50mm-f18-1&quot;
+        title=&quot;image-konica-50mm-f18-1&quot;
+        src=&quot;/static/ea6db5418c44d2e1ba6c40dc44a20028/1c72d/konica-50mm-f18-1-DSC00209.jpg&quot;
+        srcset=&quot;/static/ea6db5418c44d2e1ba6c40dc44a20028/a80bd/konica-50mm-f18-1-DSC00209.jpg 148w,
+/static/ea6db5418c44d2e1ba6c40dc44a20028/1c91a/konica-50mm-f18-1-DSC00209.jpg 295w,
+/static/ea6db5418c44d2e1ba6c40dc44a20028/1c72d/konica-50mm-f18-1-DSC00209.jpg 590w,
+/static/ea6db5418c44d2e1ba6c40dc44a20028/a8a14/konica-50mm-f18-1-DSC00209.jpg 885w,
+/static/ea6db5418c44d2e1ba6c40dc44a20028/fbd2c/konica-50mm-f18-1-DSC00209.jpg 1180w,
+/static/ea6db5418c44d2e1ba6c40dc44a20028/44e8b/konica-50mm-f18-1-DSC00209.jpg 9504w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[高效研发资源]]></title><description><![CDATA[本地查看文件并上传到服务器的流程 check-file-locally-and-upload ZSH易用性简单演示 zsh-basic FISH易用性简单演示 fish-basic 在网络不稳定情况下使用Mosh + Tmux mosh-demo 使用fzf目录查询 fzf-…]]></description><link>https://jungejason.github.io/dev-eff-book-resources/</link><guid isPermaLink="false">https://jungejason.github.io/dev-eff-book-resources/</guid><pubDate>Sat, 18 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;本地查看文件并上传到服务器的流程&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/1deb0006ea65cd5c4a28819a2cf50629/check-file-locally-and-upload.gif&quot; alt=&quot;check-file-locally-and-upload&quot;&gt;&lt;/p&gt;
 &lt;p&gt;ZSH易用性简单演示&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/3198a7c972939d35de0c03bd26c4a8a6/zsh-basic.gif&quot; alt=&quot;zsh-basic&quot;&gt;&lt;/p&gt;
