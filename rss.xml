@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 17 Dec 2023 04:49:24 GMT</lastBuildDate><item><title><![CDATA[Vintage Lens H.Zuiko 24mm f/2.8]]></title><description><![CDATA[Introduction This lens is a good one. The 36mm equivalent focal length on an APS-C body is very useful for street photography. The lens is…]]></description><link>https://jungejason.github.io/lens-zuiko-24mm-f28/</link><guid isPermaLink="false">https://jungejason.github.io/lens-zuiko-24mm-f28/</guid><pubDate>Sat, 16 Dec 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 19 Dec 2023 07:04:53 GMT</lastBuildDate><item><title><![CDATA[Vintage Lens H.Zuiko 24mm f/2.8]]></title><description><![CDATA[Introduction This lens is a good one. The 36mm equivalent focal length on an APS-C body is very useful for street photography. The lens is…]]></description><link>https://jungejason.github.io/lens-zuiko-24mm-f28/</link><guid isPermaLink="false">https://jungejason.github.io/lens-zuiko-24mm-f28/</guid><pubDate>Sat, 16 Dec 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This lens is a good one. The 36mm equivalent focal length on an APS-C body is very useful for street photography. The lens is sharp for a vintage lens. The color is vivid and clsoe to what I see with my eyes. &lt;/p&gt;
 &lt;p&gt;One thing I like is it has busy bokeh!&lt;/p&gt;
 &lt;h2&gt;Sample Photos&lt;/h2&gt;
@@ -180,26 +180,26 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3654473d7317eccce35daa32ab981583/6112e/morning-street-2-DSC05489.jpg&quot;
+    href=&quot;/static/79ada72b8aef0f8cc6e465373e1443bd/768c6/morning-street-2-DSC05489.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.21621621621621%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAE/8QAFAEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABLXhUSjk//8QAGhAAAwADAQAAAAAAAAAAAAAAAAECERIhMf/aAAgBAQABBQKVJeNWpJ9b4f/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABcQAAMBAAAAAAAAAAAAAAAAAAAQMQH/2gAIAQEABj8ChCLV/8QAGhABAQACAwAAAAAAAAAAAAAAAQARITFBYf/aAAgBAQABPyEPWaJhryyOM9J4Xd//2gAMAwEAAgADAAAAEJDP/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8QJ//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCxj//EABoQAQACAwEAAAAAAAAAAAAAAAEAESFBcbH/2gAIAQEAAT8QdEv5MN3FNGrlr4xUIy3bcVj/2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 150.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAIDBAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAepbz+uEMYNbIyhMs//EABsQAAICAwEAAAAAAAAAAAAAAAECAAMQERIh/9oACAEBAAEFAqrlNRsUIbgxVFEcLxwsUwt5uAzeP//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABURAQEAAAAAAAAAAAAAAAAAABAB/9oACAECAQE/ASn/xAAbEAACAgMBAAAAAAAAAAAAAAAAARFBAhASIP/aAAgBAQAGPwJN5I7omYLEtvz/AP/EABwQAAMAAwADAAAAAAAAAAAAAAABESExQWGRsf/aAAgBAQABPyFEg5lF2YbI09Njq/Q5JryOvfZkLA8hS4LYbyf/2gAMAwEAAgADAAAAEJ8vgv/EABcRAQEBAQAAAAAAAAAAAAAAAAEAEBH/2gAIAQMBAT8QC5Gf/8QAFREBAQAAAAAAAAAAAAAAAAAAASD/2gAIAQIBAT8QWH//xAAcEAEAAwEAAwEAAAAAAAAAAAABABEhQRAxYaH/2gAIAQEAAT8QDESXaJ8jeyS8NZpPjVE/IJsk7F49fTuy8oEXEldvtm+JsPtHoHZSif/Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;morning-street-2-DSC05489.JPG&quot;
         title=&quot;morning-street-2-DSC05489.JPG&quot;
-        src=&quot;/static/3654473d7317eccce35daa32ab981583/1c72d/morning-street-2-DSC05489.jpg&quot;
-        srcset=&quot;/static/3654473d7317eccce35daa32ab981583/a80bd/morning-street-2-DSC05489.jpg 148w,
-/static/3654473d7317eccce35daa32ab981583/1c91a/morning-street-2-DSC05489.jpg 295w,
-/static/3654473d7317eccce35daa32ab981583/1c72d/morning-street-2-DSC05489.jpg 590w,
-/static/3654473d7317eccce35daa32ab981583/a8a14/morning-street-2-DSC05489.jpg 885w,
-/static/3654473d7317eccce35daa32ab981583/fbd2c/morning-street-2-DSC05489.jpg 1180w,
-/static/3654473d7317eccce35daa32ab981583/6112e/morning-street-2-DSC05489.jpg 4912w&quot;
+        src=&quot;/static/79ada72b8aef0f8cc6e465373e1443bd/1c72d/morning-street-2-DSC05489.jpg&quot;
+        srcset=&quot;/static/79ada72b8aef0f8cc6e465373e1443bd/a80bd/morning-street-2-DSC05489.jpg 148w,
+/static/79ada72b8aef0f8cc6e465373e1443bd/1c91a/morning-street-2-DSC05489.jpg 295w,
+/static/79ada72b8aef0f8cc6e465373e1443bd/1c72d/morning-street-2-DSC05489.jpg 590w,
+/static/79ada72b8aef0f8cc6e465373e1443bd/a8a14/morning-street-2-DSC05489.jpg 885w,
+/static/79ada72b8aef0f8cc6e465373e1443bd/fbd2c/morning-street-2-DSC05489.jpg 1180w,
+/static/79ada72b8aef0f8cc6e465373e1443bd/768c6/morning-street-2-DSC05489.jpg 3264w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -383,26 +383,26 @@
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/4e80e0726fef693fd9e1e22ab6c0f53f/6112e/trees-foggy-morning-DSC05363.jpg&quot;
+    href=&quot;/static/2598552da388ceb4d33dc7f9bbe5ce3b/768c6/trees-foggy-morning-DSC05363.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.21621621621621%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFAf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/aAAwDAQACEAMQAAABQu3MhRga/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAECAxESIzH/2gAIAQEAAQUCmlsvSyqJjmz/xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAwEBPwEn/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGxAAAgEFAAAAAAAAAAAAAAAAARIQAAIRMUH/2gAIAQEABj8CxbqWAputH//EABsQAAICAwEAAAAAAAAAAAAAAAABETEhQVFh/9oACAEBAAE/IVW2DCBGeEmAt0NU3kLUf//aAAwDAQACAAMAAAAQwP8A/8QAFREBAQAAAAAAAAAAAAAAAAAAEDH/2gAIAQMBAT8Qo//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/EEn/xAAcEAEBAAIDAQEAAAAAAAAAAAABEQAhMVFxQYH/2gAIAQEAAT8Q2pCDAUhV5/THY0pswzTcjbfeFQ73ySzCLoffc//Z&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 150.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAc3qlYcjS3pwaEVmcWL/AP/EAB0QAAICAwADAAAAAAAAAAAAAAECABEDEiEQIjH/2gAIAQEAAQUCrtXKMddSPD4FvX1MOQmNxW+//8QAFhEBAQEAAAAAAAAAAAAAAAAAEAER/9oACAEDAQE/AYYf/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8BKf/EABsQAAIDAAMAAAAAAAAAAAAAAAABEBESAiFh/9oACAEBAAY/ArLR0ZU6Q+XsuP/EABwQAAMBAAIDAAAAAAAAAAAAAAABESExQRBRYf/aAAgBAQABPyHTvqp1EXgIYyqiTDehbROdZMvKmfBleTI9iNa42a0f/9oADAMBAAIAAwAAABDbC8z/xAAXEQEAAwAAAAAAAAAAAAAAAAAQAREx/9oACAEDAQE/ENEVP//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/EGMf/8QAHRABAQADAAIDAAAAAAAAAAAAAREAITFBUXGR8P/aAAgBAQABPxAZjY251kIF877mihj2+8jwoo9wm7ivPHcIWkFxmCuiEf1x7Fcjmm/vOyh+ZhKlmCNZlIezIBFZn//Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;trees-foggy-morning-DSC05363.JPG&quot;
         title=&quot;trees-foggy-morning-DSC05363.JPG&quot;
-        src=&quot;/static/4e80e0726fef693fd9e1e22ab6c0f53f/1c72d/trees-foggy-morning-DSC05363.jpg&quot;
-        srcset=&quot;/static/4e80e0726fef693fd9e1e22ab6c0f53f/a80bd/trees-foggy-morning-DSC05363.jpg 148w,
-/static/4e80e0726fef693fd9e1e22ab6c0f53f/1c91a/trees-foggy-morning-DSC05363.jpg 295w,
-/static/4e80e0726fef693fd9e1e22ab6c0f53f/1c72d/trees-foggy-morning-DSC05363.jpg 590w,
-/static/4e80e0726fef693fd9e1e22ab6c0f53f/a8a14/trees-foggy-morning-DSC05363.jpg 885w,
-/static/4e80e0726fef693fd9e1e22ab6c0f53f/fbd2c/trees-foggy-morning-DSC05363.jpg 1180w,
-/static/4e80e0726fef693fd9e1e22ab6c0f53f/6112e/trees-foggy-morning-DSC05363.jpg 4912w&quot;
+        src=&quot;/static/2598552da388ceb4d33dc7f9bbe5ce3b/1c72d/trees-foggy-morning-DSC05363.jpg&quot;
+        srcset=&quot;/static/2598552da388ceb4d33dc7f9bbe5ce3b/a80bd/trees-foggy-morning-DSC05363.jpg 148w,
+/static/2598552da388ceb4d33dc7f9bbe5ce3b/1c91a/trees-foggy-morning-DSC05363.jpg 295w,
+/static/2598552da388ceb4d33dc7f9bbe5ce3b/1c72d/trees-foggy-morning-DSC05363.jpg 590w,
+/static/2598552da388ceb4d33dc7f9bbe5ce3b/a8a14/trees-foggy-morning-DSC05363.jpg 885w,
+/static/2598552da388ceb4d33dc7f9bbe5ce3b/fbd2c/trees-foggy-morning-DSC05363.jpg 1180w,
+/static/2598552da388ceb4d33dc7f9bbe5ce3b/768c6/trees-foggy-morning-DSC05363.jpg 3264w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
