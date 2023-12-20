@@ -1,4 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 20 Dec 2023 07:09:04 GMT</lastBuildDate><item><title><![CDATA[Vintage Lens H.Zuiko 24mm f/2.8]]></title><description><![CDATA[Introduction This lens is a good one. The 36mm equivalent focal length on an APS-C body is very useful for street photography. The lens is…]]></description><link>https://jungejason.github.io/lens-zuiko-24mm-f28/</link><guid isPermaLink="false">https://jungejason.github.io/lens-zuiko-24mm-f28/</guid><pubDate>Sat, 16 Dec 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 20 Dec 2023 07:46:46 GMT</lastBuildDate><item><title><![CDATA[Byxbee Park]]></title><description><![CDATA[Introduction This is a very big and nice park in Palo Alto. It’s a good place for a walk. It’s also a good place for photography. I took…]]></description><link>https://jungejason.github.io/photography-byxbee-park/photography-byxbee-park/</link><guid isPermaLink="false">https://jungejason.github.io/photography-byxbee-park/photography-byxbee-park/</guid><pubDate>Tue, 19 Dec 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This is a very big and nice park in Palo Alto. It’s a good place for a walk. It’s also a good place for photography. I took these photos with my Sony A7Rv and Tamron 28-75mm f/2.8 lens.&lt;/p&gt;
+&lt;h2&gt;Sample Photos&lt;/h2&gt;
+&lt;p&gt;Landscape 1 - Mountain Tip Hidden Behind Clouds:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1/400S&lt;/li&gt;
+&lt;li&gt;ISO 100&lt;/li&gt;
+&lt;li&gt;F/8&lt;/li&gt;
+&lt;li&gt;75mm
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cf08923e7547559b2670b794fcfaa910/4bdc0/byxbee-park-landscape-1-DSC00463.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUBBP/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAHo2IuLSGP/xAAYEAADAQEAAAAAAAAAAAAAAAAAAhEQIf/aAAgBAQABBQLhVKu0/8QAFREBAQAAAAAAAAAAAAAAAAAAABL/2gAIAQMBAT8BlL//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEv/aAAgBAgEBPwGlP//EABYQAQEBAAAAAAAAAAAAAAAAADEAIP/aAAgBAQAGPwJnP//EABwQAAEDBQAAAAAAAAAAAAAAAAEAEZEQQVFhcf/aAAgBAQABPyEG8KqB2ZT9lOyZX//aAAwDAQACAAMAAAAQNN//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxCUP//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/ELU//8QAHBAAAgEFAQAAAAAAAAAAAAAAAAEhETFhkcHh/9oACAEBAAE/EEQRQjMaYz1DhfeOt1n/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;byxbee-park-landscape-1-DSC00463.jpeg&quot;
+        title=&quot;byxbee-park-landscape-1-DSC00463.jpeg&quot;
+        src=&quot;/static/cf08923e7547559b2670b794fcfaa910/1c72d/byxbee-park-landscape-1-DSC00463.jpg&quot;
+        srcset=&quot;/static/cf08923e7547559b2670b794fcfaa910/a80bd/byxbee-park-landscape-1-DSC00463.jpg 148w,
+/static/cf08923e7547559b2670b794fcfaa910/1c91a/byxbee-park-landscape-1-DSC00463.jpg 295w,
+/static/cf08923e7547559b2670b794fcfaa910/1c72d/byxbee-park-landscape-1-DSC00463.jpg 590w,
+/static/cf08923e7547559b2670b794fcfaa910/a8a14/byxbee-park-landscape-1-DSC00463.jpg 885w,
+/static/cf08923e7547559b2670b794fcfaa910/fbd2c/byxbee-park-landscape-1-DSC00463.jpg 1180w,
+/static/cf08923e7547559b2670b794fcfaa910/4bdc0/byxbee-park-landscape-1-DSC00463.jpg 4675w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Landscape 2 - Clouds and A Bird&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1/600S&lt;/li&gt;
+&lt;li&gt;ISO 100&lt;/li&gt;
+&lt;li&gt;F/8&lt;/li&gt;
+&lt;li&gt;73mm
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/87517bef06b8d714375b61a03f74c476/f2cf9/byxbee-park-lsky-bird-DSC00451.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAIEBQED/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAfW1iysvKQzekTC//8QAGhABAAMBAQEAAAAAAAAAAAAAAQACERIDEP/aAAgBAQABBQKvriWpaIbrCzO2dM35/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFREBAQAAAAAAAAAAAAAAAAAAESD/2gAIAQIBAT8BI//EABcQAAMBAAAAAAAAAAAAAAAAAAABMDH/2gAIAQEABj8CMUP/xAAaEAEBAAMBAQAAAAAAAAAAAAABABARIUFh/9oACAEBAAE/IfrEH0rdcMQpb3ANbd//2gAMAwEAAgADAAAAEK//AP7/xAAWEQEBAQAAAAAAAAAAAAAAAAARABD/2gAIAQMBAT8QZ3//xAAXEQEAAwAAAAAAAAAAAAAAAAABABAR/9oACAECAQE/EGMb/8QAGRABAQEBAQEAAAAAAAAAAAAAAQAhETFR/9oACAEBAAE/EG8D4MiFPvjG5ETC+Mp11G+x0XG6v//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;byxbee-park-lsky-bird-DSC00451.jpeg&quot;
+        title=&quot;byxbee-park-lsky-bird-DSC00451.jpeg&quot;
+        src=&quot;/static/87517bef06b8d714375b61a03f74c476/1c72d/byxbee-park-lsky-bird-DSC00451.jpg&quot;
+        srcset=&quot;/static/87517bef06b8d714375b61a03f74c476/a80bd/byxbee-park-lsky-bird-DSC00451.jpg 148w,
+/static/87517bef06b8d714375b61a03f74c476/1c91a/byxbee-park-lsky-bird-DSC00451.jpg 295w,
+/static/87517bef06b8d714375b61a03f74c476/1c72d/byxbee-park-lsky-bird-DSC00451.jpg 590w,
+/static/87517bef06b8d714375b61a03f74c476/a8a14/byxbee-park-lsky-bird-DSC00451.jpg 885w,
+/static/87517bef06b8d714375b61a03f74c476/fbd2c/byxbee-park-lsky-bird-DSC00451.jpg 1180w,
+/static/87517bef06b8d714375b61a03f74c476/f2cf9/byxbee-park-lsky-bird-DSC00451.jpg 2276w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Vintage Lens H.Zuiko 24mm f/2.8]]></title><description><![CDATA[Introduction This lens is a good one. The 36mm equivalent focal length on an APS-C body is very useful for street photography. The lens is…]]></description><link>https://jungejason.github.io/lens-zuiko-24mm-f28/</link><guid isPermaLink="false">https://jungejason.github.io/lens-zuiko-24mm-f28/</guid><pubDate>Sat, 16 Dec 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This lens is a good one. The 36mm equivalent focal length on an APS-C body is very useful for street photography. The lens is sharp for a vintage lens. The color is vivid and clsoe to what I see with my eyes. &lt;/p&gt;
 &lt;p&gt;One thing I like is it has busy bokeh!&lt;/p&gt;
 &lt;h2&gt;Sample Photos&lt;/h2&gt;
