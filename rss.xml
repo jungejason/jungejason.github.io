@@ -1,4 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 20 Dec 2023 07:46:46 GMT</lastBuildDate><item><title><![CDATA[Byxbee Park]]></title><description><![CDATA[Introduction This is a very big and nice park in Palo Alto. It’s a good place for a walk. It’s also a good place for photography. I took…]]></description><link>https://jungejason.github.io/photography-byxbee-park/photography-byxbee-park/</link><guid isPermaLink="false">https://jungejason.github.io/photography-byxbee-park/photography-byxbee-park/</guid><pubDate>Tue, 19 Dec 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Mushyroom Blog]]></title><description><![CDATA[fun, dev-efficiency, art, meaning...]]></description><link>https://jungejason.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 22 Dec 2023 06:03:42 GMT</lastBuildDate><item><title><![CDATA[Sunset Glow]]></title><description><![CDATA[Recently I have seen beautiful sunset glow in the sky. Finally today when picking up my daughter from school, I got a chance to take some…]]></description><link>https://jungejason.github.io/photography-sunset-glow/sunset-glow/</link><guid isPermaLink="false">https://jungejason.github.io/photography-sunset-glow/sunset-glow/</guid><pubDate>Thu, 21 Dec 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Recently I have seen beautiful sunset glow in the sky. Finally today when picking up my daughter from school, I got a chance to take some photos. I used the Sony A7Rv with the Zeiss 35mm f1.4 lens. Only one of them is good.&lt;/p&gt;
+&lt;p&gt;This lens &lt;/p&gt;
+&lt;h2&gt;Sample Photos&lt;/h2&gt;
+&lt;p&gt;Sunset Glow:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Camera&lt;/td&gt;
+&lt;td&gt;Sony A7Rv&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lens&lt;/td&gt;
+&lt;td&gt;Zeiss 35mm f1.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Aperture&lt;/td&gt;
+&lt;td&gt;f8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shutter Speed&lt;/td&gt;
+&lt;td&gt;1/60 S&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ISO&lt;/td&gt;
+&lt;td&gt;640&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Extra Notes&lt;/td&gt;
+&lt;td&gt;Used APS-C Mode by mistake&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e06975f5f3135225f9887515bfccaa41/1fc44/sunset-glow-DSC00562.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAF8ciJuMkT/xAAaEAACAwEBAAAAAAAAAAAAAAAAAgEDERQi/9oACAEBAAEFAmrkaJ3wdluNfYxp/8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQMBAT8Bh//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAgBAgEBPwG6r//EABsQAAEEAwAAAAAAAAAAAAAAAAABAhAhIjJB/9oACAEBAAY/AqMkNjhbo//EABoQAQACAwEAAAAAAAAAAAAAAAEAESExUYH/2gAIAQEAAT8hHvnkHRCKGnKKgsJpCAUj7G0//9oADAMBAAIAAwAAABAE7//EABcRAQEBAQAAAAAAAAAAAAAAAAEAEUH/2gAIAQMBAT8QHosv/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8QFv/EABsQAQEBAQADAQAAAAAAAAAAAAERADEhYXHw/9oACAEBAAE/EHYSijO7wYHrJAA6LpgTIqEnzQeh61+7kSoV7v/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;sunset-glow-DSC00562.jpeg&quot;
+        title=&quot;sunset-glow-DSC00562.jpeg&quot;
+        src=&quot;/static/e06975f5f3135225f9887515bfccaa41/1c72d/sunset-glow-DSC00562.jpg&quot;
+        srcset=&quot;/static/e06975f5f3135225f9887515bfccaa41/a80bd/sunset-glow-DSC00562.jpg 148w,
+/static/e06975f5f3135225f9887515bfccaa41/1c91a/sunset-glow-DSC00562.jpg 295w,
+/static/e06975f5f3135225f9887515bfccaa41/1c72d/sunset-glow-DSC00562.jpg 590w,
+/static/e06975f5f3135225f9887515bfccaa41/a8a14/sunset-glow-DSC00562.jpg 885w,
+/static/e06975f5f3135225f9887515bfccaa41/fbd2c/sunset-glow-DSC00562.jpg 1180w,
+/static/e06975f5f3135225f9887515bfccaa41/1fc44/sunset-glow-DSC00562.jpg 3120w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Byxbee Park]]></title><description><![CDATA[Introduction This is a very big and nice park in Palo Alto. It’s a good place for a walk. It’s also a good place for photography. I took…]]></description><link>https://jungejason.github.io/photography-byxbee-park/photography-byxbee-park/</link><guid isPermaLink="false">https://jungejason.github.io/photography-byxbee-park/photography-byxbee-park/</guid><pubDate>Tue, 19 Dec 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This is a very big and nice park in Palo Alto. It’s a good place for a walk. It’s also a good place for photography. I took these photos with my Sony A7Rv and Tamron 28-75mm f/2.8 lens.&lt;/p&gt;
 &lt;h2&gt;Sample Photos&lt;/h2&gt;
 &lt;p&gt;Landscape 1 - Mountain Tip Hidden Behind Clouds:&lt;/p&gt;
