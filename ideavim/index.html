@@ -19,7 +19,7 @@
 <li>可以通过VIM命令行快捷键调用IDE命令</li>
 </ol>
 <p>下面进行一些展开介绍。</p>
-<h2>1. 安装配置简便</h2>
+<h2 id="1-安装配置简便">1. 安装配置简便</h2>
 <p>在JetBrains系列软件中，比如IntelliJ IDEA, WebStorm, DataGrip等等，可以使用Cmd + Shift + A，输入plugins进入plugin安装界面，然后在market place中查找IdeaVim进行安装。</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -230,7 +230,7 @@ map &lt;S-Space> :action GotoNextError&lt;CR>
 map &lt;leader>b :action ToggleLineBreakpoint&lt;CR>
 map &lt;leader>o :action FileStructurePopup&lt;CR></code></pre></div>
 <p>另外， 这个配置文件是对所有JetBrains 工具都共享的。配置一次就可以在所有工具上生效。</p>
-<h2>2. 对原生的VIM命令支持在IDE中基本做到无缝集成</h2>
+<h2 id="2-对原生的vim命令支持在ide中基本做到无缝集成">2. 对原生的VIM命令支持在IDE中基本做到无缝集成</h2>
 <p>这一点没有太多解释。如果有快捷键冲突的话，可以在这个配置界页面进行调整：</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -265,9 +265,9 @@ map &lt;leader>o :action FileStructurePopup&lt;CR></code></pre></div>
       />
   </a>
     </span></p>
-<h2>3. 因为IDE对语法的理解比VIM更强，使一些VIM命令更“聪明”</h2>
+<h2 id="3-因为ide对语法的理解比vim更强使一些vim命令更聪明">3. 因为IDE对语法的理解比VIM更强，使一些VIM命令更“聪明”</h2>
 <p>这里举一个最常用的例子。<code class="language-text">]m</code>将光标跳转到下一个函数开始的地方。在VIM中要做到精准的跳转很不容易，所以我基本上没有使用。然而在IdeaVim中，因为IDE对语法语义理解精准，所以用起来很爽。类似的命令还有<code class="language-text">[m</code>, <code class="language-text">]M</code>, “[M`</p>
-<h2>4. 提供最常用VIM插件的实现</h2>
+<h2 id="4-提供最常用vim插件的实现">4. 提供最常用VIM插件的实现</h2>
 <p>IdeaVim是JetBrains的开源软件<sup id="fnref-1"><a href="#fn-1" class="footnote-ref">1</a></sup>，是使用Kotlin实现的插件。所以我们不能直接使用vim的现有插件。不过，IdeaVim选择实现了一些最常用的VIM插件。比如，<a href="https://github.com/tpope">tpope</a>/<strong><a href="https://github.com/tpope/vim-surround">vim-surround</a></strong>, <a href="https://github.com/tpope">tpope</a>/<strong><a href="https://github.com/tpope/vim-commentary">vim-commentary</a></strong>, <a href="https://github.com/vim-scripts">vim-scripts</a>/<strong><a href="https://github.com/vim-scripts/argtextobj.vim">argtextobj.vim</a></strong>, 等等。</p>
 <p>从我的使用体验来看，这些选择非常成功，每一个精品。做到了“插件中的插件，精品中的精品”。下面就举两个例子。</p>
 <p>第一个，argtextobj。变成中我们常常需要修改函数声明中或者函数调用语句中的整个参数。这个时候，一些额外的单词以及逗号就很讨厌。<a href="https://github.com/vim-scripts">vim-scripts</a>/<a href="https://github.com/vim-scripts/argtextobj.vim">argtextobj.vim</a> 就是用来解决这个问题的一个插件。比如使用如下操作方便工作：</p>
@@ -321,7 +321,7 @@ map &lt;leader>o :action FileStructurePopup&lt;CR></code></pre></div>
 <p>而要使用这两个功能，不需要任何安装，只需要在~/.ideavimrc文件中添加以下两行即可：</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">set argtextobj
 set surround</code></pre></div>
-<h2>5. 可以通过VIM命令行快捷键调用IDE命令</h2>
+<h2 id="5-可以通过vim命令行快捷键调用ide命令">5. 可以通过VIM命令行快捷键调用IDE命令</h2>
 <p>VIM的一个根本优势是默认模式是命令模式，所以很多按键很简洁，不需要组合键，从而在IdeaVim中我们可以方便定义很多快捷键。比如，可以使用Space, a 快速切换 Annotation View (Git Blame):</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -457,4 +457,4 @@ map &lt;leader>o :action FileStructurePopup&lt;CR></code></pre></div>
           >
             window.___chunkMapping="{\"app\":[\"/app-aba25e40741b1842d626.js\"],\"component---cache-caches-gatsby-plugin-offline-app-shell-js\":[\"/component---cache-caches-gatsby-plugin-offline-app-shell-js-7e3ad5d39088c23f1c0b.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-eeb530a6f83d59e98345.js\"],\"component---src-pages-about-js\":[\"/component---src-pages-about-js-ba2ac79cd53b54a57874.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-884b541f1195dbdb9b1f.js\"],\"component---src-pages-tags-js\":[\"/component---src-pages-tags-js-b57e72cfad87762f4546.js\"],\"component---src-templates-blog-post-js\":[\"/component---src-templates-blog-post-js-553adc38437691b8aa1b.js\"],\"component---src-templates-tag-js\":[\"/component---src-templates-tag-js-17964a486fc885abfe45.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="0fd97b5c505238e7dd68";</script><script src="/webpack-runtime-2089979820d4d9c5ae88.js" async></script><script src="/framework-5c27a8618c195b646b3c.js" async></script><script src="/app-aba25e40741b1842d626.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="bc00521fa4dea979fdd8";</script><script src="/webpack-runtime-ae5c25b12e8c6de09140.js" async></script><script src="/framework-5c27a8618c195b646b3c.js" async></script><script src="/app-aba25e40741b1842d626.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>

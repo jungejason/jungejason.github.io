@@ -18,7 +18,7 @@
 <p>只处理最常见的场景。至于更偏的场景临时Google找解决办法。</p>
 </li>
 </ul>
-<h2>场景一：在 git diff 中显示更细粒度差别</h2>
+<h2 id="场景一在-git-diff-中显示更细粒度差别">场景一：在 git diff 中显示更细粒度差别</h2>
 <p>默认的<code class="language-text">git diff</code>显示粒度以行为单位，比较粗。比如</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -53,7 +53,7 @@
       />
   </a>
     </span></p>
-<h3>解决方案1 - 使用 git diff 的 option：</h3>
+<h3 id="解决方案1---使用-git-diff-的-option">解决方案1 - 使用 git diff 的 option：</h3>
 <p>如果希望一目了然看到更细微的差别，可以使用 <code class="language-text">--color-words</code> 选项：</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -123,7 +123,7 @@
       />
   </a>
     </span></p>
-<h3>解决方案2 - 使用 vimdiff:</h3>
+<h3 id="解决方案2---使用-vimdiff">解决方案2 - 使用 vimdiff:</h3>
 <p>我们可以使用 vimdiff。首先在.gitconfig 中设置：</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">cat</span> ~/.gitconfig
 <span class="token punctuation">..</span>.
@@ -164,7 +164,7 @@
       />
   </a>
     </span></p>
-<h3>解决方案3 - 使用 IDE:</h3>
+<h3 id="解决方案3---使用-ide">解决方案3 - 使用 IDE:</h3>
 <p>也可以使用常用的IDE。这样的好处是对大的改动比较好，比如，在WebStorm中， 使用Local Change窗口。可以看到，WebStorm提供可视化的比较选项，很方便。不过，坏处是没有命令行查看快捷，尤其是简单的改动。</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -199,7 +199,7 @@
       />
   </a>
     </span></p>
-<h2>场景二：比较两个文件显示更细粒度的差别</h2>
+<h2 id="场景二比较两个文件显示更细粒度的差别">场景二：比较两个文件显示更细粒度的差别</h2>
 <p>比较两个文件时，默认的<code class="language-text">diff</code>命令也有力度不好的问题：</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -235,7 +235,7 @@
   </a>
     </span></p>
 <p>另外，高亮显示也没有<sup id="fnref-2"><a href="#fn-2" class="footnote-ref">2</a></sup><sup id="fnref-3"><a href="#fn-3" class="footnote-ref">3</a></sup>。</p>
-<h3>解决方案1 - 借用 git diff：</h3>
+<h3 id="解决方案1---借用-git-diff">解决方案1 - 借用 git diff：</h3>
 <p>不在git代码仓中，我们也可以使用<code class="language-text">git diff</code>。只要添加一个<code class="language-text">--no-index</code> 选项：</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -303,7 +303,7 @@
       />
   </a>
     </span></p>
-<h3>解决方案2 - 使用 vimdiff：</h3>
+<h3 id="解决方案2---使用-vimdiff-1">解决方案2 - 使用 vimdiff：</h3>
 <p>使用<code class="language-text">vimdiff index.js new-index.js</code></p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -338,7 +338,7 @@
       />
   </a>
     </span></p>
-<h3>解决方案3 - 使用IDE：</h3>
+<h3 id="解决方案3---使用ide">解决方案3 - 使用IDE：</h3>
 <p>如果你常用的IDE支持的话，使用它做 diff 也很方便。比如Intellij 系列IDEA支持命令行diff选项。</p>
 <p><code class="language-text">idea diff index.js new-index.js</code></p>
 <p><code class="language-text">webstorm diff index.js new-index.js</code></p>
@@ -393,4 +393,4 @@
           >
             window.___chunkMapping="{\"app\":[\"/app-aba25e40741b1842d626.js\"],\"component---cache-caches-gatsby-plugin-offline-app-shell-js\":[\"/component---cache-caches-gatsby-plugin-offline-app-shell-js-7e3ad5d39088c23f1c0b.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-eeb530a6f83d59e98345.js\"],\"component---src-pages-about-js\":[\"/component---src-pages-about-js-ba2ac79cd53b54a57874.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-884b541f1195dbdb9b1f.js\"],\"component---src-pages-tags-js\":[\"/component---src-pages-tags-js-b57e72cfad87762f4546.js\"],\"component---src-templates-blog-post-js\":[\"/component---src-templates-blog-post-js-553adc38437691b8aa1b.js\"],\"component---src-templates-tag-js\":[\"/component---src-templates-tag-js-17964a486fc885abfe45.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="0fd97b5c505238e7dd68";</script><script src="/webpack-runtime-2089979820d4d9c5ae88.js" async></script><script src="/framework-5c27a8618c195b646b3c.js" async></script><script src="/app-aba25e40741b1842d626.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="bc00521fa4dea979fdd8";</script><script src="/webpack-runtime-ae5c25b12e8c6de09140.js" async></script><script src="/framework-5c27a8618c195b646b3c.js" async></script><script src="/app-aba25e40741b1842d626.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
